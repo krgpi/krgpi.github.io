@@ -15,7 +15,10 @@ const IndexPage: React.FC = () => {
               <p>iCloudで同期できる付箋アプリです。</p>
               <p>
                 <b>
-                  <a href="/releases/cloudstickies/CloudStickies-1.0.5.zip">
+                  <a
+                    href="https://www.ikaraage.com/release/cloudstickies/CloudStickies-1.0.5.zip"
+                    download={true}
+                  >
                     ダウンロード / Download
                   </a>
                 </b>
