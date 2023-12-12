@@ -4,8 +4,7 @@ const IndexPage: React.FC = () => {
   return (
     <div className="text-white p-1 space-y-3">
       <p className="text-3xl">Activity Log</p>
-
-      <ul>
+      <ul className="list-disc">
         <li>
           <a
             className="text-krg-link-orange hover:underline"
@@ -27,7 +26,7 @@ const IndexPage: React.FC = () => {
       </ul>
       <hr />
       <p className="text-3xl">Engineering</p>
-      <ul>
+      <ul className="list-disc">
         <li>
           <script
             async
@@ -72,7 +71,7 @@ const IndexPage: React.FC = () => {
       </ul>
       <hr />
       <p className="text-3xl">Photography</p>
-      <ul>
+      <ul className="list-disc">
         <li>
           <a
             className="text-krg-link-orange hover:underline"
