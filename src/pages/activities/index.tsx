@@ -2,16 +2,16 @@ import React from "react";
 
 const IndexPage: React.FC = () => {
   return (
-    <div className="text-white p-1 space-y-3">
+    <div className="space-y-3">
       <p className="text-3xl">Activity Log</p>
-      <ul className="list-disc">
+      <ul className="list-disc list-inside">
         <li>
           <a
             className="text-krg-link-orange hover:underline"
             href="https://agelog.hateblo.jp/"
             target="_blank"
           >
-            agelog(揚げログ)
+            Blog
           </a>
         </li>
         <li>
@@ -26,7 +26,7 @@ const IndexPage: React.FC = () => {
       </ul>
       <hr />
       <p className="text-3xl">Engineering</p>
-      <ul className="list-disc">
+      <ul className="list-disc list-inside">
         <li>
           <script
             async
@@ -71,7 +71,7 @@ const IndexPage: React.FC = () => {
       </ul>
       <hr />
       <p className="text-3xl">Photography</p>
-      <ul className="list-disc">
+      <ul className="list-disc list-inside">
         <li>
           <a
             className="text-krg-link-orange hover:underline"
