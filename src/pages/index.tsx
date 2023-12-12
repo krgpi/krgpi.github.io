@@ -8,7 +8,7 @@ const IndexPage: React.FC = () => {
         <p className="text-medium">Dec 12, 2023</p>
         <a
           className="text-2xl font-bold hover:underline text-krg-link-orange"
-          href="releases/cloudstickies"
+          href="products/cloudstickies"
         >
           The Stickies app, which syncs with iCloud, has been released.
         </a>

@@ -6,7 +6,7 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 export type Path =
   | `/`
   | `/activities`
-  | `/releases/cloudstickies`
+  | `/products/cloudstickies`
 
 export type Params = {
   
