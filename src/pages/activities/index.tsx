@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "../../router";
 
 const IndexPage: React.FC = () => {
   return (
@@ -72,6 +73,11 @@ const IndexPage: React.FC = () => {
       <hr />
       <p className="text-3xl">Photography</p>
       <ul className="list-disc list-inside">
+        <li>
+          <Link className="text-krg-link-orange hover:underline" to="/gallery">
+            Gallery
+          </Link>
+        </li>
         <li>
           <a
             className="text-krg-link-orange hover:underline"
