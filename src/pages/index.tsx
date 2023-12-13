@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "../router";
 
 const IndexPage: React.FC = () => {
   return (
@@ -6,12 +7,12 @@ const IndexPage: React.FC = () => {
       <p className="text-3xl">Featured</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <p className="text-medium">Dec 12, 2023</p>
-        <a
+        <Link
           className="text-2xl font-bold hover:underline text-krg-link-orange"
-          href="products/cloudstickies"
+          to="/products/cloudstickies"
         >
           The Stickies app, which syncs with iCloud, has been released.
-        </a>
+        </Link>
         <p className="text-large">The app for macOS is available.</p>
         <p className="text-large">
           The app for iOS will be available on Feb 2024.
