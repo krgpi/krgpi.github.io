@@ -1,24 +1,25 @@
 import React from "react";
+import { Link } from "../router";
 
 const TheHeader: React.FC = () => {
   return (
     <div className="text-center font-raj">
       <div id="header" className="bg-krg-bg-slate">
         <h1 className="text-white text-3xl py-2">
-          <a href="/">Karaage Project</a>
+          <Link to="/">Karaage Project</Link>
         </h1>
-        <a className="text-krg-link-orange hover:underline px-4" href="/">
+        <Link className="text-krg-link-orange hover:underline px-4" to="/">
           Home
-        </a>
-        <a className="text-krg-link-orange hover:underline px-4" href="/works">
+        </Link>
+        <Link className="text-krg-link-orange hover:underline px-4" to="/works">
           Works
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-krg-link-orange hover:underline px-4"
-          href="/activities"
+          to="/activities"
         >
           Links
-        </a>
+        </Link>
       </div>
     </div>
   );
