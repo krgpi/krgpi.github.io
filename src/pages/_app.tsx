@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <section className="bg-krg-bg-gray flex flex-col min-h-screen justify-between">
       <TheHeader />
-      <main className="mb-auto p-4 text-white">
+      <main className="mb-auto p-4 text-white max-w-screen-xl mx-auto">
         <Outlet />
       </main>
       <TheFooter />

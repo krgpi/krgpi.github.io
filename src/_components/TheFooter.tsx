@@ -2,7 +2,7 @@ import React from "react";
 
 const TheFooter: React.FC = () => {
   return (
-    <footer className="bg-krg-bg-slate p-2 font-raj">
+    <footer className="bg-krg-bg-slate p-2 font-raj text-center">
       <p className="text-white">&copy; {new Date().getFullYear()} Yuki NOAKI</p>
 
       <div className="space-x-2">
