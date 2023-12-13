@@ -5,7 +5,7 @@ import TheHeader from "../_components/TheHeader";
 
 const App: React.FC = () => {
   return (
-    <section className="bg-krg-bg-gray flex flex-col h-screen justify-between">
+    <section className="bg-krg-bg-gray flex flex-col min-h-screen justify-between">
       <TheHeader />
       <main className="mb-auto p-4 text-white">
         <Outlet />
