@@ -25,7 +25,7 @@ const IndexPage: React.FC = () => {
             <img
               className="rounded-full"
               width="100"
-              src="src/assets/icon.png"
+              src="/icon.png"
               alt="icon"
             />
           </div>
