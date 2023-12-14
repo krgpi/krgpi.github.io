@@ -12,6 +12,9 @@ const config: Config = {
         "krg-link-orange": "#ff9900",
         "krg-link-active": "#0000ff",
       },
+      backgroundImage: {
+        "stickies-bg": "url('/stickies-on-the-desktop.png')",
+      },
     },
   },
   plugins: [],
