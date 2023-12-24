@@ -7,10 +7,16 @@ const IndexPage: React.FC = () => {
       <p className="text-3xl">Featured</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <p className="text-medium">Dec 12, 2023</p>
+
         <Link
           className="text-2xl font-bold hover:underline text-krg-link-orange"
           to="/products/cloudstickies"
         >
+          <img
+            src="/stickies-icon-128-square.png"
+            alt="green-note"
+            className="w-1/4"
+          />
           The Stickies app, which syncs with iCloud, has been released.
         </Link>
         <p className="text-large">The app for macOS is available.</p>
@@ -35,7 +41,21 @@ const IndexPage: React.FC = () => {
               a.k.a. Karaage, Software Engineer at Tokyo, Japan
             </p>
             <p className="text-large font-bold">
-              Product Manager & Scrum Master @ CoeFont Co, Ltd.
+              <ul className="list-disc list-inside">
+                <li>
+                  CEO @{" "}
+                  <a
+                    className="text-krg-link-orange hover:underline"
+                    href="https://ideoj.pages.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    IDEOJ corp.
+                  </a>
+                </li>
+                <li>Product Manager & Scrum Master @ CoeFont Co, Ltd.</li>
+                <li>iOS & macOS App Engineer @ Freelance</li>
+              </ul>
             </p>
             <p>
               I work to support the launch and growth of startups with
