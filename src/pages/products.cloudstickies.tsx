@@ -18,7 +18,7 @@ const IndexPage: React.FC = () => {
               className="mt-4 text-white bg-krg-link-orange font-bold hover:underline focus:ring-4 focus:ring-blue-300 rounded-lg px-5 py-2.5 me-2 mb-2  focus:outline-none"
             >
               <a
-                href="https://www.ikaraage.com/releases/cloudstickies/CloudStickies-1.0.5.zip"
+                href="https://www.ikaraage.com/releases/cloudstickies/CloudStickies-1.0.6.zip"
                 download={true}
               >
                 Download for macOS
