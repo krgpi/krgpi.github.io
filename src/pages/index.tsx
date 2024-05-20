@@ -3,8 +3,8 @@ import { Link } from "../router";
 
 const IndexPage: React.FC = () => {
   return (
-    <div className="space-y-2">
-      <p className="text-3xl">Featured</p>
+    <div className="space-y-2 font-area">
+      <p className="text-3xl font-area_ext">Featured</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <p className="text-medium">Dec 12, 2023</p>
 
@@ -20,11 +20,8 @@ const IndexPage: React.FC = () => {
           The Stickies app, which syncs with iCloud, has been released.
         </Link>
         <p className="text-large">The app for macOS is available.</p>
-        <p className="text-large">
-          The app for iOS will be available on Feb 2024.
-        </p>
       </div>
-      <p className="text-3xl">Profile</p>
+      <p className="text-3xl font-area_ext">Profile</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <div className="flex flex-col md:flex-row md:space-x-4">
           <div>
@@ -46,7 +43,7 @@ const IndexPage: React.FC = () => {
                   CEO @{" "}
                   <a
                     className="text-krg-link-orange hover:underline"
-                    href="https://ideoj.pages.dev"
+                    href="https://ideoj.co.jp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -4,7 +4,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        raj: ["Rajdhani"],
+        raj: ["Rajdhani", "sans-serif"],
+        mplus: ["m-plus-2c", "sans-serif"],
+        area_ext: ["area-extended", "sans-serif"],
+        area: ["area-normal", "sans-serif"],
       },
       colors: {
         "krg-bg-gray": "#4C4C4C",

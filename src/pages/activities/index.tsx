@@ -45,15 +45,6 @@ const IndexPage: React.FC = () => {
         <li>
           <a
             className="text-krg-link-orange hover:underline"
-            href="https://mstdn.jp/@krgpi"
-            target="_blank"
-          >
-            mastodon(mstdn.jp)
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-krg-link-orange hover:underline"
             href="https://github.com/krgpi"
             target="_blank"
           >
