@@ -3,7 +3,7 @@ import { Link } from "../router";
 
 const IndexPage: React.FC = () => {
   return (
-    <div className="space-y-2 font-area">
+    <div className="space-y-2 font-area_ext">
       <p className="text-3xl font-area_ext">Featured</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <p className="text-medium">Dec 12, 2023</p>
@@ -21,7 +21,7 @@ const IndexPage: React.FC = () => {
         </Link>
         <p className="text-large">The app for macOS is available.</p>
       </div>
-      <p className="text-3xl font-area_ext">Profile</p>
+      <p className="text-3xl font-area_ext">My Profile</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <div className="flex flex-col md:flex-row md:space-x-4">
           <div>
@@ -57,6 +57,7 @@ const IndexPage: React.FC = () => {
             <p>
               I work to support the launch and growth of startups with
               engineering and product management.
+              スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
             </p>
             <p>hobbies: 📸 🎸 🚘</p>
           </div>
