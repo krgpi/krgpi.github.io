@@ -36,7 +36,7 @@ const IndexPage: React.FC = () => {
           />
           <a
             href="https://twitter.com/krgpi?ref_src=twsrc%5Etfw"
-            className="twitter-follow-button"
+            className="twitter-follow-button text-krg-link-orange hover:underline"
             data-show-count="false"
           >
             Follow @krgpi
@@ -65,11 +65,6 @@ const IndexPage: React.FC = () => {
       <p className="text-3xl">Photography</p>
       <ul className="list-disc list-inside">
         <li>
-          <Link className="text-krg-link-orange hover:underline" to="/gallery">
-            Gallery
-          </Link>
-        </li>
-        <li>
           <a
             className="text-krg-link-orange hover:underline"
             href="https://www.instagram.com/caraage_films/"
@@ -77,6 +72,11 @@ const IndexPage: React.FC = () => {
           >
             Instagram
           </a>
+        </li>
+        <li>
+          <Link className="text-krg-link-orange hover:underline" to="/gallery">
+            Gallery
+          </Link>
         </li>
         <li>
           <a
