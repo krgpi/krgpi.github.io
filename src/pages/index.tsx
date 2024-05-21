@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "../router";
 
-const IndexPage: React.FC = () => {
+const Component: React.FC = () => {
   return (
     <div className="space-y-2 font-area_ext">
       <p className="text-3xl font-area_ext">Featured</p>
@@ -67,4 +67,4 @@ const IndexPage: React.FC = () => {
   );
 };
 
-export default IndexPage;
+export default Component;
