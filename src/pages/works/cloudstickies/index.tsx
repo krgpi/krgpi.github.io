@@ -32,7 +32,7 @@ const Component: React.FC = () => {
         </div>
       </div>
             <div className="max-w-prose">
-<a href='./cloudstickies/en'>The English guide is here</a>
+<a className="hover:underline text-krg-link-orange" href='./cloudstickies/en'>The English guide is here</a>
     <Japanese components={components} />
             </div>
             </div>
