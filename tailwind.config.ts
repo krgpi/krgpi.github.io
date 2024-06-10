@@ -11,7 +11,7 @@ const config: Config = {
         area: ["area-normal", "sans-serif"],
       },
       colors: {
-        "krg-bg-gray": "#9C9C9C",
+        "krg-bg-gray": "#4C4C4C",
         "krg-bg-slate": "#000020",
         "krg-link-orange": "#ff9900",
         "krg-link-active": "#0000ff",
