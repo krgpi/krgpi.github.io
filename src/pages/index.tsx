@@ -39,7 +39,7 @@ const Component: React.FC = () => {
             <p className="text-large font-bold">
               <ul className="list-disc list-inside">
                 <li>
-                  CEO @{" "}
+                  Founder @{" "}
                   <a
                     className="text-krg-link-orange hover:underline"
                     href="https://ideoj.co.jp"
