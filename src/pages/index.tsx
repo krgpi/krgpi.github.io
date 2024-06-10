@@ -4,20 +4,19 @@ import { Link } from "../router";
 const Component: React.FC = () => {
   return (
     <div className="space-y-2 font-area_ext">
-      <p className="text-3xl font-area_ext">Featured</p>
+      <p className="text-3xl font-area_ext">Download</p>
       <div className="max-w-lg rounded overflow-hidden border p-4">
         <p className="text-medium">Dec 12, 2023</p>
 
         <Link
           className="text-2xl font-bold hover:underline text-krg-link-orange"
-          to="/products/cloudstickies"
+          to="/works/cloudstickies"
         >
           <img
-            src="/stickies-icon-128-square.png"
+            src="/stickies-on-the-desktop.png"
             alt="green-note"
-            className="w-1/4"
           />
-          The Stickies app, which syncs with iCloud, has been released.
+          The Stickies app, which syncs with iCloud.
         </Link>
         <p className="text-large">The app for macOS is available.</p>
       </div>

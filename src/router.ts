@@ -6,9 +6,15 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 export type Path =
   | `/`
   | `/activities`
+  | `/career`
+  | `/career/career`
   | `/gallery`
-  | `/products/cloudstickies`
   | `/works`
+  | `/works/cloudstickies`
+  | `/works/cloudstickies/en`
+  | `/works/cloudstickies/en/english`
+  | `/works/cloudstickies/japanese`
+  | `/works/works`
 
 export type Params = {
   
