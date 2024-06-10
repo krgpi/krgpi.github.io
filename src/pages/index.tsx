@@ -5,28 +5,28 @@ const Component: React.FC = () => {
   return (
     <div className="space-y-2 font-area_ext">
       <p className="text-3xl font-area_ext">Download</p>
-      <div className="max-w-lg rounded overflow-hidden border p-4">
-        <p className="text-medium">Dec 12, 2023</p>
-
+      <hr />
+        <p className="text-large">The app for macOS is available. / macOS向けiCloudでデバイス間同期する付箋アプリ</p>
+      <div className="max-w-prose rounded overflow-hidden">
         <Link
           className="text-2xl font-bold hover:underline text-krg-link-orange"
           to="/works/cloudstickies"
-        >
+          >
+          Cloud Stickies - The Stickies app, which syncs with iCloud.
           <img
             src="/stickies-on-the-desktop.png"
             alt="green-note"
           />
-          The Stickies app, which syncs with iCloud.
         </Link>
-        <p className="text-large">The app for macOS is available.</p>
       </div>
       <p className="text-3xl font-area_ext">My Profile</p>
-      <div className="max-w-lg rounded overflow-hidden border p-4">
-        <div className="flex flex-col md:flex-row md:space-x-4">
-          <div>
+      <hr />
+      <div className="max-w-prose rounded overflow-hidden">
+        <div className="flex flex-col sm:flex-row md:space-x-4">
+          <div className="hidden sm:block">
             <img
               className="rounded-full"
-              width="100"
+              width="400"
               src="/icon.png"
               alt="icon"
             />
@@ -55,7 +55,7 @@ const Component: React.FC = () => {
             </p>
             <p>
               I work to support the launch and growth of startups with
-              engineering and product management.
+              engineering and product management. /
               スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
             </p>
             <p>hobbies: 📸 🎸 🚘</p>
