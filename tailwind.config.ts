@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 const config: Config = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    './mdx-components.tsx', "./index.html", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -10,7 +11,7 @@ const config: Config = {
         area: ["area-normal", "sans-serif"],
       },
       colors: {
-        "krg-bg-gray": "#4C4C4C",
+        "krg-bg-gray": "#9C9C9C",
         "krg-bg-slate": "#000020",
         "krg-link-orange": "#ff9900",
         "krg-link-active": "#0000ff",
@@ -20,6 +21,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
