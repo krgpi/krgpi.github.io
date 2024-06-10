@@ -30,11 +30,12 @@ const Component: React.FC = () => {
               src="/icon.png"
               alt="icon"
             />
+            <a href="/icons" className="text-krg-link-orange text-xs">more icons</a>
           </div>
           <div>
-            <p className="text-2xl">Yuki NOAKI</p>
+            <p className="text-2xl">Karaage / Yuki NOAKI</p>
             <p className="text-large">
-              a.k.a. Karaage, Software Engineer at Tokyo, Japan
+              Software Engineer at Tokyo, Japan
             </p>
             <p className="text-large font-bold">
               <ul className="list-disc list-inside">
