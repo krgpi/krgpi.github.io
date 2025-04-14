@@ -1,24 +1,8 @@
-import React from "react";
-import { Link } from "../router";
+import type React from "react";
 
 const Component: React.FC = () => {
   return (
     <div className="space-y-2 font-area_ext">
-      <p className="text-3xl font-area_ext">Download</p>
-      <hr />
-        <p className="text-large">The app for macOS is available. / macOS向けiCloudでデバイス間同期する付箋アプリ</p>
-      <div className="max-w-prose rounded overflow-hidden">
-        <Link
-          className="text-2xl font-bold hover:underline text-krg-link-orange"
-          to="/works/cloudstickies"
-          >
-          Cloud Stickies - The Stickies app, which syncs with iCloud.
-          <img
-            src="/stickies-on-the-desktop.png"
-            alt="green-note"
-          />
-        </Link>
-      </div>
       <p className="text-3xl font-area_ext">My Profile</p>
       <hr />
       <div className="max-w-prose rounded overflow-hidden">
@@ -30,13 +14,13 @@ const Component: React.FC = () => {
               src="/icon.png"
               alt="icon"
             />
-            <a href="/icons" className="text-krg-link-orange text-xs">more icons</a>
+            <a href="/icons" className="text-krg-link-orange text-xs">
+              more icons
+            </a>
           </div>
           <div>
             <p className="text-2xl">Karaage / Yuki NOAKI</p>
-            <p className="text-large">
-              Software Engineer at Tokyo, Japan
-            </p>
+            <p className="text-large">Software Engineer at Tokyo, Japan</p>
             <p className="text-large font-bold">
               <ul className="list-disc list-inside">
                 <li>
