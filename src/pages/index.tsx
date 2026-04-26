@@ -11,8 +11,29 @@ const Component: React.FC = () => {
   });
 
   return (
-    <div className="space-y-2 font-area_ext">
-      <h1 className="text-3xl font-area_ext">My Profile</h1>
+    <div className="space-y-2 font-area_ext max-w-(--breakpoint-xl) mx-auto p-4">
+      <h1 className="sr-only">
+        Karaage (からあげ / Yuki NOAKI) — Software Engineer &amp; Product
+        Manager Portfolio
+      </h1>
+      <h2 className="text-3xl font-area_ext">Download</h2>
+      <hr />
+      <p className="text-large">
+        AIプロンプトや LLM 出力の一時メモにも使える、iCloud
+        同期対応の付箋アプリ。 / iCloud-synced sticky notes for AI prompts
+        &amp; LLM scratchpads on macOS.
+      </p>
+      <div className="max-w-prose rounded-sm overflow-hidden">
+        <a
+          className="text-2xl font-bold hover:underline text-krg-link-orange"
+          href="/works/cloudstickies"
+        >
+          Cloud Stickies — The sticky notes app, which syncs with iCloud.
+          <img src="/stickies-on-the-desktop.png" alt="Cloud Stickies on the desktop" />
+        </a>
+      </div>
+
+      <h2 className="text-3xl font-area_ext">My Profile</h2>
       <hr />
       <div className="max-w-prose rounded-sm overflow-hidden">
         <div className="flex flex-col sm:flex-row md:space-x-4">

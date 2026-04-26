@@ -30,6 +30,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://krgpi.github.io/works/cloudstickies/en"/>
   </url>
   <url>
+    <loc>https://krgpi.github.io/releases/cloudstickies</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://krgpi.github.io/career</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>

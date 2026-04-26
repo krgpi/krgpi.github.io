@@ -6,9 +6,9 @@ const IndexPage: React.FC = () => {
     const defaultComponents = useMDXComponents()
     const components = customMdx(defaultComponents)
     return (
-    <div className="max-w-prose">
+    <div className="max-w-(--breakpoint-xl) mx-auto p-4"><div className="max-w-prose">
             <Career components={components} />
-      </div>
+      </div></div>
     )
 }
 export default IndexPage;

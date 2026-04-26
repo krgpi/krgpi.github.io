@@ -2,7 +2,7 @@ import React from "react";
 
 const IndexPage: React.FC = () => {
   return (
-    <div className="">
+    <div className="max-w-(--breakpoint-xl) mx-auto p-4">
       <p className="text-lg">Gallery</p>
 
       <div className="space-y-4">
