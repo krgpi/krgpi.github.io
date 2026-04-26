@@ -16,22 +16,18 @@ const Component: React.FC = () => {
         Karaage (からあげ / Yuki NOAKI) — Software Engineer &amp; Product
         Manager Portfolio
       </h1>
-      <h2 className="text-3xl font-area_ext">Download</h2>
-      <hr />
-      <p className="text-large">
-        AIプロンプトや LLM 出力の一時メモにも使える、iCloud
-        同期対応の付箋アプリ。 / iCloud-synced sticky notes for AI prompts
-        &amp; LLM scratchpads on macOS.
-      </p>
-      <div className="max-w-prose rounded-sm overflow-hidden">
-        <a
-          className="text-2xl font-bold hover:underline text-krg-link-orange"
-          href="/works/cloudstickies"
-        >
-          Cloud Stickies — The sticky notes app, which syncs with iCloud.
-          <img src="/stickies-on-the-desktop.png" alt="Cloud Stickies on the desktop" />
-        </a>
-      </div>
+
+      <a
+        href="/works/cloudstickies"
+        className="group flex items-center gap-3 max-w-prose rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-3 py-2 text-sm hover:bg-krg-link-orange/20"
+      >
+        <span className="flex-1">
+          <span className="font-bold group-hover:underline">Cloud Stickies</span>{" "}
+          を配布中 — iCloud 同期対応の付箋アプリ。AIプロンプトや LLM
+          出力のスクラッチパッドにも。
+        </span>
+        <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
+      </a>
 
       <h2 className="text-3xl font-area_ext">My Profile</h2>
       <hr />
