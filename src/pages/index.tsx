@@ -5,7 +5,7 @@ const Component: React.FC = () => {
     <div className="space-y-2 font-area_ext">
       <p className="text-3xl font-area_ext">My Profile</p>
       <hr />
-      <div className="max-w-prose rounded overflow-hidden">
+      <div className="max-w-prose rounded-sm overflow-hidden">
         <div className="flex flex-col sm:flex-row md:space-x-4">
           <div className="hidden sm:block">
             <img
