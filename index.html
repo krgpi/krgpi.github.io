@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <script>
@@ -23,10 +23,69 @@
           h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
       })(document);
     </script>
-    <link rel="icon" href="/public/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&amp;display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karaage's Library</title>
+
+    <title>Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio</title>
+    <meta name="description" content="Karaage（からあげ / Yuki NOAKI）のポートフォリオサイト。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。IDEOJ Inc. 創業者、CoeFontでのプロダクトマネジメント、フリーランスでのWeb / iOS / macOSアプリ開発、Cloud Stickiesなど自作プロダクトを紹介。" />
+    <meta name="keywords" content="Karaage, からあげ, krgpi, Yuki NOAKI, 野秋優希, エンジニア, ソフトウェアエンジニア, プロダクトマネージャー, Product Manager, IDEOJ, CoeFont, Cloud Stickies, ポートフォリオ, フリーランス, iOSエンジニア, macOSエンジニア, Webエンジニア, スタートアップ" />
+    <meta name="author" content="Karaage / Yuki NOAKI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://krgpi.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Karaage's Library" />
+    <meta property="og:title" content="Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio" />
+    <meta property="og:description" content="東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー Karaage（からあげ）のポートフォリオ。IDEOJ Inc. 創業者、CoeFontでのプロダクトマネジメント、Cloud Stickiesなど自作プロダクトを紹介。" />
+    <meta property="og:url" content="https://krgpi.github.io/" />
+    <meta property="og:image" content="https://krgpi.github.io/icon.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@krgpi" />
+    <meta name="twitter:creator" content="@krgpi" />
+    <meta name="twitter:title" content="Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager" />
+    <meta name="twitter:description" content="東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー Karaage（からあげ）のポートフォリオ。" />
+    <meta name="twitter:image" content="https://krgpi.github.io/icon.png" />
+
+    <!-- JSON-LD: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Karaage",
+      "alternateName": ["からあげ", "Yuki NOAKI", "krgpi"],
+      "jobTitle": ["Software Engineer", "Product Manager"],
+      "url": "https://krgpi.github.io/",
+      "image": "https://krgpi.github.io/icon.png",
+      "sameAs": [
+        "https://twitter.com/krgpi",
+        "https://www.linkedin.com/in/yknoaki/",
+        "https://ideoj.co.jp"
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "IDEOJ Inc.",
+          "url": "https://ideoj.co.jp"
+        },
+        {
+          "@type": "Organization",
+          "name": "CoeFont Co., Ltd."
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tokyo",
+        "addressCountry": "JP"
+      },
+      "description": "東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える。"
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
