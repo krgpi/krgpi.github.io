@@ -3,7 +3,7 @@ import { Link } from "../../router";
 
 const IndexPage: React.FC = () => {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 max-w-(--breakpoint-xl) mx-auto p-4">
       <p className="text-3xl">Activity Log</p>
       <ul className="list-disc list-inside">
         <li>
