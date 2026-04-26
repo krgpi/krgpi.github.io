@@ -15,6 +15,7 @@ export type Path =
   | `/works/cloudstickies/en`
   | `/works/cloudstickies/en/english`
   | `/works/cloudstickies/japanese`
+  | `/works/cloudstickies/privacy`
   | `/works/works`
 
 export type Params = {
