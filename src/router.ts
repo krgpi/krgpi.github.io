@@ -10,12 +10,16 @@ export type Path =
   | `/career/career`
   | `/gallery`
   | `/releases/cloudstickies`
+  | `/releases/deskstick`
   | `/works`
   | `/works/cloudstickies`
   | `/works/cloudstickies/en`
-  | `/works/cloudstickies/en/english`
-  | `/works/cloudstickies/japanese`
   | `/works/cloudstickies/privacy`
+  | `/works/deskstick`
+  | `/works/deskstick/en`
+  | `/works/deskstick/en/english`
+  | `/works/deskstick/japanese`
+  | `/works/deskstick/privacy`
   | `/works/works`
 
 export type Params = {
