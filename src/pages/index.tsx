@@ -5,7 +5,7 @@ const Component: React.FC = () => {
   useDocumentMeta({
     title: "Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio",
     description:
-      "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。IDEOJ Inc. 創業者、CoeFontでのプロダクトマネジメントとエンジニアリング、フリーランスでのWeb / iOS / macOSアプリ開発を行っています。",
+      "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。株式会社IDEOJ 創業者、CoeFontでのプロダクトマネジメントとエンジニアリング、フリーランスでのWeb / iOS / macOSアプリ開発を行っています。",
     canonical: "https://krgpi.github.io/",
     ogImage: "https://krgpi.github.io/icon.png",
   });
@@ -18,11 +18,11 @@ const Component: React.FC = () => {
       </h1>
 
       <a
-        href="/works/cloudstickies"
+        href="/works/deskstick"
         className="group flex items-center gap-3 max-w-prose rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-3 py-2 text-sm hover:bg-krg-link-orange/20"
       >
         <span className="flex-1">
-          <span className="font-bold group-hover:underline">Cloud Stickies</span>{" "}
+          <span className="font-bold group-hover:underline">DeskStick</span>{" "}
           を配布中 — iCloud 同期対応の付箋アプリ。AIプロンプトや LLM
           出力のスクラッチパッドにも。
         </span>
