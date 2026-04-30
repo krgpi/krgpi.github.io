@@ -3,53 +3,53 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://krgpi.github.io/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://krgpi.github.io/works</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krgpi.github.io/works/cloudstickies</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://krgpi.github.io/works/deskstick</loc>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://krgpi.github.io/works/cloudstickies"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://krgpi.github.io/works/cloudstickies/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://krgpi.github.io/works/deskstick"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krgpi.github.io/works/deskstick/en"/>
   </url>
   <url>
-    <loc>https://krgpi.github.io/works/cloudstickies/en</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://krgpi.github.io/works/deskstick/en</loc>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://krgpi.github.io/works/cloudstickies"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://krgpi.github.io/works/cloudstickies/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://krgpi.github.io/works/deskstick"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krgpi.github.io/works/deskstick/en"/>
   </url>
   <url>
-    <loc>https://krgpi.github.io/releases/cloudstickies</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://krgpi.github.io/releases/deskstick</loc>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://krgpi.github.io/career</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://krgpi.github.io/activities</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://krgpi.github.io/gallery</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
