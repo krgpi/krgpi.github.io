@@ -23,19 +23,19 @@ export const useMDXComponents =(components: MDXComponents): MDXComponents => {
       return <table className="w-full border-collapse">{props.children}</table>;
     },
     th: (props) => {
-      return <th className="whitespace-nowrap border border-gray-200 bg-gray-100 px-4 py-2">{props.children}</th>;
+      return <th className="whitespace-nowrap border border-gray-200 bg-gray-100 px-4 py-2 text-gray-900">{props.children}</th>;
     },
     td: (props) => {
-      return <td className="border border-gray-200 px-4 py-2">{props.children}</td>;
+      return <td className="border border-gray-200 px-4 py-2 text-white">{props.children}</td>;
     },
     ol: (props) => {
-      return <ol className="mb-4 list-inside list-decimal text-sm text-white">{props.children}</ol>;
+      return <ol className="mb-4 list-inside list-decimal text-sm text-white marker:text-white">{props.children}</ol>;
     },
     ul: (props) => {
-      return <ul className="mb-4 list-inside list-disc text-sm text-white">{props.children}</ul>;
+      return <ul className="mb-4 list-inside list-disc text-sm text-white marker:text-white">{props.children}</ul>;
     },
     li: (props) => {
-      return <li className="pl-2 text-white">{props.children}</li>;
+      return <li className="pl-2 text-white marker:text-white">{props.children}</li>;
     },
     a: (props) => {
       return (
