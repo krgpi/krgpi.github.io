@@ -81,27 +81,37 @@ const Component: React.FC = () => {
               iCloud-synced sticky notes for AI prompts &amp; scratchpads on
               macOS
             </p>
-            <div className="mt-2 flex flex-wrap items-center gap-3">
-              <a
-                href={DOWNLOAD_URL}
-                download
-                className="inline-block bg-krg-link-orange text-white font-bold rounded-lg px-6 py-3 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
-              >
-                Download .dmg for macOS (Free)
-              </a>
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Download DeskStick on the App Store"
-                className="inline-block focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg"
-              >
-                <img
-                  src="/app-store-badge-en.svg"
-                  alt="Download on the App Store"
-                  className="h-12 w-auto"
-                />
-              </a>
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
+              <div className="flex flex-col gap-1">
+                <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
+                  Mac
+                </span>
+                <a
+                  href={DOWNLOAD_URL}
+                  download
+                  className="inline-flex items-center justify-center bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
+                >
+                  Download .dmg (Free)
+                </a>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
+                  iPhone / iPad / Vision Pro
+                </span>
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download DeskStick for iOS / iPadOS / visionOS on the App Store"
+                  className="inline-flex items-center focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg h-12"
+                >
+                  <img
+                    src="/app-store-badge-en.svg"
+                    alt="Download on the App Store"
+                    className="h-12 w-auto"
+                  />
+                </a>
+              </div>
             </div>
             <p className="text-white text-sm">
               macOS 13.0+ · iOS 16.0+ · iPadOS · visionOS · Free · iCloud sync ·
