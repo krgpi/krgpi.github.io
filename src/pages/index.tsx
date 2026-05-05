@@ -11,7 +11,7 @@ const Component: React.FC = () => {
   });
 
   return (
-    <div className="space-y-2 font-area_ext max-w-(--breakpoint-xl) mx-auto p-4">
+    <div className="not-prose font-area_ext max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8">
       <h1 className="sr-only">
         Karaage (からあげ / Yuki NOAKI) — Software Engineer &amp; Product
         Manager Portfolio
@@ -19,63 +19,65 @@ const Component: React.FC = () => {
 
       <a
         href="/works/deskstick"
-        className="group flex items-center gap-3 max-w-prose rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-3 py-2 text-sm hover:bg-krg-link-orange/20"
+        className="group flex items-center gap-3 rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-4 py-3 text-sm font-sans hover:bg-krg-link-orange/20"
       >
         <span className="flex-1">
-          <span className="font-bold group-hover:underline">DeskStick</span>{" "}
-          を配布中 — iCloud 同期対応の付箋アプリ。AIプロンプトや LLM
+          <span className="font-bold">DeskStick</span>{" "}
+          を配布中 — iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad / visionOS）に対応。AIプロンプトや LLM
           出力のスクラッチパッドにも。
         </span>
         <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
       </a>
 
-      <h2 className="text-3xl font-area_ext">My Profile</h2>
-      <hr />
-      <div className="max-w-prose rounded-sm overflow-hidden">
-        <div className="flex flex-col sm:flex-row md:space-x-4">
-          <div className="hidden sm:block">
+      <section className="space-y-4">
+        <h2 className="text-3xl font-area_ext">My Profile</h2>
+        <hr />
+        <div className="flex flex-col sm:flex-row sm:gap-6">
+          <div className="shrink-0 flex flex-col items-center sm:items-start">
             <img
-              className="rounded-full"
-              width="400"
+              className="rounded-full w-32 sm:w-60"
               src="/icon.png"
               alt="Karaage (からあげ / Yuki NOAKI) — エンジニア / プロダクトマネージャー"
             />
-            <a href="/icons" className="text-krg-link-orange text-xs">
+            <a
+              href="/icons"
+              className="block mt-2 text-krg-link-orange text-xs text-center hover:underline"
+            >
               more icons
             </a>
           </div>
-          <div>
-            <p className="text-2xl">Karaage / からあげ / Yuki NOAKI</p>
-            <p className="text-large">
+          <div className="space-y-3">
+            <p className="text-2xl">Karaage / Yuki NOAKI</p>
+            <p>
               Software Engineer & Product Manager at Tokyo, Japan
             </p>
-            <p className="text-large font-bold">
-              <ul className="list-disc list-inside">
-                <li>
-                  Founder @{" "}
-                  <a
-                    className="text-krg-link-orange hover:underline"
-                    href="https://ideoj.co.jp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    IDEOJ corp.
-                  </a>
-                </li>
-                <li>Product Manager & Engineer @ CoeFont Co, Ltd.</li>
-                <li>Web, iOS & macOS App Engineer @ Freelance</li>
-              </ul>
-            </p>
-            <p>
-              I work to support the launch and growth of startups with
-              engineering and product management. /
-              スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
-              ソフトウェアエンジニアとして、またプロダクトマネージャーとして、Webからモバイル・デスクトップアプリまで幅広く開発・プロダクト企画に携わっています。
-            </p>
+            <ul className="text-large font-bold list-disc list-inside space-y-1">
+              <li>
+                Founder @{" "}
+                <a
+                  className="text-krg-link-orange hover:underline"
+                  href="https://ideoj.co.jp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IDEOJ corp.
+                </a>
+              </li>
+              <li>Product Manager & Engineer @ CoeFont Co, Ltd.</li>
+              <li>Web, iOS & macOS App Engineer @ Freelance</li>
+            </ul>
+            <div className="prose prose-invert max-w-none font-sans">
+              <p>
+                I work to support the launch and growth of startups with
+                engineering and product management. /
+                スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
+                ソフトウェアエンジニアとして、またプロダクトマネージャーとして、Webからモバイル・デスクトップアプリまで幅広く開発・プロダクト企画に携わっています。
+              </p>
+            </div>
             <p>hobbies: 📸 🎸 🚘</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
