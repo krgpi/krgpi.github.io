@@ -63,7 +63,7 @@ const Component: React.FC = () => {
     <div className="space-y-4">
       <div className="relative w-full bg-cover bg-center bg-stickies-bg min-h-96">
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
-        <div className="relative mx-auto max-w-(--breakpoint-xl) min-h-96">
+        <div className="relative mx-auto max-w-3xl min-h-96">
           <a
             href="/works/deskstick"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
@@ -116,44 +116,44 @@ const Component: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-(--breakpoint-xl) mx-auto px-4 space-y-4 w-full">
-      <section
-        aria-label="Support and follow"
-        className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-prose"
-      >
-        <a
-          href="https://paypal.me/krgpi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center gap-1 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-6 py-6 text-center shadow-lg hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-yellow-200"
+      <div className="max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8 w-full">
+        <section
+          aria-label="Support and follow"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
-          <span className="text-2xl">☕ Buy me a coffee</span>
-          <span className="text-sm font-normal">
-            Support development via PayPal
-          </span>
-        </a>
-        <a
-          href="https://twitter.com/krgpi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center gap-1 rounded-xl bg-black hover:bg-gray-800 text-white font-bold px-6 py-6 text-center shadow-lg border border-white/20 hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-white/30"
-        >
-          <span className="text-2xl">𝕏 Follow @krgpi</span>
-          <span className="text-sm font-normal">Get release updates on X</span>
-        </a>
-      </section>
-      <div className="max-w-prose">
-        <p>
-          <strong>DeskStick</strong> is a sticky notes app for macOS that
-          syncs your notes across multiple Macs via iCloud. It is especially
-          handy as a <strong>scratchpad for AI prompts and LLM outputs</strong>{" "}
-          — keeping reusable ChatGPT / Claude / Gemini prompts pinned on top,
-          and parking generated drafts before pasting them into your real
-          editor. It supports pinning, color coding, and a menubar overview.
-          Built by Karaage.
-        </p>
-        <English components={components} />
-      </div>
+          <a
+            href="https://paypal.me/krgpi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center gap-1 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-6 py-6 text-center shadow-lg hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-yellow-200"
+          >
+            <span className="text-2xl">☕ Buy me a coffee</span>
+            <span className="text-sm font-normal">
+              Support development via PayPal
+            </span>
+          </a>
+          <a
+            href="https://twitter.com/krgpi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center gap-1 rounded-xl bg-black hover:bg-gray-800 text-white font-bold px-6 py-6 text-center shadow-lg border border-white/20 hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-white/30"
+          >
+            <span className="text-2xl">𝕏 Follow @krgpi</span>
+            <span className="text-sm font-normal">Get release updates on X</span>
+          </a>
+        </section>
+        <div>
+          <p>
+            <strong>DeskStick</strong> is a sticky notes app for macOS that
+            syncs your notes across multiple Macs via iCloud. It is especially
+            handy as a <strong>scratchpad for AI prompts and LLM outputs</strong>{" "}
+            — keeping reusable ChatGPT / Claude / Gemini prompts pinned on top,
+            and parking generated drafts before pasting them into your real
+            editor. It supports pinning, color coding, and a menubar overview.
+            Built by Karaage.
+          </p>
+          <English components={components} />
+        </div>
       </div>
     </div>
   );
