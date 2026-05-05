@@ -13,7 +13,7 @@ const Component: React.FC = () => {
     title:
       "DeskStick - AIプロンプト・出力の一時メモに使えるiCloud同期付箋アプリ (macOS) | Karaage's Library",
     description:
-      "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる macOS 向けの付箋（sticky notes）アプリです。複数のMac間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからの一覧表示で素早くアクセスできます。無料でダウンロードできます。Karaage（からあげ）が個人開発したプロダクトです。",
+      "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる macOS 向けの付箋（sticky notes）アプリです。複数のMac間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからの一覧表示で素早くアクセスできます。無料でダウンロードできます。",
     canonical: "https://krgpi.github.io/works/deskstick",
     ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
     jsonLdId: "deskstick",
@@ -75,11 +75,10 @@ const Component: React.FC = () => {
               DeskStick
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              Stick with your ideas, prompts, and AI outputs.
+              アイデアもプロンプトも、AIの出力も、ぜんぶ貼っておく。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              iCloud-synced sticky notes for AI prompts &amp; scratchpads on
-              macOS
+              AIプロンプトとメモのための、iCloud同期付箋アプリ for macOS
             </p>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
               <div className="flex flex-col gap-1">
@@ -155,19 +154,6 @@ const Component: React.FC = () => {
           </a>
         </section>
         <div>
-          <p>
-            <strong>DeskStick</strong>{" "}
-            は、iCloud で付箋（sticky notes）を同期できる macOS
-            向けのメモアプリです。
-            <strong>
-              ChatGPT・Claude・Gemini など生成 AI
-              に渡すプロンプトのスニペットや、AI
-              から得た出力の一時的なスクラッチパッド
-            </strong>
-            として使うのに最適で、複数の Mac
-            間でシームレスにメモを同期できます。ピン留め・色分け・メニューバーからの一覧表示などにより、AI
-            を使った作業中の小さな思考の断片を、その場ですぐ手元に貼り付けておけます。Karaage（からあげ）が個人開発しました。
-          </p>
           <Japanese components={components} />
         </div>
       </div>
