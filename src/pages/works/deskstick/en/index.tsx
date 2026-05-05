@@ -71,7 +71,7 @@ const Component: React.FC = () => {
             日本語版 →
           </a>
           <div className="flex flex-col items-start justify-center min-h-96 px-4 py-8 gap-3 [&>*]:drop-shadow-lg">
-            <h1 className="text-white text-4xl sm:text-6xl font-light break-words">
+            <h1 className="text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80">
               DeskStick
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
