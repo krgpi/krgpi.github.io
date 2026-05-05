@@ -32,21 +32,21 @@ const IndexPage: React.FC = () => {
       <section className="space-y-3">
         <h2 className="text-3xl">Engineering</h2>
         <hr />
+        <div>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charSet="utf-8"
+          />
+          <a
+            href="https://twitter.com/krgpi?ref_src=twsrc%5Etfw"
+            className="twitter-follow-button"
+            data-show-count="false"
+          >
+            Follow @krgpi
+          </a>
+        </div>
         <ul className="list-disc list-inside space-y-1">
-          <li>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charSet="utf-8"
-            />
-            <a
-              href="https://twitter.com/krgpi?ref_src=twsrc%5Etfw"
-              className="twitter-follow-button text-krg-link-orange hover:underline"
-              data-show-count="false"
-            >
-              Follow @krgpi
-            </a>
-          </li>
           <li>
             <a
               className="text-krg-link-orange hover:underline"
