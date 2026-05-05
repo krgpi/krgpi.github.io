@@ -10,6 +10,7 @@ const LATEST_DMG_VERSION = "1.0.4";
 const LATEST_DMG_URL = `${ASSET_BASE}/CloudStickiesInstaller-${LATEST_DMG_VERSION}.dmg`;
 
 const APPCAST_URL = `${ASSET_BASE}/appcast.xml`;
+const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
 
 const PREVIOUS_ZIP_RELEASES: { version: string; url: string }[] = [
   { version: "1.0.5", url: `${ASSET_BASE}/CloudStickies-1.0.5.zip` },
@@ -36,7 +37,7 @@ const Component: React.FC = () => {
       "@type": "SoftwareApplication",
       name: "DeskStick",
       applicationCategory: "ProductivityApplication",
-      operatingSystem: "macOS",
+      operatingSystem: "macOS, iOS, iPadOS, visionOS",
       softwareVersion: LATEST_ZIP_VERSION,
       downloadUrl: LATEST_ZIP_URL,
       installUrl: LATEST_ZIP_URL,
@@ -70,6 +71,28 @@ const Component: React.FC = () => {
 
       <section className="space-y-3">
         <h2 className="text-2xl font-bold">最新版 / Latest</h2>
+
+        <div className="rounded-lg border border-white/20 p-4 max-w-prose space-y-2">
+          <p className="text-xl">
+            iOS / iPadOS / visionOS — <strong>App Store</strong>
+          </p>
+          <p className="text-sm">
+            iOS 16.0+ / iPadOS 16.0+ / visionOS 1.0+ / 無料 / iCloud で macOS 版とシームレスに同期
+          </p>
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="App Store で DeskStick をダウンロード"
+            className="mt-2 inline-block focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg"
+          >
+            <img
+              src="/app-store-badge-ja.svg"
+              alt="App Store からダウンロード"
+              className="h-12 w-auto"
+            />
+          </a>
+        </div>
 
         <div className="rounded-lg border border-white/20 p-4 max-w-prose space-y-2">
           <p className="text-xl">
