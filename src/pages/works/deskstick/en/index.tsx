@@ -6,6 +6,7 @@ import English from "./english.mdx";
 
 const DOWNLOAD_URL =
   "https://krgpi.github.io/releases/cloudstickies/CloudStickiesInstaller-1.0.4.dmg";
+const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -22,20 +23,19 @@ const Component: React.FC = () => {
       name: "DeskStick",
       applicationCategory: "ProductivityApplication",
       applicationSubCategory: "Note Taking",
-      operatingSystem: "macOS",
-      softwareVersion: "1.0.4",
-      fileFormat: "application/x-apple-diskimage",
+      operatingSystem: "macOS, iOS, iPadOS, visionOS",
+      softwareVersion: "1.0.6",
       description:
-        "DeskStick — an iCloud-synced sticky notes app for macOS, ideal as a scratchpad for AI prompts and LLM outputs (ChatGPT, Claude, Gemini). Sync prompt snippets and working notes seamlessly across multiple Macs, with pinning, color coding, and a menubar overview.",
+        "DeskStick — an iCloud-synced sticky notes app for macOS, iOS, iPadOS, and visionOS. Ideal as a scratchpad for AI prompts and LLM outputs (ChatGPT, Claude, Gemini). Sync prompt snippets and working notes seamlessly across Mac, iPhone, iPad, and Apple Vision Pro, with pinning, color coding, and a menubar overview.",
       keywords:
         "AI prompt notes, ChatGPT scratchpad, Claude prompt manager, LLM scratchpad, sticky notes, macOS, iCloud sync, prompt snippets, quick notes",
       featureList: [
-        "iCloud sync across multiple Macs",
+        "iCloud sync across Mac, iPhone, iPad, and Apple Vision Pro",
         "Snippet storage for AI prompts",
         "Scratchpad for LLM outputs",
         "Pin notes always on top",
         "Color-coded organization",
-        "Menubar overview",
+        "Menubar overview (macOS)",
       ],
       offers: {
         "@type": "Offer",
@@ -81,16 +81,31 @@ const Component: React.FC = () => {
               iCloud-synced sticky notes for AI prompts &amp; scratchpads on
               macOS
             </p>
-            <a
-              href={DOWNLOAD_URL}
-              download
-              className="mt-2 inline-block bg-krg-link-orange text-white font-bold rounded-lg px-6 py-3 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
-            >
-              Download .dmg for macOS (Free)
-            </a>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <a
+                href={DOWNLOAD_URL}
+                download
+                className="inline-block bg-krg-link-orange text-white font-bold rounded-lg px-6 py-3 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
+              >
+                Download .dmg for macOS (Free)
+              </a>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download DeskStick on the App Store"
+                className="inline-block focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg"
+              >
+                <img
+                  src="/app-store-badge-en.svg"
+                  alt="Download on the App Store"
+                  className="h-12 w-auto"
+                />
+              </a>
+            </div>
             <p className="text-white text-sm">
-              macOS 13.0+ · Universal · Free · iCloud sync · Auto-updates after
-              install
+              macOS 13.0+ · iOS 16.0+ · iPadOS · visionOS · Free · iCloud sync ·
+              macOS auto-updates after install
             </p>
             <a
               href="/releases/deskstick"

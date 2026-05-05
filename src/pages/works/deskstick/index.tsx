@@ -6,6 +6,7 @@ import Japanese from "./japanese.mdx";
 
 const DOWNLOAD_URL =
   "https://krgpi.github.io/releases/cloudstickies/CloudStickiesInstaller-1.0.4.dmg";
+const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -22,15 +23,14 @@ const Component: React.FC = () => {
       name: "DeskStick",
       applicationCategory: "ProductivityApplication",
       applicationSubCategory: "Note Taking",
-      operatingSystem: "macOS",
-      softwareVersion: "1.0.4",
-      fileFormat: "application/x-apple-diskimage",
+      operatingSystem: "macOS, iOS, iPadOS, visionOS",
+      softwareVersion: "1.0.6",
       description:
-        "AIプロンプトや LLM 出力の一時メモに最適な、iCloudで同期できるmacOS向け付箋アプリ DeskStick。ChatGPT や Claude へのプロンプトのスニペット、生成された文章のスクラッチパッドとして、複数のMac間でシームレスに同期。ピン留めや色分けで整理できる macOS 純正風の sticky note アプリ。",
+        "AIプロンプトや LLM 出力の一時メモに最適な、iCloud で同期できる付箋アプリ DeskStick。macOS / iOS / iPadOS / visionOS に対応し、ChatGPT や Claude へのプロンプトのスニペット、生成された文章のスクラッチパッドとして、Mac・iPhone・iPad・Apple Vision Pro 間でシームレスに同期。ピン留めや色分けで整理できる macOS 純正風の sticky note アプリ。",
       keywords:
         "AIプロンプト メモ, ChatGPT メモ, Claude プロンプト, LLM スクラッチパッド, 付箋アプリ, sticky notes, macOS, iCloud 同期, プロンプト管理, 一時メモ",
       featureList: [
-        "iCloudによる複数Mac間の同期",
+        "iCloud による Mac・iPhone・iPad・Apple Vision Pro 間の同期",
         "AIプロンプトのスニペット保存",
         "LLM出力の一時メモ・スクラッチパッド",
         "付箋のピン留め（常に最前面表示）",
@@ -81,16 +81,31 @@ const Component: React.FC = () => {
               iCloud-synced sticky notes for AI prompts &amp; scratchpads on
               macOS
             </p>
-            <a
-              href={DOWNLOAD_URL}
-              download
-              className="mt-2 inline-block bg-krg-link-orange text-white font-bold rounded-lg px-6 py-3 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
-            >
-              Download .dmg for macOS（無料 / Free）
-            </a>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <a
+                href={DOWNLOAD_URL}
+                download
+                className="inline-block bg-krg-link-orange text-white font-bold rounded-lg px-6 py-3 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
+              >
+                Download .dmg for macOS（無料 / Free）
+              </a>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="App Store で DeskStick をダウンロード"
+                className="inline-block focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg"
+              >
+                <img
+                  src="/app-store-badge-ja.svg"
+                  alt="App Store からダウンロード"
+                  className="h-12 w-auto"
+                />
+              </a>
+            </div>
             <p className="text-white text-sm">
-              macOS 13.0+ / Universal / 無料配布 / iCloud 同期対応 /
-              インストール後は自動アップデート
+              macOS 13.0+ / iOS 16.0+ / iPadOS / visionOS / 無料配布 / iCloud 同期対応 /
+              macOS はインストール後に自動アップデート
             </p>
             <a
               href="/releases/deskstick"
