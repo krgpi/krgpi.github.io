@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# mise (contains secrets)
+mise.toml
+mise.local.toml
+.mise.toml
+.mise.local.toml
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

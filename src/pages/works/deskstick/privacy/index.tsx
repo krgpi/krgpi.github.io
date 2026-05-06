@@ -189,7 +189,24 @@ const Component: React.FC = () => {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold">8. Contact</h2>
+          <h2 className="text-2xl font-bold">8. About this website</h2>
+          <p>
+            This page is part of the developer’s portfolio site (
+            <code>krgpi.github.io</code>), which is separate from the
+            DeskStick app itself. For details on how the website handles
+            visitor data — including aggregate analytics — please see the{" "}
+            <a
+              href="/privacy"
+              className="text-krg-link-orange hover:underline"
+            >
+              site privacy policy
+            </a>
+            . The app on your Mac is not affected by website analytics.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-2xl font-bold">9. Contact</h2>
           <p>
             Questions or requests about this policy can be sent to{" "}
             <a
