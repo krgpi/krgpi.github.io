@@ -1,54 +1,54 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
-import { useDocumentMeta } from "../../../_components/useDocumentMeta";
-import { useMDXComponents as customMdx } from "../../../mdx-components";
-import Japanese from "./japanese.mdx";
+import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { useMDXComponents as customMdx } from "../../../../mdx-components";
+import English from "./english.mdx";
 
-const APP_STORE_URL = "https://apps.apple.com/app/setpolaris";
+const APP_STORE_URL = "https://apps.apple.com/app/polarisetter";
 
 const Component: React.FC = () => {
   useDocumentMeta({
     title:
-      "SetPolaris - 天体観測のための真北＆水平コンパスアプリ (iOS) | Karaage's Library",
+      "Polarisetter - True north & level companion for telescope setup (iOS) | Karaage's Library",
     description:
-      "SetPolaris は天体望遠鏡を屋外で組み立てるときに「真北」と「水平」をひと目で確認できる、観測者のための iOS 向け補助コンパスアプリです。磁北を真北に補正し、水平インジケーターと組み合わせることで、赤道儀の極軸合わせや三脚のセッティングを暗闇の中でもスムーズに進められます。暗順応を妨げない赤い文字×黒背景の UI を採用しています。",
-    canonical: "https://krgpi.github.io/works/setpolaris",
-    ogImage: "https://krgpi.github.io/setpolaris-screenshot.png",
-    favicon: "/setpolaris-icon-ios.png",
-    jsonLdId: "setpolaris",
+      "Polarisetter is an iOS companion app for setting up a telescope at night. It shows true north (declination-corrected) and the device's level on a single dark-sky-friendly screen, so you can polar-align an equatorial mount quickly in the dark. Black background with red text — designed not to wreck your night vision.",
+    canonical: "https://krgpi.github.io/works/polarisetter/en",
+    ogImage: "https://krgpi.github.io/polarisetter-screenshot.png",
+    favicon: "/polarisetter-icon-ios.png",
+    jsonLdId: "polarisetter-en",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      name: "SetPolaris",
+      name: "Polarisetter",
       applicationCategory: "NavigationApplication",
       applicationSubCategory: "Astronomy",
       operatingSystem: "iOS, iPadOS",
       softwareVersion: "1.0",
       description:
-        "天体望遠鏡を屋外で組み立てるときに「真北」と「水平」を 1 画面で確認できる iOS 向け補助コンパス SetPolaris。磁北を真北に補正し、水準器と組み合わせて赤道儀の極軸合わせをスムーズにします。暗順応を妨げない赤×黒の UI。",
+        "Polarisetter — an iOS companion app that shows true north (declination-corrected) and the device's level on one screen for polar-aligning a telescope at night. Dark-sky friendly red-on-black UI.",
       keywords:
-        "天体観測, 望遠鏡, 真北, コンパス, 水準器, 赤道儀, 極軸合わせ, 星空, 夜空, 赤色 LED",
+        "astronomy, telescope, true north, compass, level, stargazing, polar align, equatorial mount, night sky, red light",
       featureList: [
-        "真北の表示（磁北からの偏角補正）",
-        "水平インジケーター（傾きのリアルタイム表示）",
-        "暗順応を妨げない赤×黒の UI",
-        "オフラインで動作（位置情報は端末内のみで使用）",
+        "True north (corrected from magnetic north)",
+        "Real-time level indicator",
+        "Dark-sky friendly red-on-black UI",
+        "Works offline (location stays on-device)",
       ],
       offers: {
         "@type": "Offer",
         price: "0",
-        priceCurrency: "JPY",
+        priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/setpolaris",
+        url: "https://krgpi.github.io/works/polarisetter/en",
       },
       author: {
         "@type": "Person",
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/setpolaris",
-      image: "https://krgpi.github.io/setpolaris-screenshot.png",
-      inLanguage: ["ja", "en"],
+      url: "https://krgpi.github.io/works/polarisetter/en",
+      image: "https://krgpi.github.io/polarisetter-screenshot.png",
+      inLanguage: "en",
     },
   });
 
@@ -60,28 +60,28 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/setpolaris/en"
+            href="/works/polarisetter"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
-            English version →
+            日本語版 →
           </a>
           <div className="flex flex-col items-start justify-center min-h-96 px-4 py-8 gap-3 [&>*]:drop-shadow-lg">
             <h1 className="flex items-center gap-3 sm:gap-4 text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80 leading-none">
               <img
-                src="/setpolaris-icon-ios.png"
+                src="/polarisetter-icon-ios.png"
                 alt=""
                 aria-hidden="true"
                 width={96}
                 height={96}
                 className="block w-[1.2em] h-[1.2em] shrink-0 rounded-2xl drop-shadow-xl drop-shadow-black/40"
               />
-              <span>SetPolaris</span>
+              <span>Polarisetter</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              天体観測のための、真北＆水平コンパス。
+              True north &amp; level for telescope setup.
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              天体望遠鏡を組み立てるときの「真北」と「水平」を 1 画面で。
+              Polar-align your mount in the dark, on a single red-on-black screen.
             </p>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
               <div className="flex flex-col gap-1">
@@ -92,19 +92,19 @@ const Component: React.FC = () => {
                   href={APP_STORE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="App Store で SetPolaris をダウンロード"
+                  aria-label="Download Polarisetter on the App Store"
                   className="inline-flex items-center focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg h-12"
                 >
                   <img
-                    src="/app-store-badge-ja.svg"
-                    alt="App Store からダウンロード"
+                    src="/app-store-badge-en.svg"
+                    alt="Download on the App Store"
                     className="h-12 w-auto"
                   />
                 </a>
               </div>
             </div>
             <p className="text-white text-sm">
-              iOS 15.6+ / iPadOS 15.6+ / 無料 / オフライン動作 / 位置情報は端末内のみで使用
+              iOS 15.6+ · iPadOS 15.6+ · Free · Works offline · Location stays on-device
             </p>
           </div>
         </div>
@@ -115,14 +115,14 @@ const Component: React.FC = () => {
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
           <a
-            href="https://paypal.me/krgpi?country.x=JP&locale.x=ja_JP"
+            href="https://paypal.me/krgpi"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center gap-1 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-6 py-6 text-center shadow-lg hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-yellow-200"
           >
             <span className="text-2xl">☕ Buy me a coffee</span>
             <span className="text-sm font-normal">
-              PayPal で開発を支援する / Support development via PayPal
+              Support development via PayPal
             </span>
           </a>
           <a
@@ -132,13 +132,18 @@ const Component: React.FC = () => {
             className="flex flex-col items-center justify-center gap-1 rounded-xl bg-black hover:bg-gray-800 text-white font-bold px-6 py-6 text-center shadow-lg border border-white/20 hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-white/30"
           >
             <span className="text-2xl">𝕏 Follow @krgpi</span>
-            <span className="text-sm font-normal">
-              最新リリースのお知らせを受け取る / Get release updates on X
-            </span>
+            <span className="text-sm font-normal">Get release updates on X</span>
           </a>
         </section>
         <div>
-          <Japanese components={components} />
+          <p>
+            <strong>Polarisetter</strong> is a small iOS companion app for telescope users.
+            It shows true north (declination-corrected) and a real-time level indicator on
+            one dark-sky-friendly screen, so polar alignment doesn't drag on. No accounts,
+            no ads, no network — just your phone, the sky, and a red-on-black readout.
+            Built by Karaage.
+          </p>
+          <English components={components} />
         </div>
       </div>
     </div>
