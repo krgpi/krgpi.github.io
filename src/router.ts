@@ -20,6 +20,11 @@ export type Path =
   | `/works/deskstick/en/english`
   | `/works/deskstick/japanese`
   | `/works/deskstick/privacy`
+  | `/works/setpolaris`
+  | `/works/setpolaris/en`
+  | `/works/setpolaris/en/english`
+  | `/works/setpolaris/japanese`
+  | `/works/setpolaris/privacy`
   | `/works/works`
 
 export type Params = {
