@@ -9,6 +9,7 @@ export type Path =
   | `/career`
   | `/career/career`
   | `/gallery`
+  | `/privacy`
   | `/releases/cloudstickies`
   | `/releases/deskstick`
   | `/works`
@@ -20,11 +21,11 @@ export type Path =
   | `/works/deskstick/en/english`
   | `/works/deskstick/japanese`
   | `/works/deskstick/privacy`
-  | `/works/setpolaris`
-  | `/works/setpolaris/en`
-  | `/works/setpolaris/en/english`
-  | `/works/setpolaris/japanese`
-  | `/works/setpolaris/privacy`
+  | `/works/polarisetter`
+  | `/works/polarisetter/en`
+  | `/works/polarisetter/en/english`
+  | `/works/polarisetter/japanese`
+  | `/works/polarisetter/privacy`
   | `/works/works`
 
 export type Params = {

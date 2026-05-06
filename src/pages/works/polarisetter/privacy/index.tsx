@@ -5,12 +5,12 @@ const LAST_UPDATED = "May 6, 2026";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title: "Privacy Policy — SetPolaris | Karaage's Library",
+    title: "Privacy Policy — Polarisetter | Karaage's Library",
     description:
-      "Privacy Policy for SetPolaris, an iOS companion app showing true north and level for telescope setup. Learn how the app handles location data, sensors, and contact information.",
-    canonical: "https://krgpi.github.io/works/setpolaris/privacy",
-    ogImage: "https://krgpi.github.io/setpolaris-screenshot.png",
-    favicon: "/setpolaris-icon-ios.png",
+      "Privacy Policy for Polarisetter, an iOS companion app showing true north and level for telescope setup. Learn how the app handles location data, sensors, and contact information.",
+    canonical: "https://krgpi.github.io/works/polarisetter/privacy",
+    ogImage: "https://krgpi.github.io/polarisetter-screenshot.png",
+    favicon: "/polarisetter-icon-ios.png",
   });
 
   return (
@@ -18,14 +18,14 @@ const Component: React.FC = () => {
       <header className="space-y-2 max-w-prose">
         <p className="text-sm text-gray-500">
           <a
-            href="/works/setpolaris/en"
+            href="/works/polarisetter/en"
             className="text-krg-link-orange hover:underline"
           >
-            ← Back to SetPolaris
+            ← Back to Polarisetter
           </a>
         </p>
         <h1 className="text-3xl sm:text-4xl font-light">
-          SetPolaris — Privacy Policy
+          Polarisetter — Privacy Policy
         </h1>
         <p className="text-sm text-gray-500">Last updated: {LAST_UPDATED}</p>
       </header>
@@ -33,13 +33,13 @@ const Component: React.FC = () => {
       <article className="max-w-prose space-y-6 leading-relaxed">
         <section className="space-y-2">
           <p>
-            This Privacy Policy explains how <strong>SetPolaris</strong>{" "}
+            This Privacy Policy explains how <strong>Polarisetter</strong>{" "}
             (the “app”), an iOS / iPadOS companion app for telescope setup
             developed by Karaage (Yuki NOAKI), handles information when you use
             the app. The app is distributed for free on the App Store.
           </p>
           <p>
-            <strong>Summary:</strong> SetPolaris does not collect, transmit, or
+            <strong>Summary:</strong> Polarisetter does not collect, transmit, or
             sell any personal data to the developer or to third parties. The
             app does not require an account, has no ads, no analytics SDKs, and
             does not perform any network communication.
@@ -49,7 +49,7 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">1. Information the app handles</h2>
           <p>
-            SetPolaris reads two kinds of sensor data on your device while it is
+            Polarisetter reads two kinds of sensor data on your device while it is
             running:
           </p>
           <ul className="list-disc list-inside space-y-1">
@@ -78,7 +78,7 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">2. Network communication</h2>
           <p>
-            SetPolaris does not perform any network communication during normal
+            Polarisetter does not perform any network communication during normal
             use. It works fully offline.
           </p>
         </section>
@@ -86,7 +86,7 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">3. Crash reports and diagnostics</h2>
           <p>
-            SetPolaris does not include any third-party crash-reporting or
+            Polarisetter does not include any third-party crash-reporting or
             telemetry SDK. If you choose to share diagnostics with Apple from
             iOS{" "}
             <strong>
@@ -100,7 +100,7 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">4. Children's privacy</h2>
           <p>
-            SetPolaris is a general-purpose utility app and is not directed at
+            Polarisetter is a general-purpose utility app and is not directed at
             children under 13. It does not knowingly collect any personal
             information from children.
           </p>
@@ -116,7 +116,7 @@ const Component: React.FC = () => {
               still works for the level indicator.
             </li>
             <li>
-              You can uninstall SetPolaris by long-pressing its icon on the
+              You can uninstall Polarisetter by long-pressing its icon on the
               Home Screen and selecting <strong>Remove App</strong>.
             </li>
           </ul>
@@ -129,17 +129,34 @@ const Component: React.FC = () => {
             date at the top of this page reflects the most recent revision.
             Material changes will also be noted on the{" "}
             <a
-              href="/works/setpolaris/en"
+              href="/works/polarisetter/en"
               className="text-krg-link-orange hover:underline"
             >
-              SetPolaris page
+              Polarisetter page
             </a>
             .
           </p>
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold">7. Contact</h2>
+          <h2 className="text-2xl font-bold">7. About this website</h2>
+          <p>
+            This page is part of the developer’s portfolio site (
+            <code>krgpi.github.io</code>), which is separate from the
+            Polarisetter app itself. For details on how the website handles
+            visitor data — including aggregate analytics — please see the{" "}
+            <a
+              href="/privacy"
+              className="text-krg-link-orange hover:underline"
+            >
+              site privacy policy
+            </a>
+            . The app on your device is not affected by website analytics.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-2xl font-bold">8. Contact</h2>
           <p>
             Questions or requests about this policy can be sent to{" "}
             <a
