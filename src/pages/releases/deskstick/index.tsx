@@ -31,6 +31,7 @@ const Component: React.FC = () => {
       "DeskStick（iCloud 同期対応の macOS 向け付箋アプリ）の最新版および過去バージョンのダウンロードページ。DMG インストーラ・ZIP・Sparkle 自動アップデート対応。AIプロンプトや LLM 出力の一時メモに使えます。",
     canonical: "https://krgpi.github.io/releases/deskstick",
     ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
+    favicon: "/deskstick-icon-mac.png",
     jsonLdId: "deskstick-releases",
     jsonLd: {
       "@context": "https://schema.org",
