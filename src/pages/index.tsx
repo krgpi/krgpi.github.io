@@ -21,10 +21,33 @@ const Component: React.FC = () => {
         href="/works/deskstick"
         className="group flex items-center gap-3 rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-4 py-3 text-sm font-sans hover:bg-krg-link-orange/20"
       >
+        <img
+          src="/deskstick-icon-ios.png"
+          alt=""
+          aria-hidden
+          className="shrink-0 w-12 h-12 rounded-xl"
+        />
         <span className="flex-1">
           <span className="font-bold">DeskStick</span>{" "}
           を配布中 — iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad / visionOS）に対応。AIプロンプトや LLM
           出力のスクラッチパッドにも。
+        </span>
+        <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
+      </a>
+
+      <a
+        href="/works/polarisetter"
+        className="group flex items-center gap-3 rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-4 py-3 text-sm font-sans hover:bg-krg-link-orange/20"
+      >
+        <img
+          src="/polarisetter-icon-ios.png"
+          alt=""
+          aria-hidden
+          className="shrink-0 w-12 h-12 rounded-xl"
+        />
+        <span className="flex-1">
+          <span className="font-bold">Polarisetter</span>{" "}
+          を配布中 — 天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS 対応。暗順応を妨げない黒背景＋赤文字 UI。
         </span>
         <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
       </a>
