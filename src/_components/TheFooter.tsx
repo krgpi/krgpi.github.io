@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const TheFooter: React.FC = () => {
   return (
@@ -20,6 +21,12 @@ const TheFooter: React.FC = () => {
         >
           Twitter
         </a>
+        <Link
+          className="text-krg-link-orange hover:underline"
+          to="/privacy"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
