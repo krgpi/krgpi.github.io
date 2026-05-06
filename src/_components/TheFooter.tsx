@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link } from "../router";
 
 const TheFooter: React.FC = () => {
   return (
