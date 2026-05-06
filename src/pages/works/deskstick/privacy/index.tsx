@@ -10,6 +10,7 @@ const Component: React.FC = () => {
       "Privacy Policy for DeskStick, an iCloud-synced sticky notes app for macOS. Learn how the app handles your notes, iCloud sync, automatic updates, and contact information.",
     canonical: "https://krgpi.github.io/works/deskstick/privacy",
     ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
+    favicon: "/deskstick-icon-mac.png",
   });
 
   return (

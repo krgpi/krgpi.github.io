@@ -16,6 +16,7 @@ const Component: React.FC = () => {
       "DeskStick is an iCloud-synced sticky notes app for macOS, perfect for keeping AI prompts (ChatGPT, Claude, Gemini) and LLM outputs as quick scratchpads. Sync notes across multiple Macs, pin them on top, color-code, and access everything from the menubar. Free download. Built by Karaage.",
     canonical: "https://krgpi.github.io/works/deskstick/en",
     ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
+    favicon: "/deskstick-icon-mac.png",
     jsonLdId: "deskstick-en",
     jsonLd: {
       "@context": "https://schema.org",
@@ -71,8 +72,16 @@ const Component: React.FC = () => {
             日本語版 →
           </a>
           <div className="flex flex-col items-start justify-center min-h-96 px-4 py-8 gap-3 [&>*]:drop-shadow-lg">
-            <h1 className="text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80">
-              DeskStick
+            <h1 className="flex items-center gap-3 sm:gap-4 text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80 leading-none">
+              <img
+                src="/deskstick-icon-mac.png"
+                alt=""
+                aria-hidden="true"
+                width={96}
+                height={96}
+                className="block w-[1.2em] h-[1.2em] shrink-0 drop-shadow-xl drop-shadow-black/40"
+              />
+              <span>DeskStick</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
               Stick with your ideas, prompts, and AI outputs.
@@ -89,8 +98,16 @@ const Component: React.FC = () => {
                 <a
                   href={DOWNLOAD_URL}
                   download
-                  className="inline-flex items-center justify-center bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
+                  className="inline-flex items-center justify-center gap-2 bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
                 >
+                  <img
+                    src="/deskstick-icon-mac.png"
+                    alt=""
+                    aria-hidden="true"
+                    width={28}
+                    height={28}
+                    className="w-7 h-7 rounded-md"
+                  />
                   Download .dmg (Free)
                 </a>
               </div>

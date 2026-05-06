@@ -5,9 +5,12 @@ type MetaOptions = {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  favicon?: string;
   jsonLd?: Record<string, unknown>;
   jsonLdId?: string;
 };
+
+const DEFAULT_FAVICON = "/favicon.ico";
 
 const setMeta = (selector: string, attr: string, value: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(selector);
@@ -35,6 +38,7 @@ export const useDocumentMeta = ({
   description,
   canonical,
   ogImage,
+  favicon,
   jsonLd,
   jsonLdId,
 }: MetaOptions) => {
@@ -57,6 +61,7 @@ export const useDocumentMeta = ({
       setMeta('meta[property="og:image"]', "content", ogImage);
       setMeta('meta[name="twitter:image"]', "content", ogImage);
     }
+    setLink("icon", favicon ?? DEFAULT_FAVICON);
 
     if (jsonLd && jsonLdId) {
       const id = `jsonld-${jsonLdId}`;

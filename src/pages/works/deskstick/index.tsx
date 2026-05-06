@@ -16,6 +16,7 @@ const Component: React.FC = () => {
       "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる macOS 向けの付箋（sticky notes）アプリです。複数のMac間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからの一覧表示で素早くアクセスできます。無料でダウンロードできます。",
     canonical: "https://krgpi.github.io/works/deskstick",
     ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
+    favicon: "/deskstick-icon-mac.png",
     jsonLdId: "deskstick",
     jsonLd: {
       "@context": "https://schema.org",
@@ -71,8 +72,16 @@ const Component: React.FC = () => {
             English version →
           </a>
           <div className="flex flex-col items-start justify-center min-h-96 px-4 py-8 gap-3 [&>*]:drop-shadow-lg">
-            <h1 className="text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80">
-              DeskStick
+            <h1 className="flex items-center gap-3 sm:gap-4 text-white text-4xl sm:text-6xl font-bold break-words drop-shadow-2xl drop-shadow-black/80 leading-none">
+              <img
+                src="/deskstick-icon-mac.png"
+                alt=""
+                aria-hidden="true"
+                width={96}
+                height={96}
+                className="block w-[1.2em] h-[1.2em] shrink-0 drop-shadow-xl drop-shadow-black/40"
+              />
+              <span>DeskStick</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
               アイデアもプロンプトも、AIの出力も、ぜんぶ貼っておく。
@@ -88,8 +97,16 @@ const Component: React.FC = () => {
                 <a
                   href={DOWNLOAD_URL}
                   download
-                  className="inline-flex items-center justify-center bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
+                  className="inline-flex items-center justify-center gap-2 bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
                 >
+                  <img
+                    src="/deskstick-icon-mac.png"
+                    alt=""
+                    aria-hidden="true"
+                    width={28}
+                    height={28}
+                    className="w-7 h-7 rounded-md"
+                  />
                   .dmg をダウンロード（無料）
                 </a>
               </div>
