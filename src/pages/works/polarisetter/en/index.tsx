@@ -4,7 +4,7 @@ import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
 import English from "./english.mdx";
 
-const APP_STORE_URL = "https://apps.apple.com/app/polarisetter";
+const APP_STORE_URL = "https://apps.apple.com/app/id6766741368";
 
 const Component: React.FC = () => {
   useDocumentMeta({
