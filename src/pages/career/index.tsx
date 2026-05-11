@@ -1,7 +1,7 @@
 import { useMDXComponents } from '@mdx-js/react';
 import React from "react";
 import { useMDXComponents as customMdx } from "../../mdx-components";
-import Career from './career.mdx';
+import Career from './career.md';
 const IndexPage: React.FC = () => {
     const defaultComponents = useMDXComponents()
     const components = customMdx(defaultComponents)
