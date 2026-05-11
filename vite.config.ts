@@ -21,6 +21,7 @@ export default defineConfig(async () => {
             react(),
             generouted(),
             mdx({
+                include: /\.(md|mdx)$/,
                 remarkPlugins: [remarkGfm, remarkUnwrapImages],
                 rehypePlugins: [],
             })

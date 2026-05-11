@@ -7,7 +7,6 @@ export type Path =
   | `/`
   | `/activities`
   | `/career`
-  | `/career/career`
   | `/gallery`
   | `/privacy`
   | `/releases/cloudstickies`
