@@ -31,4 +31,9 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-krg-link-orange) 35%, transparent);
+    color: inherit;
+  }
 }
