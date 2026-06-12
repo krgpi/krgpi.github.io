@@ -4,7 +4,7 @@ import { useDocumentMeta } from "../_components/useDocumentMeta";
 const Component: React.FC = () => {
   useDocumentMeta({
     title:
-      "Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio",
+      "Karaage (からあげ / Yuki NOAKI) - Product Manager / Product Builder Portfolio",
     description:
       "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。株式会社IDEOJ 創業者、CoeFontでのプロダクトマネジメントとエンジニアリング、フリーランスでのWeb / iOS / macOSアプリ開発を行っています。",
     canonical: "https://krgpi.github.io/",
@@ -14,8 +14,8 @@ const Component: React.FC = () => {
   return (
     <div className="not-prose font-area_ext max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8">
       <h1 className="sr-only">
-        Karaage (からあげ / Yuki NOAKI) — Software Engineer &amp; Product
-        Manager Portfolio
+        Karaage (からあげ / Yuki NOAKI) — Product Manager / Product Builder &amp;
+        Team Catalyst Portfolio
       </h1>
 
       <section className="space-y-4">
@@ -35,31 +35,53 @@ const Component: React.FC = () => {
               more icons
             </a>
           </div>
-          <div className="space-y-3">
-            <p className="text-2xl">Karaage / Yuki NOAKI</p>
-            <p>Software Engineer & Product Manager at Tokyo, Japan</p>
-            <ul className="text-large font-bold list-disc list-inside space-y-1">
-              <li>
-                <a
-                  className="text-krg-link-orange hover:underline"
-                  href="https://ideoj.co.jp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  株式会社IDEOJ
-                </a>{" "}
-                創業者
-              </li>
-              <li>
-                フリーランス
-                プロダクトマネージャー・プロダクトマネジメントアドバイザー
-              </li>
-            </ul>
-            <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
-              <li>株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
-              <li>（元）ピクシブ株式会社 iOSアプリエンジニア</li>
-            </ul>
-            <p>hobbies: 📸 🎸 🚘 🀄️ 🎳 💻 🪴 🗺️ 🐈</p>
+          <div className="space-y-5">
+            <div className="space-y-1">
+              <p className="text-3xl">
+                Karaage
+                <span className="text-lg font-normal"> / Yuki NOAKI</span>
+              </p>
+              <p className="text-lg">
+                Product Manager
+                <span className="text-gray-400"> · Tokyo, Japan</span>
+              </p>
+              <p className="text-sm italic text-krg-link-orange/90">
+                Building products. Catalyzing teams.
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <div className="space-y-1">
+                <p className="text-xs font-bold tracking-widest text-gray-400">
+                  NOW
+                </p>
+                <p>
+                  <a
+                    className="font-bold text-krg-link-orange hover:underline"
+                    href="https://ideoj.co.jp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    株式会社IDEOJ
+                  </a>{" "}
+                  創業者
+                </p>
+                <p>
+                  フリーランス プロダクトマネージャー / マネジメントアドバイザー
+                </p>
+              </div>
+              <div className="space-y-1 text-sm text-gray-400">
+                <p className="text-xs font-bold tracking-widest text-gray-500">
+                  PAST
+                </p>
+                <p>株式会社CoeFont プロダクトマネージャー兼エンジニア</p>
+                <p>ピクシブ株式会社 iOSアプリエンジニア</p>
+              </div>
+            </div>
+
+            <p className="text-sm text-gray-300">
+              hobbies: 📸 🎸 🚘 🀄️ 🎳 💻 🪴 🗺️ 🐈
+            </p>
           </div>
         </div>
       </section>
@@ -86,6 +108,9 @@ const Component: React.FC = () => {
               </span>
               <span className="block">
                 暗号化ファイル共有サービス。パスワードや共有リンクが不要な仕組みでリスクを根絶できます。
+              </span>
+              <span className="block mt-1 text-xs text-gray-400">
+                by IDEOJ
               </span>
             </span>
             <span
