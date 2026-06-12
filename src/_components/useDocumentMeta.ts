@@ -78,5 +78,5 @@ export const useDocumentMeta = ({
         script?.remove();
       };
     }
-  }, [title, description, canonical, ogImage, jsonLd, jsonLdId]);
+  }, [title, description, canonical, ogImage, jsonLd, jsonLdId, favicon]);
 };
