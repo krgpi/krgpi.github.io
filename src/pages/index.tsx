@@ -86,16 +86,17 @@ const Component: React.FC = () => {
                 </a>{" "}
                 創業者
               </li>
-              <li>フリーランス プロダクトマネジメントアドバイザー</li>
+              <li>
+                フリーランス
+                プロダクトマネージャー・プロダクトマネジメントアドバイザー
+              </li>
             </ul>
             <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
-              <li>ex 株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
-              <li>ex pixiv株式会社 iOSアプリエンジニア</li>
+              <li>株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
+              <li>（元）ピクシブ株式会社 iOSアプリエンジニア</li>
             </ul>
             <div className="prose prose-invert max-w-none font-sans">
               <p>
-                I work to support the launch and growth of startups with
-                engineering and product management. /
                 スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
                 ソフトウェアエンジニアとして、またプロダクトマネージャーとして、Webからモバイル・デスクトップアプリまで幅広く開発・プロダクト企画に携わっています。
               </p>
