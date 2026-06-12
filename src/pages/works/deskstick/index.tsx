@@ -130,8 +130,8 @@ const Component: React.FC = () => {
               </div>
             </div>
             <p className="text-white text-sm">
-              macOS 13.0+ / iOS 16.0+ / iPadOS / visionOS / 無料配布 / iCloud 同期対応 /
-              macOS はインストール後に自動アップデート
+              macOS 13.0+ / iOS 16.0+ / iPadOS / visionOS / 無料配布 / iCloud
+              同期対応 / macOS はインストール後に自動アップデート
             </p>
             <a
               href="/releases/deskstick"

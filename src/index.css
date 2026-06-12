@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -12,7 +12,7 @@
   --color-krg-link-orange: #ff9900;
   --color-krg-link-active: #0000ff;
 
-  --background-image-stickies-bg: url('/stickies-on-the-desktop.png');
+  --background-image-stickies-bg: url("/stickies-on-the-desktop.png");
 }
 
 /*
@@ -33,7 +33,11 @@
   }
 
   ::selection {
-    background-color: color-mix(in srgb, var(--color-krg-link-orange) 35%, transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--color-krg-link-orange) 35%,
+      transparent
+    );
     color: inherit;
   }
 }

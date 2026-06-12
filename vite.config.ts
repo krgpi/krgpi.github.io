@@ -1,30 +1,29 @@
-import generouted from '@generouted/react-router/plugin';
+import generouted from "@generouted/react-router/plugin";
 import mdx from "@mdx-js/rollup";
-import react from '@vitejs/plugin-react';
+import react from "@vitejs/plugin-react";
 import { resolve } from "path";
-import remarkGfm from 'remark-gfm';
-import remarkUnwrapImages from 'remark-unwrap-images';
-import { defineConfig } from 'vite';
+import remarkGfm from "remark-gfm";
+import remarkUnwrapImages from "remark-unwrap-images";
+import { defineConfig } from "vite";
 
 export default defineConfig(async () => {
-
-    return {
-        build: {
-            rollupOptions: {
-                input: {
-                    main: resolve(__dirname, 'index.html'),
-                    404: resolve(__dirname, '404.html'),
-                }
-            }
+  return {
+    build: {
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, "index.html"),
+          404: resolve(__dirname, "404.html"),
         },
-        plugins: [
-            react(),
-            generouted(),
-            mdx({
-                include: /\.(md|mdx)$/,
-                remarkPlugins: [remarkGfm, remarkUnwrapImages],
-                rehypePlugins: [],
-            })
-        ]
-    }
-})
+      },
+    },
+    plugins: [
+      react(),
+      generouted(),
+      mdx({
+        include: /\.(md|mdx)$/,
+        remarkPlugins: [remarkGfm, remarkUnwrapImages],
+        rehypePlugins: [],
+      }),
+    ],
+  };
+});

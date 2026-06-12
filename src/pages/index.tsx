@@ -3,7 +3,8 @@ import { useDocumentMeta } from "../_components/useDocumentMeta";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title: "Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio",
+    title:
+      "Karaage (からあげ / Yuki NOAKI) - Engineer & Product Manager Portfolio",
     description:
       "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。株式会社IDEOJ 創業者、CoeFontでのプロダクトマネジメントとエンジニアリング、フリーランスでのWeb / iOS / macOSアプリ開発を行っています。",
     canonical: "https://krgpi.github.io/",
@@ -28,11 +29,13 @@ const Component: React.FC = () => {
           className="shrink-0 w-12 h-12 rounded-xl"
         />
         <span className="flex-1">
-          <span className="font-bold">DeskStick</span>{" "}
-          を配布中 — iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad / visionOS）に対応。AIプロンプトや LLM
-          出力のスクラッチパッドにも。
+          <span className="font-bold">DeskStick</span> を配布中 — iCloud
+          同期対応の付箋アプリ。macOS と iOS（iPhone / iPad /
+          visionOS）に対応。AIプロンプトや LLM 出力のスクラッチパッドにも。
         </span>
-        <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
+        <span aria-hidden className="shrink-0 text-krg-link-orange">
+          →
+        </span>
       </a>
 
       <a
@@ -46,10 +49,13 @@ const Component: React.FC = () => {
           className="shrink-0 w-12 h-12 rounded-xl"
         />
         <span className="flex-1">
-          <span className="font-bold">Polarisetter</span>{" "}
-          を配布中 — 天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS 対応。暗順応を妨げない黒背景＋赤文字 UI。
+          <span className="font-bold">Polarisetter</span> を配布中 —
+          天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS
+          対応。暗順応を妨げない黒背景＋赤文字 UI。
         </span>
-        <span aria-hidden className="shrink-0 text-krg-link-orange">→</span>
+        <span aria-hidden className="shrink-0 text-krg-link-orange">
+          →
+        </span>
       </a>
 
       <section className="space-y-4">
@@ -71,9 +77,7 @@ const Component: React.FC = () => {
           </div>
           <div className="space-y-3">
             <p className="text-2xl">Karaage / Yuki NOAKI</p>
-            <p>
-              Software Engineer & Product Manager at Tokyo, Japan
-            </p>
+            <p>Software Engineer & Product Manager at Tokyo, Japan</p>
             <ul className="text-large font-bold list-disc list-inside space-y-1">
               <li>
                 <a

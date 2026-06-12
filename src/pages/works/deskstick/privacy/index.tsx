@@ -33,9 +33,9 @@ const Component: React.FC = () => {
       <article className="max-w-prose space-y-6 leading-relaxed">
         <section className="space-y-2">
           <p>
-            This Privacy Policy explains how <strong>DeskStick</strong>{" "}
-            (the “app”), a macOS sticky notes application developed by Karaage
-            (Yuki NOAKI), handles information when you use the app. The app is
+            This Privacy Policy explains how <strong>DeskStick</strong> (the
+            “app”), a macOS sticky notes application developed by Karaage (Yuki
+            NOAKI), handles information when you use the app. The app is
             distributed for free from{" "}
             <a
               href="https://krgpi.github.io/works/deskstick"
@@ -46,8 +46,8 @@ const Component: React.FC = () => {
             .
           </p>
           <p>
-            <strong>Summary:</strong> DeskStick does not collect, transmit,
-            or sell any personal data to the developer or to third parties. Your
+            <strong>Summary:</strong> DeskStick does not collect, transmit, or
+            sell any personal data to the developer or to third parties. Your
             notes stay on your Mac and (optionally) inside your own iCloud
             account.
           </p>
@@ -56,9 +56,9 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">1. Information the app handles</h2>
           <p>
-            DeskStick stores the content you type into sticky notes —
-            including text, note color, position, and pinned state — on your
-            Mac. The developer does not receive a copy of this content.
+            DeskStick stores the content you type into sticky notes — including
+            text, note color, position, and pinned state — on your Mac. The
+            developer does not receive a copy of this content.
           </p>
           <p>
             The app does not ask for your name, email address, location,
@@ -71,9 +71,9 @@ const Component: React.FC = () => {
           <h2 className="text-2xl font-bold">2. iCloud sync</h2>
           <p>
             If you are signed in to iCloud on your Mac and have iCloud Drive
-            enabled, DeskStick uses Apple’s CloudKit framework to sync
-            your sticky notes between Macs that are signed in to the same Apple
-            ID. Your notes are stored in your private iCloud database and are
+            enabled, DeskStick uses Apple’s CloudKit framework to sync your
+            sticky notes between Macs that are signed in to the same Apple ID.
+            Your notes are stored in your private iCloud database and are
             handled by Apple under{" "}
             <a
               href="https://www.apple.com/legal/privacy/"
@@ -88,8 +88,8 @@ const Component: React.FC = () => {
           <p>
             The developer cannot read, view, or recover the contents of notes
             stored in your iCloud account. If you do not want to use iCloud
-            sync, you can sign out of iCloud or disable iCloud Drive for the
-            app from <strong>System Settings → [your name] → iCloud</strong>.
+            sync, you can sign out of iCloud or disable iCloud Drive for the app
+            from <strong>System Settings → [your name] → iCloud</strong>.
           </p>
         </section>
 
@@ -119,8 +119,8 @@ const Component: React.FC = () => {
             >
               GitHub’s privacy statement
             </a>
-            . The developer does not run server-side logging or analytics on
-            top of these requests.
+            . The developer does not run server-side logging or analytics on top
+            of these requests.
           </p>
           <p>
             You can disable automatic update checks at any time from the app’s
@@ -129,7 +129,9 @@ const Component: React.FC = () => {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold">4. Crash reports and diagnostics</h2>
+          <h2 className="text-2xl font-bold">
+            4. Crash reports and diagnostics
+          </h2>
           <p>
             DeskStick does not include any third-party crash-reporting or
             telemetry SDK. If you choose to share diagnostics with Apple from
@@ -147,9 +149,9 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">5. Children’s privacy</h2>
           <p>
-            DeskStick is a general-purpose productivity app and is not
-            directed at children under 13. It does not knowingly collect any
-            personal information from children.
+            DeskStick is a general-purpose productivity app and is not directed
+            at children under 13. It does not knowingly collect any personal
+            information from children.
           </p>
         </section>
 
@@ -165,9 +167,8 @@ const Component: React.FC = () => {
               disabling iCloud Drive for the app.
             </li>
             <li>
-              You can uninstall DeskStick by dragging{" "}
-              <code>DeskStick.app</code> from <code>/Applications</code>{" "}
-              to the Trash.
+              You can uninstall DeskStick by dragging <code>DeskStick.app</code>{" "}
+              from <code>/Applications</code> to the Trash.
             </li>
           </ul>
         </section>
@@ -192,13 +193,10 @@ const Component: React.FC = () => {
           <h2 className="text-2xl font-bold">8. About this website</h2>
           <p>
             This page is part of the developer’s portfolio site (
-            <code>krgpi.github.io</code>), which is separate from the
-            DeskStick app itself. For details on how the website handles
-            visitor data — including aggregate analytics — please see the{" "}
-            <a
-              href="/privacy"
-              className="text-krg-link-orange hover:underline"
-            >
+            <code>krgpi.github.io</code>), which is separate from the DeskStick
+            app itself. For details on how the website handles visitor data —
+            including aggregate analytics — please see the{" "}
+            <a href="/privacy" className="text-krg-link-orange hover:underline">
               site privacy policy
             </a>
             . The app on your Mac is not affected by website analytics.

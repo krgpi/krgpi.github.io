@@ -81,7 +81,8 @@ const Component: React.FC = () => {
               True north &amp; level for telescope setup.
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              Polar-align your mount in the dark, on a single red-on-black screen.
+              Polar-align your mount in the dark, on a single red-on-black
+              screen.
             </p>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
               <div className="flex flex-col gap-1">
@@ -104,7 +105,8 @@ const Component: React.FC = () => {
               </div>
             </div>
             <p className="text-white text-sm">
-              iOS 15.6+ · iPadOS 15.6+ · Free · Works offline · Location stays on-device
+              iOS 15.6+ · iPadOS 15.6+ · Free · Works offline · Location stays
+              on-device
             </p>
           </div>
         </div>
@@ -132,16 +134,18 @@ const Component: React.FC = () => {
             className="flex flex-col items-center justify-center gap-1 rounded-xl bg-black hover:bg-gray-800 text-white font-bold px-6 py-6 text-center shadow-lg border border-white/20 hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-white/30"
           >
             <span className="text-2xl">𝕏 Follow @krgpi</span>
-            <span className="text-sm font-normal">Get release updates on X</span>
+            <span className="text-sm font-normal">
+              Get release updates on X
+            </span>
           </a>
         </section>
         <div>
           <p>
-            <strong>Polarisetter</strong> is a small iOS companion app for telescope users.
-            It shows true north (declination-corrected) and a real-time level indicator on
-            one dark-sky-friendly screen, so polar alignment doesn't drag on. No accounts,
-            no ads, no network — just your phone, the sky, and a red-on-black readout.
-            Built by Karaage.
+            <strong>Polarisetter</strong> is a small iOS companion app for
+            telescope users. It shows true north (declination-corrected) and a
+            real-time level indicator on one dark-sky-friendly screen, so polar
+            alignment doesn't drag on. No accounts, no ads, no network — just
+            your phone, the sky, and a red-on-black readout. Built by Karaage.
           </p>
           <English components={components} />
         </div>

@@ -78,7 +78,8 @@ const Component: React.FC = () => {
             iOS / iPadOS / visionOS — <strong>App Store</strong>
           </p>
           <p className="text-sm">
-            iOS 16.0+ / iPadOS 16.0+ / visionOS 1.0+ / 無料 / iCloud で macOS 版とシームレスに同期
+            iOS 16.0+ / iPadOS 16.0+ / visionOS 1.0+ / 無料 / iCloud で macOS
+            版とシームレスに同期
           </p>
           <a
             href={APP_STORE_URL}
@@ -134,7 +135,8 @@ const Component: React.FC = () => {
         <h2 className="text-2xl font-bold">インストール方法 / Installation</h2>
         <ol className="list-decimal list-inside space-y-1 max-w-prose">
           <li>
-            <strong>DMG の場合:</strong> ダウンロードしたファイルをダブルクリックでマウントし、
+            <strong>DMG の場合:</strong>{" "}
+            ダウンロードしたファイルをダブルクリックでマウントし、
             <code>DeskStick.app</code> を <code>/Applications</code>{" "}
             フォルダにドラッグ＆ドロップしてください。
           </li>
@@ -165,7 +167,9 @@ const Component: React.FC = () => {
       </section>
 
       <section className="space-y-2">
-        <h2 className="text-2xl font-bold">過去バージョン / Previous releases</h2>
+        <h2 className="text-2xl font-bold">
+          過去バージョン / Previous releases
+        </h2>
 
         <h3 className="text-xl font-semibold mt-2">ZIP</h3>
         <ul className="list-disc list-inside max-w-prose">

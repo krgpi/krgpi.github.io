@@ -166,18 +166,21 @@ const Component: React.FC = () => {
             className="flex flex-col items-center justify-center gap-1 rounded-xl bg-black hover:bg-gray-800 text-white font-bold px-6 py-6 text-center shadow-lg border border-white/20 hover:scale-[1.02] transition-transform focus:outline-none focus:ring-4 focus:ring-white/30"
           >
             <span className="text-2xl">𝕏 Follow @krgpi</span>
-            <span className="text-sm font-normal">Get release updates on X</span>
+            <span className="text-sm font-normal">
+              Get release updates on X
+            </span>
           </a>
         </section>
         <div>
           <p>
             <strong>DeskStick</strong> is a sticky notes app for macOS that
             syncs your notes across multiple Macs via iCloud. It is especially
-            handy as a <strong>scratchpad for AI prompts and LLM outputs</strong>{" "}
-            — keeping reusable ChatGPT / Claude / Gemini prompts pinned on top,
-            and parking generated drafts before pasting them into your real
-            editor. It supports pinning, color coding, and a menubar overview.
-            Built by Karaage.
+            handy as a{" "}
+            <strong>scratchpad for AI prompts and LLM outputs</strong> — keeping
+            reusable ChatGPT / Claude / Gemini prompts pinned on top, and
+            parking generated drafts before pasting them into your real editor.
+            It supports pinning, color coding, and a menubar overview. Built by
+            Karaage.
           </p>
           <English components={components} />
         </div>

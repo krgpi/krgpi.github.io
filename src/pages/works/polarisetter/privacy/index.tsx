@@ -33,14 +33,14 @@ const Component: React.FC = () => {
       <article className="max-w-prose space-y-6 leading-relaxed">
         <section className="space-y-2">
           <p>
-            This Privacy Policy explains how <strong>Polarisetter</strong>{" "}
-            (the “app”), an iOS / iPadOS companion app for telescope setup
-            developed by Karaage (Yuki NOAKI), handles information when you use
-            the app. The app is distributed for free on the App Store.
+            This Privacy Policy explains how <strong>Polarisetter</strong> (the
+            “app”), an iOS / iPadOS companion app for telescope setup developed
+            by Karaage (Yuki NOAKI), handles information when you use the app.
+            The app is distributed for free on the App Store.
           </p>
           <p>
-            <strong>Summary:</strong> Polarisetter does not collect, transmit, or
-            sell any personal data to the developer or to third parties. The
+            <strong>Summary:</strong> Polarisetter does not collect, transmit,
+            or sell any personal data to the developer or to third parties. The
             app does not require an account, has no ads, no analytics SDKs, and
             does not perform any network communication.
           </p>
@@ -49,8 +49,8 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">1. Information the app handles</h2>
           <p>
-            Polarisetter reads two kinds of sensor data on your device while it is
-            running:
+            Polarisetter reads two kinds of sensor data on your device while it
+            is running:
           </p>
           <ul className="list-disc list-inside space-y-1">
             <li>
@@ -69,22 +69,24 @@ const Component: React.FC = () => {
             transmitted off your device. The developer never receives any of it.
           </p>
           <p>
-            The app does not ask for your name, email address, contacts,
-            photos, microphone, or camera. It does not contain advertising or
-            analytics SDKs, and it does not track your usage.
+            The app does not ask for your name, email address, contacts, photos,
+            microphone, or camera. It does not contain advertising or analytics
+            SDKs, and it does not track your usage.
           </p>
         </section>
 
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">2. Network communication</h2>
           <p>
-            Polarisetter does not perform any network communication during normal
-            use. It works fully offline.
+            Polarisetter does not perform any network communication during
+            normal use. It works fully offline.
           </p>
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold">3. Crash reports and diagnostics</h2>
+          <h2 className="text-2xl font-bold">
+            3. Crash reports and diagnostics
+          </h2>
           <p>
             Polarisetter does not include any third-party crash-reporting or
             telemetry SDK. If you choose to share diagnostics with Apple from
@@ -111,7 +113,9 @@ const Component: React.FC = () => {
           <ul className="list-disc list-inside space-y-1">
             <li>
               You can revoke location access at any time from{" "}
-              <strong>Settings → Privacy &amp; Security → Location Services</strong>
+              <strong>
+                Settings → Privacy &amp; Security → Location Services
+              </strong>
               . Without location, the app falls back to magnetic north only and
               still works for the level indicator.
             </li>
@@ -145,10 +149,7 @@ const Component: React.FC = () => {
             <code>krgpi.github.io</code>), which is separate from the
             Polarisetter app itself. For details on how the website handles
             visitor data — including aggregate analytics — please see the{" "}
-            <a
-              href="/privacy"
-              className="text-krg-link-orange hover:underline"
-            >
+            <a href="/privacy" className="text-krg-link-orange hover:underline">
               site privacy policy
             </a>
             . The app on your device is not affected by website analytics.

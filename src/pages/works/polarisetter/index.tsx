@@ -104,7 +104,8 @@ const Component: React.FC = () => {
               </div>
             </div>
             <p className="text-white text-sm">
-              iOS 15.6+ / iPadOS 15.6+ / 無料 / オフライン動作 / 位置情報は端末内のみで使用
+              iOS 15.6+ / iPadOS 15.6+ / 無料 / オフライン動作 /
+              位置情報は端末内のみで使用
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { Routes } from "@generouted/react-router";
-import 'github-markdown-css';
+import "github-markdown-css";
 import posthog from "posthog-js";
 import { createRoot } from "react-dom/client";
 import "./index.css";

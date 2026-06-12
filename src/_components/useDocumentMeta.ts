@@ -16,7 +16,8 @@ const setMeta = (selector: string, attr: string, value: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(selector);
   if (!el) {
     el = document.createElement("meta");
-    const [, key, name] = selector.match(/meta\[(name|property)="([^"]+)"\]/) || [];
+    const [, key, name] =
+      selector.match(/meta\[(name|property)="([^"]+)"\]/) || [];
     if (key && name) el.setAttribute(key, name);
     document.head.appendChild(el);
   }
