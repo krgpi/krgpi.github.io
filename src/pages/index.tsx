@@ -18,48 +18,8 @@ const Component: React.FC = () => {
         Manager Portfolio
       </h1>
 
-      <a
-        href="/works/deskstick"
-        className="group flex items-center gap-3 rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-4 py-3 text-sm font-sans hover:bg-krg-link-orange/20"
-      >
-        <img
-          src="/deskstick-icon-ios.png"
-          alt=""
-          aria-hidden
-          className="shrink-0 w-12 h-12 rounded-xl"
-        />
-        <span className="flex-1">
-          <span className="font-bold">DeskStick</span> を配布中 — iCloud
-          同期対応の付箋アプリ。macOS と iOS（iPhone / iPad /
-          visionOS）に対応。AIプロンプトや LLM 出力のスクラッチパッドにも。
-        </span>
-        <span aria-hidden className="shrink-0 text-krg-link-orange">
-          →
-        </span>
-      </a>
-
-      <a
-        href="/works/polarisetter"
-        className="group flex items-center gap-3 rounded-sm border border-krg-link-orange/60 bg-krg-link-orange/10 px-4 py-3 text-sm font-sans hover:bg-krg-link-orange/20"
-      >
-        <img
-          src="/polarisetter-icon-ios.png"
-          alt=""
-          aria-hidden
-          className="shrink-0 w-12 h-12 rounded-xl"
-        />
-        <span className="flex-1">
-          <span className="font-bold">Polarisetter</span> を配布中 —
-          天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS
-          対応。暗順応を妨げない黒背景＋赤文字 UI。
-        </span>
-        <span aria-hidden className="shrink-0 text-krg-link-orange">
-          →
-        </span>
-      </a>
-
       <section className="space-y-4">
-        <h2 className="text-3xl font-area_ext">My Profile</h2>
+        <h2 className="text-3xl font-area_ext">Profile</h2>
         <hr />
         <div className="flex flex-col sm:flex-row sm:gap-6">
           <div className="shrink-0 flex flex-col items-center sm:items-start">
@@ -107,6 +67,61 @@ const Component: React.FC = () => {
             </div>
             <p>hobbies: 📸 🎸 🚘</p>
           </div>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-3xl font-area_ext">Works</h2>
+        <hr />
+        <div className="space-y-4">
+          <a
+            href="/works/deskstick"
+            className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
+          >
+            <img
+              src="/deskstick-icon-ios.png"
+              alt=""
+              aria-hidden
+              className="shrink-0 w-12 h-12 rounded-xl"
+            />
+            <span className="flex-1">
+              <span className="font-bold group-hover:underline">DeskStick</span>{" "}
+              を配布中 — iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad
+              / visionOS）に対応。AIプロンプトや LLM 出力のスクラッチパッドにも。
+            </span>
+            <span
+              aria-hidden
+              className="shrink-0 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-krg-link-orange"
+            >
+              →
+            </span>
+          </a>
+
+          <a
+            href="/works/polarisetter"
+            className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
+          >
+            <img
+              src="/polarisetter-icon-ios.png"
+              alt=""
+              aria-hidden
+              className="shrink-0 w-12 h-12 rounded-xl"
+            />
+            <span className="flex-1">
+              <span className="font-bold group-hover:underline">
+                Polarisetter
+              </span>{" "}
+              を配布中 —
+              天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS
+              対応。暗順応を妨げない黒背景＋赤文字 UI。
+            </span>
+            <span
+              aria-hidden
+              className="shrink-0 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-krg-link-orange"
+            >
+              →
+            </span>
+          </a>
         </div>
       </section>
     </div>
