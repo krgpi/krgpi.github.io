@@ -59,12 +59,6 @@ const Component: React.FC = () => {
               <li>株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
               <li>（元）ピクシブ株式会社 iOSアプリエンジニア</li>
             </ul>
-            <div className="prose prose-invert max-w-none font-sans">
-              <p>
-                スタートアップの立ち上げや成長を、エンジニアリングとプロダクトマネジメントで支える仕事をしています。
-                ソフトウェアエンジニアとして、またプロダクトマネージャーとして、Webからモバイル・デスクトップアプリまで幅広く開発・プロダクト企画に携わっています。
-              </p>
-            </div>
             <p>hobbies: 📸 🎸 🚘</p>
           </div>
         </div>
