@@ -59,7 +59,7 @@ const Component: React.FC = () => {
               <li>株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
               <li>（元）ピクシブ株式会社 iOSアプリエンジニア</li>
             </ul>
-            <p>hobbies: 📸 🎸 🚘</p>
+            <p>hobbies: 📸 🎸 🚘 🀄️ 🎳 💻 🪴 🗺️ 🐈</p>
           </div>
         </div>
       </section>
@@ -68,6 +68,34 @@ const Component: React.FC = () => {
         <h2 className="text-3xl font-area_ext">Works</h2>
         <hr />
         <div className="space-y-4">
+          <a
+            href="https://kagisuru.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
+          >
+            <img
+              src="/kagisuru-icon.png"
+              alt=""
+              aria-hidden
+              className="shrink-0 w-12 h-12 rounded-xl"
+            />
+            <span className="flex-1">
+              <span className="block font-bold group-hover:underline">
+                カギスル
+              </span>
+              <span className="block">
+                暗号化ファイル共有サービス。パスワードや共有リンクが不要な仕組みでリスクを根絶できます。
+              </span>
+            </span>
+            <span
+              aria-hidden
+              className="shrink-0 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-krg-link-orange"
+            >
+              →
+            </span>
+          </a>
+
           <a
             href="/works/deskstick"
             className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
@@ -79,9 +107,14 @@ const Component: React.FC = () => {
               className="shrink-0 w-12 h-12 rounded-xl"
             />
             <span className="flex-1">
-              <span className="font-bold group-hover:underline">DeskStick</span>{" "}
-              を配布中 — iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad
-              / visionOS）に対応。AIプロンプトや LLM 出力のスクラッチパッドにも。
+              <span className="block font-bold group-hover:underline">
+                DeskStick
+              </span>
+              <span className="block">
+                iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad /
+                visionOS）に対応。AIプロンプトや LLM
+                出力のスクラッチパッドにも。
+              </span>
             </span>
             <span
               aria-hidden
@@ -102,12 +135,12 @@ const Component: React.FC = () => {
               className="shrink-0 w-12 h-12 rounded-xl"
             />
             <span className="flex-1">
-              <span className="font-bold group-hover:underline">
+              <span className="block font-bold group-hover:underline">
                 Polarisetter
-              </span>{" "}
-              を配布中 —
-              天体望遠鏡セッティング用の真北・水平ガイド。iOS / iPadOS
-              対応。暗順応を妨げない黒背景＋赤文字 UI。
+              </span>
+              <span className="block">
+                天体望遠鏡セッティング用の真北・水平ガイド。暗順応を妨げない黒背景＋赤文字UIになっています。
+              </span>
             </span>
             <span
               aria-hidden
