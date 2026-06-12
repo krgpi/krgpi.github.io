@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Outlet } from "react-router";
 import TheFooter from "../_components/TheFooter";
 import TheHeader from "../_components/TheHeader";

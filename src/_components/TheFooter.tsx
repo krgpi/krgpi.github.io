@@ -1,10 +1,12 @@
-import React from "react";
+import type React from "react";
 import { Link } from "../router";
 
 const TheFooter: React.FC = () => {
   return (
     <footer className="bg-krg-bg-slate p-2 font-raj text-center">
-      <p className="text-white">&copy; 2016-{new Date().getFullYear()} Yuki NOAKI</p>
+      <p className="text-white">
+        &copy; 2016-{new Date().getFullYear()} Yuki NOAKI
+      </p>
 
       <div className="space-x-2">
         <a
@@ -21,10 +23,7 @@ const TheFooter: React.FC = () => {
         >
           Twitter
         </a>
-        <Link
-          className="text-krg-link-orange hover:underline"
-          to="/privacy"
-        >
+        <Link className="text-krg-link-orange hover:underline" to="/privacy">
           Privacy Policy
         </Link>
       </div>

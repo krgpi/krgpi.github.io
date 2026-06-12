@@ -1,5 +1,5 @@
 import { useMDXComponents } from "@mdx-js/react";
-import React from "react";
+import type React from "react";
 import { useDocumentMeta } from "../../_components/useDocumentMeta";
 import { useMDXComponents as customMdx } from "../../mdx-components";
 import Privacy from "./_content.mdx";

@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "../../router";
 
 const IndexPage: React.FC = () => {
@@ -13,6 +13,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://agelog.hateblo.jp/"
               target="_blank"
+              rel="noopener"
             >
               Blog
             </a>
@@ -22,6 +23,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://scrapbox.io/krgpi/"
               target="_blank"
+              rel="noopener"
             >
               Scrapbox
             </a>
@@ -52,6 +54,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://github.com/krgpi"
               target="_blank"
+              rel="noopener"
             >
               GitHub
             </a>
@@ -61,6 +64,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://zenn.dev/karaage"
               target="_blank"
+              rel="noopener"
             >
               Zenn
             </a>
@@ -77,12 +81,16 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://www.instagram.com/caraage_films/"
               target="_blank"
+              rel="noopener"
             >
               Instagram
             </a>
           </li>
           <li>
-            <Link className="text-krg-link-orange hover:underline" to="/gallery">
+            <Link
+              className="text-krg-link-orange hover:underline"
+              to="/gallery"
+            >
               Gallery
             </Link>
           </li>
@@ -91,6 +99,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://www.youtube.com/user/iKaraage"
               target="_blank"
+              rel="noopener"
             >
               YouTube
             </a>
@@ -100,6 +109,7 @@ const IndexPage: React.FC = () => {
               className="text-krg-link-orange hover:underline"
               href="https://www.flickr.com/photos/79438375@N08/albums"
               target="_blank"
+              rel="noopener"
             >
               Flickr
             </a>

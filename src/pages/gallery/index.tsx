@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 const IndexPage: React.FC = () => {
   return (
@@ -121,6 +121,7 @@ const IndexPage: React.FC = () => {
           className="to-krg-link-orange hover:underline"
           href="https://www.instagram.com/caraage_films/"
           target="_blank"
+          rel="noopener"
         >
           see more on Instagram
         </a>
