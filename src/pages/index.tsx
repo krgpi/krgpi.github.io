@@ -76,18 +76,21 @@ const Component: React.FC = () => {
             </p>
             <ul className="text-large font-bold list-disc list-inside space-y-1">
               <li>
-                Founder @{" "}
                 <a
                   className="text-krg-link-orange hover:underline"
                   href="https://ideoj.co.jp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  IDEOJ corp.
-                </a>
+                  株式会社IDEOJ
+                </a>{" "}
+                創業者
               </li>
-              <li>Product Manager & Engineer @ CoeFont Co, Ltd.</li>
-              <li>Web, iOS & macOS App Engineer @ Freelance</li>
+              <li>フリーランス プロダクトマネジメントアドバイザー</li>
+            </ul>
+            <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
+              <li>ex 株式会社CoeFont プロダクトマネージャー兼エンジニア</li>
+              <li>ex pixiv株式会社 iOSアプリエンジニア</li>
             </ul>
             <div className="prose prose-invert max-w-none font-sans">
               <p>
