@@ -14,8 +14,8 @@ const Component: React.FC = () => {
   return (
     <div className="not-prose font-area_ext max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8">
       <h1 className="sr-only">
-        Karaage (からあげ / Yuki NOAKI) — Product Manager / Product Builder &amp;
-        Team Catalyst Portfolio
+        Karaage (からあげ / Yuki NOAKI) — Product Manager / Product Builder
+        &amp; Team Catalyst Portfolio
       </h1>
 
       <section className="space-y-4">
@@ -69,12 +69,13 @@ const Component: React.FC = () => {
                 <p>
                   フリーランス プロダクトマネージャー / マネジメントアドバイザー
                 </p>
+
+                <p>株式会社CoeFont プロダクトマネージャー兼エンジニア</p>
               </div>
               <div className="space-y-1 text-sm text-gray-400">
                 <p className="text-xs font-bold tracking-widest text-gray-500">
                   PAST
                 </p>
-                <p>株式会社CoeFont プロダクトマネージャー兼エンジニア</p>
                 <p>（元）ピクシブ株式会社 iOSアプリエンジニア</p>
               </div>
             </div>
@@ -109,9 +110,7 @@ const Component: React.FC = () => {
               <span className="block">
                 暗号化ファイル共有サービス。パスワードや共有リンクが不要な仕組みでリスクを根絶できます。
               </span>
-              <span className="block mt-1 text-xs text-gray-400">
-                by IDEOJ
-              </span>
+              <span className="block mt-1 text-xs text-gray-400">by IDEOJ</span>
             </span>
             <span
               aria-hidden
