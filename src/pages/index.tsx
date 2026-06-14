@@ -75,7 +75,7 @@ const Component: React.FC = () => {
                   PAST
                 </p>
                 <p>株式会社CoeFont プロダクトマネージャー兼エンジニア</p>
-                <p>ピクシブ株式会社 iOSアプリエンジニア</p>
+                <p>（元）ピクシブ株式会社 iOSアプリエンジニア</p>
               </div>
             </div>
 
