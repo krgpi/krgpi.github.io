@@ -46,14 +46,15 @@ const Component: React.FC = () => {
                             <p className="text-lg">
                                 <span className="text-gray-400">
                                     {" "}
-                                    Tokyo, Japan
+                                    Tokyo, Japan |
+                                    ソフトウェアエンジニア・プロダクトマネージャー
                                 </span>
                             </p>
                             <p className="text-sm italic text-krg-link-orange/90">
                                 Building products. Catalyzing teams.
                             </p>
                             <p>
-                                大学生のときに始めたiOSアプリエンジニアからソフトウェア開発のキャリアをスタート。いくつかのスタートアップ立ち上げを経験し、現在はフリーランスのプロダクトマネージャーやアドバイザーとして、自律的組織を目指す開発組織の成長にコミットしています。
+                                AIの組織的活用+自律型組織を目指す開発チームの成長を支援しています。フリーランスでプロダクトマネージャー・外部顧問(アドバイザー・メンター・アジャイルコーチなど)やってます。
                             </p>
                         </div>
 
@@ -72,11 +73,6 @@ const Component: React.FC = () => {
                                         株式会社IDEOJ
                                     </a>{" "}
                                     代表取締役
-                                </p>
-                                <p>ソフトウェアエンジニア</p>
-                                <p>プロダクトマネージャー</p>
-                                <p>
-                                    ソフトウェア開発チームゼネラルアドバイザー
                                 </p>
                             </div>
                             <div className="space-y-2 text-sm leading-relaxed text-gray-300">
