@@ -5,7 +5,7 @@ const Component: React.FC = () => {
     useDocumentMeta({
         title: "Karaage (からあげ / Yuki NOAKI) - Product Manager / Product Builder Portfolio",
         description:
-            "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。東京を拠点に活動するソフトウェアエンジニア・プロダクトマネージャー。株式会社IDEOJ 創業者、CoeFontでのプロダクトマネジメントとエンジニアリング、フリーランスでのWeb / iOS / macOSアプリ開発を行っています。",
+            "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。E2EEファイル共有「カギスル」主宰。AIスタートアップでPO・PdM・EMを経験し、AIの組織的活用+自律型組織を目指す開発チームを支援。株式会社IDEOJ 代表取締役。",
         canonical: "https://krgpi.github.io/",
         ogImage: "https://krgpi.github.io/icon.png",
     });
@@ -45,13 +45,11 @@ const Component: React.FC = () => {
                             </p>
                             <p className="text-lg">
                                 <span className="text-gray-400">
-                                    {" "}
-                                    Tokyo, Japan |
-                                    ソフトウェアエンジニア・プロダクトマネージャー
+                                    Tokyo, Japan
                                 </span>
                             </p>
                             <p>
-                                AIの組織的活用+自律型組織を目指す開発チームの成長を支援しています。フリーランスでプロダクトマネージャー・外部顧問(アドバイザー・メンター・アジャイルコーチなど)やってます。
+                                E2EEファイル共有「カギスル」主宰。AIスタートアップでPO・PdM・EMなどを経験。AIの組織的活用+自律型組織を目指す開発チームを支援しています。
                             </p>
                         </div>
 
@@ -60,52 +58,36 @@ const Component: React.FC = () => {
                                 <p className="text-xs font-bold tracking-widest text-gray-400">
                                     NOW
                                 </p>
-                                <p>
-                                    <a
-                                        className="font-bold text-krg-link-orange hover:underline"
-                                        href="https://ideoj.co.jp"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        株式会社IDEOJ
-                                    </a>{" "}
-                                    代表取締役
-                                </p>
+                                <ul className="list-disc list-inside space-y-1 text-sm">
+                                    <li>
+                                        プロダクトエンジニア・プロダクトマネージャー・アドバイザー
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="font-bold text-krg-link-orange hover:underline"
+                                            href="https://ideoj.co.jp"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            株式会社IDEOJ
+                                        </a>{" "}
+                                        代表取締役
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="space-y-2 text-sm leading-relaxed text-gray-300">
-                                <div className="space-y-1">
-                                    <p className="font-bold text-gray-200">
-                                        AI開発組織生産性向上アドバイザー
-                                    </p>
-                                    <p>
-                                        開発組織での組織的なAI活用について、各組織の実態に合わせてコーチング・導入設計・支援を行います。
-                                    </p>
-                                </div>
-                                <div className="space-y-1">
-                                    <p className="font-bold text-gray-200">
-                                        プロダクトマネジメントアドバイザー
-                                    </p>
-                                    <p>
-                                        開発組織の体制・プロダクトマネジメント・プロジェクト推進・意思決定プロセスなどの設計や運営を、外部から監修・支援します。仕組みで自律的組織を作ることに重きを置きます。
-                                    </p>
-                                </div>
-                            </div>
-                            <hr className="border-gray-700" />
                             <details className="text-sm leading-relaxed text-gray-300">
                                 <summary className="cursor-pointer text-gray-400 hover:text-gray-200">
                                     Detail
                                 </summary>
                                 <div className="mt-3 space-y-3">
                                     <p>
-                                        エンジニアリングマネージャー・プロダクトマネージャー・スクラムマスター・プロダクトオーナー・経営者としての経験を活かし、「エンジニアリングを土台にした意思決定」と「組織に仕組みを埋め込む」ことが自分の強みだと確信しています。
-                                        それぞれの立場を経験してきたことから、各レイヤー間のコミュニケーションや開発プロセス全体がより円滑に回るようなコーチングを得意としております。
-                                        具体的には、各レイヤーのメンバーとの1on1などを通じて、現状の課題に合わせた方法論やオペレーション改善案をご提案したり、場合によっては新しい進め方を一緒に考える壁打ち相手を務めさせていただくこともできます。
+                                        EM・PdM・スクラムマスター・PO・経営者としての経験から、「エンジニアリングを土台にした意思決定」と「組織に仕組みを埋め込む」ことを強みとしています。各レイヤーを横断してきた経験を活かし、開発プロセス全体が円滑に回る仕組みづくりに取り組んでいます。
                                     </p>
                                     <p>
                                         2025年以降、Claude
                                         Codeが実用段階に入ったタイミングで、Coding
                                         Agentを個人の生産性ハックに閉じさせず「エージェント定義のリポジトリ化」「レビュー知見のAIプロンプト化」など組織の集合知として育てる取り組みを主導してきました。
-                                        生成AI活用は「どのツールを使うか」ではなく「ワークフロー全体を再設計し、AIを組織で育てていく体制をつくること」が本質だと考えています。PdMとしてのプロダクト改善サイクル設計と、エンジニアマネージャーとしての実装経験をしてきた立場から、開発組織がAI駆動開発に移行するための支援をしていきたいと考えています。
+                                        生成AI活用は「どのツールを使うか」ではなく「ワークフロー全体を再設計し、AIを組織で育てていく体制をつくること」が本質だと考えています。
                                     </p>
                                 </div>
                             </details>
@@ -139,6 +121,9 @@ const Component: React.FC = () => {
             <section className="space-y-4">
                 <h2 className="text-3xl font-area_ext">Works</h2>
                 <hr />
+                <p className="text-sm leading-relaxed text-gray-300">
+                    ミニマリストで、プライバシーファーストなソフトウェアづくりを目指しています。-- OS標準機能を活かし、依存を最小にし、息の長いものを作ること。データの寿命はサービスより長いから、所有権はユーザーにあるべきで、互換性のある形式で持ち出せること。
+                </p>
                 <div className="space-y-4">
                     <a
                         href="https://kagisuru.com"
