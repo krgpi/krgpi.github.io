@@ -19,6 +19,10 @@ export type Path =
   | `/works/deskstick/en/english`
   | `/works/deskstick/japanese`
   | `/works/deskstick/privacy`
+  | `/works/fennec`
+  | `/works/fennec/en`
+  | `/works/fennec/en/english`
+  | `/works/fennec/japanese`
   | `/works/polarisetter`
   | `/works/polarisetter/en`
   | `/works/polarisetter/en/english`

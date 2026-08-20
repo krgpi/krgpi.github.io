@@ -1,0 +1,39 @@
+## Philosophy
+
+- **On-device first** — Recording, transcription, diarization, and translation all run locally. Only minutes generation calls out, and only to the agent CLI you already trust.
+- **Files, not a database** — One folder per session. Audio, transcripts, and `minutes.md` sit right there — readable and greppable without the app.
+- **Works with any call app** — Captures system audio at the OS level, so Zoom, Meet, Teams, Discord, LINE, and FaceTime all just work.
+- **Scriptable** — The `fennec` CLI and hooks let you drive recording and wire it into your own automation.
+
+## Features
+
+- **Dual-stream capture** — System audio (their voice) + microphone (your voice), recorded together. No virtual audio device (BlackHole, VB-CABLE) to install or route through
+- **Real-time transcription** — Live transcription with whisper.cpp (all platforms) or Apple Speech Recognition (macOS 26+)
+- **High-accuracy transcription** — Post-recording transcription with Whisper Small / Large V3 (Turbo) models
+- **AI meeting minutes** — Generate minutes via Claude Code / Codex / Gemini CLI, with context from previous meetings
+- **Live translation** — On-device translation of foreign-language speech (macOS)
+- **Speaker diarization** — Identify who said what (sherpa-onnx)
+- **Calendar integration** — Detect video meetings and remind you to start recording
+- **Tray / menu bar** — Runs in the background with a tray icon
+- **CLI** — Control the app from your terminal or scripts
+
+## Install
+
+### macOS — Homebrew
+
+```bash
+brew tap krgpi/tap
+brew install --cask fennec
+```
+
+### Windows
+
+Download and run the `.exe` or `.msi` installer from [GitHub Releases](https://github.com/krgpi/fennec/releases).
+
+### Linux
+
+Download the `.deb` or `.rpm` package from [GitHub Releases](https://github.com/krgpi/fennec/releases). PipeWire is required for system audio capture.
+
+## Feedback & Bug Reports
+
+Please reach out via [Twitter(@krgpi)](https://twitter.com/krgpi) or [GitHub Issues](https://github.com/krgpi/fennec/issues).

@@ -157,6 +157,34 @@ const Component: React.FC = () => {
                     </a>
 
                     <a
+                        href="/works/fennec"
+                        className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
+                    >
+                        <img
+                            src="/fennec-icon.png"
+                            alt=""
+                            aria-hidden
+                            className="shrink-0 w-12 h-12 rounded-xl"
+                        />
+                        <span className="flex-1">
+                            <span className="block font-bold group-hover:underline">
+                                Fennec
+                            </span>
+                            <span className="block">
+                                ローカル文字起こし &
+                                AI議事録アプリ。macOS / Windows /
+                                Linux対応。すべての処理がデバイス上で完結。
+                            </span>
+                        </span>
+                        <span
+                            aria-hidden
+                            className="shrink-0 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-krg-link-orange"
+                        >
+                            →
+                        </span>
+                    </a>
+
+                    <a
                         href="/works/deskstick"
                         className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
                     >
