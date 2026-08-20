@@ -1,13 +1,10 @@
 import type React from "react";
 import { useDocumentMeta } from "../_components/useDocumentMeta";
+import { getRouteMeta } from "../_data/routeMeta";
 
 const Component: React.FC = () => {
     useDocumentMeta({
-        title: "Karaage (からあげ / Yuki NOAKI) - Product Manager / Product Builder Portfolio",
-        description:
-            "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。E2EEファイル共有「カギスル」主宰。AIスタートアップでPO・PdM・EMを経験し、AIの組織的活用+自律型組織を目指す開発チームを支援。株式会社IDEOJ 代表取締役。",
-        canonical: "https://krgpi.github.io/",
-        ogImage: "https://krgpi.github.io/icon.png",
+        ...getRouteMeta("/"),
     });
 
     return (
@@ -157,7 +154,7 @@ const Component: React.FC = () => {
                     </a>
 
                     <a
-                        href="/works/fennec"
+                        href="/works/fennec/"
                         className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
                     >
                         <img
@@ -185,7 +182,7 @@ const Component: React.FC = () => {
                     </a>
 
                     <a
-                        href="/works/deskstick"
+                        href="/works/deskstick/"
                         className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
                     >
                         <img
@@ -214,7 +211,7 @@ const Component: React.FC = () => {
                     </a>
 
                     <a
-                        href="/works/polarisetter"
+                        href="/works/polarisetter/"
                         className="group flex items-center gap-4 -mx-2 rounded-lg px-2 py-2 text-sm font-sans hover:bg-white/5"
                     >
                         <img

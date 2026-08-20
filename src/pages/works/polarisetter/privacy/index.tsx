@@ -1,16 +1,12 @@
 import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../../_data/routeMeta";
 
 const LAST_UPDATED = "May 6, 2026";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title: "Privacy Policy — Polarisetter | Karaage's Library",
-    description:
-      "Privacy Policy for Polarisetter, an iOS companion app showing true north and level for telescope setup. Learn how the app handles location data, sensors, and contact information.",
-    canonical: "https://krgpi.github.io/works/polarisetter/privacy",
-    ogImage: "https://krgpi.github.io/polarisetter-screenshot.png",
-    favicon: "/polarisetter-icon-ios.png",
+    ...getRouteMeta("/works/polarisetter/privacy/"),
   });
 
   return (
@@ -18,7 +14,7 @@ const Component: React.FC = () => {
       <header className="space-y-2 max-w-prose">
         <p className="text-sm text-gray-500">
           <a
-            href="/works/polarisetter/en"
+            href="/works/polarisetter/en/"
             className="text-krg-link-orange hover:underline"
           >
             ← Back to Polarisetter
@@ -133,7 +129,7 @@ const Component: React.FC = () => {
             date at the top of this page reflects the most recent revision.
             Material changes will also be noted on the{" "}
             <a
-              href="/works/polarisetter/en"
+              href="/works/polarisetter/en/"
               className="text-krg-link-orange hover:underline"
             >
               Polarisetter page
@@ -149,7 +145,10 @@ const Component: React.FC = () => {
             <code>krgpi.github.io</code>), which is separate from the
             Polarisetter app itself. For details on how the website handles
             visitor data — including aggregate analytics — please see the{" "}
-            <a href="/privacy" className="text-krg-link-orange hover:underline">
+            <a
+              href="/privacy/"
+              className="text-krg-link-orange hover:underline"
+            >
               site privacy policy
             </a>
             . The app on your device is not affected by website analytics.

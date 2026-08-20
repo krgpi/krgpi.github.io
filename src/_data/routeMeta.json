@@ -1,0 +1,142 @@
+{
+  "/": {
+    "title": "Karaage (からあげ / Yuki NOAKI) - Product Manager / Product Builder Portfolio",
+    "description": "Karaage（からあげ / Yuki NOAKI）のポートフォリオ。E2EEファイル共有「カギスル」主宰。AIスタートアップでPO・PdM・EMを経験し、AIの組織的活用+自律型組織を目指す開発チームを支援。株式会社IDEOJ 代表取締役。",
+    "ogImage": "https://krgpi.github.io/icon.png",
+    "priority": "1.0",
+    "changefreq": "monthly"
+  },
+  "/works/": {
+    "title": "Works - 作ったもの | Karaage's Library",
+    "description": "Karaage（からあげ / Yuki NOAKI）が個人または自ら立ち上げたチームで作ってきたプロダクトの一覧。Fennec、DeskStick、Polarisetter などのアプリや、Letero.jp をはじめとする過去のWebサービスを、年代順に背景とあわせて紹介しています。",
+    "ogImage": "https://krgpi.github.io/icon.png",
+    "priority": "0.8",
+    "changefreq": "monthly"
+  },
+  "/works/fennec/": {
+    "title": "Fennec - ローカル文字起こし & AI議事録アプリ (macOS / Windows / Linux) | Karaage's Library",
+    "description": "Fennec はシステム音声とマイク入力を同時にキャプチャし、リアルタイムおよび録音後の音声テキスト変換を行うデスクトップアプリです。macOS・Windows・Linuxに対応。すべての処理はデバイス上で実行され、データは外部サーバーに送信されません。",
+    "ogImage": "https://krgpi.github.io/fennec-icon.png",
+    "favicon": "/fennec-icon.png",
+    "priority": "0.8",
+    "changefreq": "yearly",
+    "alternates": { "ja": "/works/fennec/", "en": "/works/fennec/en/" }
+  },
+  "/works/fennec/en/": {
+    "title": "Fennec - Local transcription & AI meeting notes for macOS, Windows, and Linux | Karaage's Library",
+    "description": "Fennec captures system audio and microphone input simultaneously, with real-time and post-recording speech-to-text. All audio processing runs on-device — recordings and transcripts never leave your machine. Available for macOS, Windows, and Linux.",
+    "ogImage": "https://krgpi.github.io/fennec-icon.png",
+    "favicon": "/fennec-icon.png",
+    "lang": "en",
+    "priority": "0.7",
+    "changefreq": "yearly",
+    "alternates": { "ja": "/works/fennec/", "en": "/works/fennec/en/" }
+  },
+  "/works/deskstick/": {
+    "title": "DeskStick - AIプロンプト・出力の一時メモに使えるiCloud同期付箋アプリ (macOS) | Karaage's Library",
+    "description": "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる macOS 向けの付箋（sticky notes）アプリです。複数のMac間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからの一覧表示で素早くアクセスできます。無料でダウンロードできます。",
+    "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
+    "favicon": "/deskstick-icon-mac.png",
+    "priority": "0.8",
+    "changefreq": "yearly",
+    "alternates": { "ja": "/works/deskstick/", "en": "/works/deskstick/en/" }
+  },
+  "/works/deskstick/en/": {
+    "title": "DeskStick - iCloud-synced sticky notes for AI prompts & scratchpads on macOS | Karaage's Library",
+    "description": "DeskStick is an iCloud-synced sticky notes app for macOS, perfect for keeping AI prompts (ChatGPT, Claude, Gemini) and LLM outputs as quick scratchpads. Sync notes across multiple Macs, pin them on top, color-code, and access everything from the menubar. Free download. Built by Karaage.",
+    "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
+    "favicon": "/deskstick-icon-mac.png",
+    "lang": "en",
+    "priority": "0.7",
+    "changefreq": "yearly",
+    "alternates": { "ja": "/works/deskstick/", "en": "/works/deskstick/en/" }
+  },
+  "/works/deskstick/privacy/": {
+    "title": "Privacy Policy — DeskStick | Karaage's Library",
+    "description": "Privacy Policy for DeskStick, an iCloud-synced sticky notes app for macOS. Learn how the app handles your notes, iCloud sync, automatic updates, and contact information.",
+    "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
+    "favicon": "/deskstick-icon-mac.png",
+    "lang": "en",
+    "priority": "0.3",
+    "changefreq": "yearly"
+  },
+  "/works/polarisetter/": {
+    "title": "Polarisetter - 天体観測のための真北＆水平コンパスアプリ (iOS) | Karaage's Library",
+    "description": "Polarisetter は天体望遠鏡を屋外で組み立てるときに「真北」と「水平」をひと目で確認できる、観測者のための iOS 向け補助コンパスアプリです。磁北を真北に補正し、水平インジケーターと組み合わせることで、赤道儀の極軸合わせや三脚のセッティングを暗闇の中でもスムーズに進められます。暗順応を妨げない赤い文字×黒背景の UI を採用しています。",
+    "ogImage": "https://krgpi.github.io/polarisetter-screenshot.png",
+    "favicon": "/polarisetter-icon-ios.png",
+    "priority": "0.8",
+    "changefreq": "yearly",
+    "alternates": {
+      "ja": "/works/polarisetter/",
+      "en": "/works/polarisetter/en/"
+    }
+  },
+  "/works/polarisetter/en/": {
+    "title": "Polarisetter - True north & level companion for telescope setup (iOS) | Karaage's Library",
+    "description": "Polarisetter is an iOS companion app for setting up a telescope at night. It shows true north (declination-corrected) and the device's level on a single dark-sky-friendly screen, so you can polar-align an equatorial mount quickly in the dark. Black background with red text — designed not to wreck your night vision.",
+    "ogImage": "https://krgpi.github.io/polarisetter-screenshot.png",
+    "favicon": "/polarisetter-icon-ios.png",
+    "lang": "en",
+    "priority": "0.7",
+    "changefreq": "yearly",
+    "alternates": {
+      "ja": "/works/polarisetter/",
+      "en": "/works/polarisetter/en/"
+    }
+  },
+  "/works/polarisetter/privacy/": {
+    "title": "Privacy Policy — Polarisetter | Karaage's Library",
+    "description": "Privacy Policy for Polarisetter, an iOS companion app showing true north and level for telescope setup. Learn how the app handles location data, sensors, and contact information.",
+    "ogImage": "https://krgpi.github.io/polarisetter-screenshot.png",
+    "favicon": "/polarisetter-icon-ios.png",
+    "lang": "en",
+    "priority": "0.3",
+    "changefreq": "yearly"
+  },
+  "/downloads/deskstick/": {
+    "title": "DeskStick Releases - macOS版ダウンロード一覧 (DMG / ZIP) | Karaage's Library",
+    "description": "DeskStick（iCloud 同期対応の macOS 向け付箋アプリ）の最新版および過去バージョンのダウンロードページ。DMG インストーラ・ZIP・Sparkle 自動アップデート対応。AIプロンプトや LLM 出力の一時メモに使えます。",
+    "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
+    "favicon": "/deskstick-icon-mac.png",
+    "priority": "0.8",
+    "changefreq": "monthly"
+  },
+  "/activities/": {
+    "title": "Activity Log - 執筆・登壇・写真などの活動記録 | Karaage's Library",
+    "description": "Karaage（からあげ / Yuki NOAKI）のエンジニアリング・写真まわりの活動記録。ブログ、技術記事、コミュニティ活動、写真作品の公開先へのリンクをまとめています。",
+    "ogImage": "https://krgpi.github.io/icon.png",
+    "priority": "0.6",
+    "changefreq": "monthly"
+  },
+  "/gallery/": {
+    "title": "Gallery - 写真作品 | Karaage's Library",
+    "description": "Karaage（からあげ / Yuki NOAKI）が撮影した写真作品のギャラリー。風景・スナップを中心に Flickr で公開している写真を掲載しています。",
+    "ogImage": "https://krgpi.github.io/icon.png",
+    "priority": "0.5",
+    "changefreq": "monthly"
+  },
+  "/privacy/": {
+    "title": "Privacy Policy | Karaage's Library",
+    "description": "Karaage (Yuki NOAKI) のポートフォリオサイト krgpi.github.io のプライバシーポリシー。アクセス解析、利用しているサービス、Cookieの取り扱いについて記載しています。",
+    "ogImage": "https://krgpi.github.io/icon.png",
+    "priority": "0.3",
+    "changefreq": "yearly"
+  },
+  "/works/cloudstickies/": {
+    "title": "DeskStick へ移動しています | Karaage's Library",
+    "noindex": true
+  },
+  "/works/cloudstickies/en/": {
+    "title": "Redirecting to DeskStick | Karaage's Library",
+    "noindex": true
+  },
+  "/works/cloudstickies/privacy/": {
+    "title": "Redirecting to DeskStick Privacy Policy | Karaage's Library",
+    "noindex": true
+  },
+  "/downloads/cloudstickies/": {
+    "title": "DeskStick Releases へ移動しています | Karaage's Library",
+    "noindex": true
+  }
+}

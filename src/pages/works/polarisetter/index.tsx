@@ -1,20 +1,15 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
 import { useDocumentMeta } from "../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../mdx-components";
-import Japanese from "./japanese.mdx";
+import Japanese from "./_japanese.mdx";
 
 const APP_STORE_URL = "https://apps.apple.com/app/id6766741368";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "Polarisetter - 天体観測のための真北＆水平コンパスアプリ (iOS) | Karaage's Library",
-    description:
-      "Polarisetter は天体望遠鏡を屋外で組み立てるときに「真北」と「水平」をひと目で確認できる、観測者のための iOS 向け補助コンパスアプリです。磁北を真北に補正し、水平インジケーターと組み合わせることで、赤道儀の極軸合わせや三脚のセッティングを暗闇の中でもスムーズに進められます。暗順応を妨げない赤い文字×黒背景の UI を採用しています。",
-    canonical: "https://krgpi.github.io/works/polarisetter",
-    ogImage: "https://krgpi.github.io/polarisetter-screenshot.png",
-    favicon: "/polarisetter-icon-ios.png",
+    ...getRouteMeta("/works/polarisetter/"),
     jsonLdId: "polarisetter",
     jsonLd: {
       "@context": "https://schema.org",
@@ -24,8 +19,6 @@ const Component: React.FC = () => {
       applicationSubCategory: "Astronomy",
       operatingSystem: "iOS, iPadOS",
       softwareVersion: "1.0",
-      description:
-        "天体望遠鏡を屋外で組み立てるときに「真北」と「水平」を 1 画面で確認できる iOS 向け補助コンパス Polarisetter。磁北を真北に補正し、水準器と組み合わせて赤道儀の極軸合わせをスムーズにします。暗順応を妨げない赤×黒の UI。",
       keywords:
         "天体観測, 望遠鏡, 真北, コンパス, 水準器, 赤道儀, 極軸合わせ, 星空, 夜空, 赤色 LED",
       featureList: [
@@ -39,14 +32,14 @@ const Component: React.FC = () => {
         price: "0",
         priceCurrency: "JPY",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/polarisetter",
+        url: "https://krgpi.github.io/works/polarisetter/",
       },
       author: {
         "@type": "Person",
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/polarisetter",
+      url: "https://krgpi.github.io/works/polarisetter/",
       image: "https://krgpi.github.io/polarisetter-screenshot.png",
       inLanguage: ["ja", "en"],
     },
@@ -60,7 +53,7 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/polarisetter/en"
+            href="/works/polarisetter/en/"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
             English version →

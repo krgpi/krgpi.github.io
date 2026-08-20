@@ -30,6 +30,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # sitemap の lastmod を git 履歴から算出するため全履歴が必要
+          fetch-depth: 0
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:

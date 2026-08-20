@@ -1,16 +1,12 @@
 import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../../_data/routeMeta";
 
 const LAST_UPDATED = "April 27, 2026";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title: "Privacy Policy — DeskStick | Karaage's Library",
-    description:
-      "Privacy Policy for DeskStick, an iCloud-synced sticky notes app for macOS. Learn how the app handles your notes, iCloud sync, automatic updates, and contact information.",
-    canonical: "https://krgpi.github.io/works/deskstick/privacy",
-    ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
-    favicon: "/deskstick-icon-mac.png",
+    ...getRouteMeta("/works/deskstick/privacy/"),
   });
 
   return (
@@ -18,7 +14,7 @@ const Component: React.FC = () => {
       <header className="space-y-2 max-w-prose">
         <p className="text-sm text-gray-500">
           <a
-            href="/works/deskstick/en"
+            href="/works/deskstick/en/"
             className="text-krg-link-orange hover:underline"
           >
             ← Back to DeskStick
@@ -38,7 +34,7 @@ const Component: React.FC = () => {
             NOAKI), handles information when you use the app. The app is
             distributed for free from{" "}
             <a
-              href="https://krgpi.github.io/works/deskstick"
+              href="https://krgpi.github.io/works/deskstick/"
               className="text-krg-link-orange hover:underline"
             >
               krgpi.github.io
@@ -180,7 +176,7 @@ const Component: React.FC = () => {
             date at the top of this page reflects the most recent revision.
             Material changes will also be noted on the{" "}
             <a
-              href="/works/deskstick/en"
+              href="/works/deskstick/en/"
               className="text-krg-link-orange hover:underline"
             >
               DeskStick page
@@ -196,7 +192,10 @@ const Component: React.FC = () => {
             <code>krgpi.github.io</code>), which is separate from the DeskStick
             app itself. For details on how the website handles visitor data —
             including aggregate analytics — please see the{" "}
-            <a href="/privacy" className="text-krg-link-orange hover:underline">
+            <a
+              href="/privacy/"
+              className="text-krg-link-orange hover:underline"
+            >
               site privacy policy
             </a>
             . The app on your Mac is not affected by website analytics.

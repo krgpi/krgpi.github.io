@@ -1,7 +1,10 @@
 import type React from "react";
+import { useDocumentMeta } from "../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../_data/routeMeta";
 import { Link } from "../../router";
 
 const IndexPage: React.FC = () => {
+  useDocumentMeta(getRouteMeta("/activities/"));
   return (
     <div className="not-prose max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8">
       <section className="space-y-3">
