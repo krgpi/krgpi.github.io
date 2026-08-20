@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://krgpi.github.io/sitemap_index.xml
 Sitemap: https://krgpi.github.io/sitemap.xml

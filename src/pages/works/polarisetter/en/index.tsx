@@ -1,20 +1,15 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
-import English from "./english.mdx";
+import English from "./_english.mdx";
 
 const APP_STORE_URL = "https://apps.apple.com/app/id6766741368";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "Polarisetter - True north & level companion for telescope setup (iOS) | Karaage's Library",
-    description:
-      "Polarisetter is an iOS companion app for setting up a telescope at night. It shows true north (declination-corrected) and the device's level on a single dark-sky-friendly screen, so you can polar-align an equatorial mount quickly in the dark. Black background with red text — designed not to wreck your night vision.",
-    canonical: "https://krgpi.github.io/works/polarisetter/en",
-    ogImage: "https://krgpi.github.io/polarisetter-screenshot.png",
-    favicon: "/polarisetter-icon-ios.png",
+    ...getRouteMeta("/works/polarisetter/en/"),
     jsonLdId: "polarisetter-en",
     jsonLd: {
       "@context": "https://schema.org",
@@ -24,8 +19,6 @@ const Component: React.FC = () => {
       applicationSubCategory: "Astronomy",
       operatingSystem: "iOS, iPadOS",
       softwareVersion: "1.0",
-      description:
-        "Polarisetter — an iOS companion app that shows true north (declination-corrected) and the device's level on one screen for polar-aligning a telescope at night. Dark-sky friendly red-on-black UI.",
       keywords:
         "astronomy, telescope, true north, compass, level, stargazing, polar align, equatorial mount, night sky, red light",
       featureList: [
@@ -39,14 +32,14 @@ const Component: React.FC = () => {
         price: "0",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/polarisetter/en",
+        url: "https://krgpi.github.io/works/polarisetter/en/",
       },
       author: {
         "@type": "Person",
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/polarisetter/en",
+      url: "https://krgpi.github.io/works/polarisetter/en/",
       image: "https://krgpi.github.io/polarisetter-screenshot.png",
       inLanguage: "en",
     },
@@ -60,7 +53,7 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/polarisetter"
+            href="/works/polarisetter/"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
             日本語版 →

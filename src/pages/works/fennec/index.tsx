@@ -1,20 +1,15 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
 import { useDocumentMeta } from "../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../mdx-components";
-import Japanese from "./japanese.mdx";
+import Japanese from "./_japanese.mdx";
 
 const GITHUB_URL = "https://github.com/krgpi/fennec/releases";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "Fennec - ローカル文字起こし & AI議事録アプリ (macOS / Windows / Linux) | Karaage's Library",
-    description:
-      "Fennec はシステム音声とマイク入力を同時にキャプチャし、リアルタイムおよび録音後の音声テキスト変換を行うデスクトップアプリです。macOS・Windows・Linuxに対応。すべての処理はデバイス上で実行され、データは外部サーバーに送信されません。",
-    canonical: "https://krgpi.github.io/works/fennec",
-    ogImage: "https://krgpi.github.io/fennec-icon.png",
-    favicon: "/fennec-icon.png",
+    ...getRouteMeta("/works/fennec/"),
     jsonLdId: "fennec",
     jsonLd: {
       "@context": "https://schema.org",
@@ -23,8 +18,6 @@ const Component: React.FC = () => {
       applicationCategory: "ProductivityApplication",
       applicationSubCategory: "Transcription",
       operatingSystem: "macOS, Windows, Linux",
-      description:
-        "ローカル文字起こし & AI議事録アプリ。システム音声とマイク入力を同時にキャプチャし、リアルタイムおよび録音後の音声テキスト変換を実行。macOS・Windows・Linuxに対応。すべての処理はデバイス上で完結し、データは外部に送信されません。",
       keywords:
         "文字起こし, 議事録, macOS, Windows, Linux, whisper.cpp, ローカル処理, 音声認識, AI議事録, 話者分離, リアルタイム翻訳",
       featureList: [
@@ -43,14 +36,14 @@ const Component: React.FC = () => {
         price: "0",
         priceCurrency: "JPY",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/fennec",
+        url: "https://krgpi.github.io/works/fennec/",
       },
       author: {
         "@type": "Person",
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/fennec",
+      url: "https://krgpi.github.io/works/fennec/",
       image: "https://krgpi.github.io/fennec-icon.png",
       inLanguage: ["ja", "en"],
     },
@@ -64,7 +57,7 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/fennec/en"
+            href="/works/fennec/en/"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
             English version →

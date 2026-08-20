@@ -1,5 +1,6 @@
 import type React from "react";
 import { useDocumentMeta } from "../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../_data/routeMeta";
 
 const ASSET_BASE = "https://krgpi.github.io/releases/cloudstickies";
 
@@ -25,13 +26,7 @@ const PREVIOUS_DMG_RELEASES: { version: string; url: string }[] = [
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "DeskStick Releases - macOS版ダウンロード一覧 (DMG / ZIP) | Karaage's Library",
-    description:
-      "DeskStick（iCloud 同期対応の macOS 向け付箋アプリ）の最新版および過去バージョンのダウンロードページ。DMG インストーラ・ZIP・Sparkle 自動アップデート対応。AIプロンプトや LLM 出力の一時メモに使えます。",
-    canonical: "https://krgpi.github.io/releases/deskstick",
-    ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
-    favicon: "/deskstick-icon-mac.png",
+    ...getRouteMeta("/downloads/deskstick/"),
     jsonLdId: "deskstick-releases",
     jsonLd: {
       "@context": "https://schema.org",
@@ -48,7 +43,7 @@ const Component: React.FC = () => {
         priceCurrency: "JPY",
         availability: "https://schema.org/InStock",
       },
-      url: "https://krgpi.github.io/releases/deskstick",
+      url: "https://krgpi.github.io/downloads/deskstick/",
       image: "https://krgpi.github.io/stickies-on-the-desktop.png",
       author: {
         "@type": "Person",
@@ -236,14 +231,14 @@ const Component: React.FC = () => {
           製品の特徴・使い方は{" "}
           <a
             className="text-krg-link-orange hover:underline"
-            href="/works/deskstick"
+            href="/works/deskstick/"
           >
             DeskStick の紹介ページ
           </a>{" "}
           をご覧ください。English guide is{" "}
           <a
             className="text-krg-link-orange hover:underline"
-            href="/works/deskstick/en"
+            href="/works/deskstick/en/"
           >
             here
           </a>

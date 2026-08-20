@@ -1,20 +1,15 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
-import English from "./english.mdx";
+import English from "./_english.mdx";
 
 const GITHUB_URL = "https://github.com/krgpi/fennec/releases";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "Fennec - Local transcription & AI meeting notes for macOS, Windows, and Linux | Karaage's Library",
-    description:
-      "Fennec captures system audio and microphone input simultaneously, with real-time and post-recording speech-to-text. All audio processing runs on-device — recordings and transcripts never leave your machine. Available for macOS, Windows, and Linux.",
-    canonical: "https://krgpi.github.io/works/fennec/en",
-    ogImage: "https://krgpi.github.io/fennec-icon.png",
-    favicon: "/fennec-icon.png",
+    ...getRouteMeta("/works/fennec/en/"),
     jsonLdId: "fennec-en",
     jsonLd: {
       "@context": "https://schema.org",
@@ -23,8 +18,6 @@ const Component: React.FC = () => {
       applicationCategory: "ProductivityApplication",
       applicationSubCategory: "Transcription",
       operatingSystem: "macOS, Windows, Linux",
-      description:
-        "Local transcription & AI meeting notes app. Captures system audio and microphone input simultaneously, with real-time and post-recording speech-to-text. All processing runs on-device — recordings and transcripts never leave your machine.",
       keywords:
         "transcription, meeting notes, macOS, Windows, Linux, whisper.cpp, local processing, speech recognition, AI meeting minutes, speaker diarization",
       featureList: [
@@ -43,14 +36,14 @@ const Component: React.FC = () => {
         price: "0",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/fennec/en",
+        url: "https://krgpi.github.io/works/fennec/en/",
       },
       author: {
         "@type": "Person",
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/fennec/en",
+      url: "https://krgpi.github.io/works/fennec/en/",
       image: "https://krgpi.github.io/fennec-icon.png",
       inLanguage: "en",
     },
@@ -64,7 +57,7 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/fennec"
+            href="/works/fennec/"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
             日本語版 →

@@ -6,29 +6,22 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 export type Path =
   | `/`
   | `/activities`
+  | `/downloads/cloudstickies`
+  | `/downloads/deskstick`
   | `/gallery`
   | `/privacy`
-  | `/releases/cloudstickies`
-  | `/releases/deskstick`
   | `/works`
   | `/works/cloudstickies`
   | `/works/cloudstickies/en`
   | `/works/cloudstickies/privacy`
   | `/works/deskstick`
   | `/works/deskstick/en`
-  | `/works/deskstick/en/english`
-  | `/works/deskstick/japanese`
   | `/works/deskstick/privacy`
   | `/works/fennec`
   | `/works/fennec/en`
-  | `/works/fennec/en/english`
-  | `/works/fennec/japanese`
   | `/works/polarisetter`
   | `/works/polarisetter/en`
-  | `/works/polarisetter/en/english`
-  | `/works/polarisetter/japanese`
   | `/works/polarisetter/privacy`
-  | `/works/works`
 
 export type Params = {
   

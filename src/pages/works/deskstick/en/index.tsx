@@ -1,8 +1,9 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
-import English from "./english.mdx";
+import English from "./_english.mdx";
 
 const DOWNLOAD_URL =
   "https://krgpi.github.io/releases/cloudstickies/CloudStickiesInstaller-1.0.4.dmg";
@@ -10,13 +11,7 @@ const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
 
 const Component: React.FC = () => {
   useDocumentMeta({
-    title:
-      "DeskStick - iCloud-synced sticky notes for AI prompts & scratchpads on macOS | Karaage's Library",
-    description:
-      "DeskStick is an iCloud-synced sticky notes app for macOS, perfect for keeping AI prompts (ChatGPT, Claude, Gemini) and LLM outputs as quick scratchpads. Sync notes across multiple Macs, pin them on top, color-code, and access everything from the menubar. Free download. Built by Karaage.",
-    canonical: "https://krgpi.github.io/works/deskstick/en",
-    ogImage: "https://krgpi.github.io/stickies-on-the-desktop.png",
-    favicon: "/deskstick-icon-mac.png",
+    ...getRouteMeta("/works/deskstick/en/"),
     jsonLdId: "deskstick-en",
     jsonLd: {
       "@context": "https://schema.org",
@@ -26,8 +21,6 @@ const Component: React.FC = () => {
       applicationSubCategory: "Note Taking",
       operatingSystem: "macOS, iOS, iPadOS, visionOS",
       softwareVersion: "1.0.6",
-      description:
-        "DeskStick — an iCloud-synced sticky notes app for macOS, iOS, iPadOS, and visionOS. Ideal as a scratchpad for AI prompts and LLM outputs (ChatGPT, Claude, Gemini). Sync prompt snippets and working notes seamlessly across Mac, iPhone, iPad, and Apple Vision Pro, with pinning, color coding, and a menubar overview.",
       keywords:
         "AI prompt notes, ChatGPT scratchpad, Claude prompt manager, LLM scratchpad, sticky notes, macOS, iCloud sync, prompt snippets, quick notes",
       featureList: [
@@ -43,7 +36,7 @@ const Component: React.FC = () => {
         price: "0",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/deskstick/en",
+        url: "https://krgpi.github.io/works/deskstick/en/",
       },
       downloadUrl: DOWNLOAD_URL,
       installUrl: DOWNLOAD_URL,
@@ -52,7 +45,7 @@ const Component: React.FC = () => {
         name: "Karaage",
         url: "https://krgpi.github.io/",
       },
-      url: "https://krgpi.github.io/works/deskstick/en",
+      url: "https://krgpi.github.io/works/deskstick/en/",
       image: "https://krgpi.github.io/stickies-on-the-desktop.png",
       inLanguage: "en",
     },
@@ -66,7 +59,7 @@ const Component: React.FC = () => {
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
-            href="/works/deskstick"
+            href="/works/deskstick/"
             className="absolute top-4 right-4 z-10 inline-flex items-center gap-1 text-krg-link-orange font-bold text-sm sm:text-base hover:underline drop-shadow-lg"
           >
             日本語版 →
@@ -135,7 +128,7 @@ const Component: React.FC = () => {
               macOS auto-updates after install
             </p>
             <a
-              href="/releases/deskstick"
+              href="/downloads/deskstick/"
               className="text-white text-sm underline hover:text-krg-link-orange"
             >
               See all releases →

@@ -1,9 +1,12 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
+import { useDocumentMeta } from "../../_components/useDocumentMeta";
+import { getRouteMeta } from "../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../mdx-components";
-import Works from "./works.mdx";
+import Works from "./_works.mdx";
 
 const Component: React.FC = () => {
+  useDocumentMeta(getRouteMeta("/works/"));
   const defaultComponents = useMDXComponents();
   const components = customMdx(defaultComponents);
   return (
