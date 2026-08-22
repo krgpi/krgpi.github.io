@@ -38,8 +38,8 @@ const Component: React.FC = () => {
         availability: "https://schema.org/InStock",
         url: "https://krgpi.github.io/works/deskstick/",
       },
-      downloadUrl: DOWNLOAD_URL,
-      installUrl: DOWNLOAD_URL,
+      downloadUrl: APP_STORE_URL,
+      installUrl: APP_STORE_URL,
       author: {
         "@type": "Person",
         name: "Karaage",
@@ -82,56 +82,43 @@ const Component: React.FC = () => {
             <p className="text-white text-xl sm:text-2xl font-light break-words">
               AIプロンプトとメモのための、iCloud同期付箋アプリ for macOS
             </p>
-            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
-              <div className="flex flex-col gap-1">
-                <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
-                  Mac
-                </span>
-                <a
-                  href={DOWNLOAD_URL}
-                  download
-                  className="inline-flex items-center justify-center gap-2 bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
-                >
-                  <img
-                    src="/deskstick-icon-mac.png"
-                    alt=""
-                    aria-hidden="true"
-                    width={28}
-                    height={28}
-                    className="w-7 h-7 rounded-md"
-                  />
-                  .dmg をダウンロード（無料）
-                </a>
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
-                  iPhone / iPad / Vision Pro
-                </span>
-                <a
-                  href={APP_STORE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="App Store で DeskStick（iOS / iPadOS / visionOS 版）をダウンロード"
-                  className="inline-flex items-center focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg h-12"
-                >
-                  <img
-                    src="/app-store-badge-ja.svg"
-                    alt="App Store からダウンロード"
-                    className="h-12 w-auto"
-                  />
-                </a>
-              </div>
+            <div className="mt-2 flex flex-col gap-1">
+              <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
+                Mac / iPhone / iPad / Vision Pro
+              </span>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="App Store で DeskStick をダウンロード"
+                className="inline-flex w-fit items-center focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-lg h-12 sm:h-14"
+              >
+                <img
+                  src="/app-store-badge-ja.svg"
+                  alt="App Store からダウンロード"
+                  className="h-12 sm:h-14 w-auto"
+                />
+              </a>
             </div>
             <p className="text-white text-sm">
               macOS 13.0+ / iOS 16.0+ / iPadOS / visionOS / 無料配布 / iCloud
-              同期対応 / macOS はインストール後に自動アップデート
+              同期対応
             </p>
-            <a
-              href="/downloads/deskstick/"
-              className="text-white text-sm underline hover:text-krg-link-orange"
-            >
-              すべてのバージョンを見る / All releases →
-            </a>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-white text-sm">
+              <a
+                href={DOWNLOAD_URL}
+                download
+                className="underline hover:text-krg-link-orange"
+              >
+                .dmg を直接ダウンロード
+              </a>
+              <a
+                href="/downloads/deskstick/"
+                className="underline hover:text-krg-link-orange"
+              >
+                すべてのバージョンを見る / All releases →
+              </a>
+            </div>
           </div>
         </div>
       </div>
