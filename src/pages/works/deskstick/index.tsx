@@ -1,13 +1,13 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
+import { DeskStickScreenshots } from "../../../_components/DeskStickScreenshots";
 import { useDocumentMeta } from "../../../_components/useDocumentMeta";
 import { getRouteMeta } from "../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../mdx-components";
 import Japanese from "./_japanese.mdx";
 
-const DOWNLOAD_URL =
-  "https://krgpi.github.io/releases/cloudstickies/CloudStickiesInstaller-1.0.4.dmg";
 const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
+const HOMEBREW_COMMAND = "brew install --cask krgpi/tap/deskstick";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -20,16 +20,21 @@ const Component: React.FC = () => {
       applicationCategory: "ProductivityApplication",
       applicationSubCategory: "Note Taking",
       operatingSystem: "macOS, iOS, iPadOS, visionOS",
-      softwareVersion: "1.0.6",
       keywords:
-        "AIプロンプト メモ, ChatGPT メモ, Claude プロンプト, LLM スクラッチパッド, 付箋アプリ, sticky notes, macOS, iCloud 同期, プロンプト管理, 一時メモ",
+        "AIプロンプト メモ, ChatGPT メモ, Claude プロンプト, LLM スクラッチパッド, 付箋アプリ, sticky notes, Mac, iPhone, iPad, Apple Vision Pro, macOS, iOS, iPadOS, visionOS, iCloud 同期, プロンプト管理, 一時メモ, ウィジェット, オフライン, Apple Intelligence",
       featureList: [
         "iCloud による Mac・iPhone・iPad・Apple Vision Pro 間の同期",
+        "オフラインでの編集と、再接続時の iCloud への自動反映",
+        "メニューバーからのクイック入力（⌘⏎ で作成）",
+        "2ペインの Organizer で一覧から直接編集・削除",
+        "付箋のピン留め（常に最前面表示・⌘P で切り替え）",
+        "付箋の色分け整理",
+        "Apple Intelligence による要約タイトル（macOS 26 以降）",
+        "メニューバー / Dock アイコンの表示切り替え",
+        "iPhone・iPad のホーム画面／ロック画面ウィジェット",
+        "リスト表示とグリッド表示の切り替え（iPhone・iPad）",
         "AIプロンプトのスニペット保存",
         "LLM出力の一時メモ・スクラッチパッド",
-        "付箋のピン留め（常に最前面表示）",
-        "付箋の色分け整理",
-        "メニューバーからの一覧表示",
       ],
       offers: {
         "@type": "Offer",
@@ -80,7 +85,7 @@ const Component: React.FC = () => {
               アイデアもプロンプトも、AIの出力も、ぜんぶ貼っておく。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              AIプロンプトとメモのための、iCloud同期付箋アプリ for macOS
+              AIプロンプトとメモのための、iCloud同期付箋アプリ for Apple デバイス
             </p>
             <div className="mt-2 flex flex-col gap-1">
               <span className="text-white/80 text-xs font-semibold tracking-wide uppercase leading-4 h-4">
@@ -104,25 +109,23 @@ const Component: React.FC = () => {
               macOS 13.0+ / iOS 16.0+ / iPadOS / visionOS / 無料配布 / iCloud
               同期対応
             </p>
-            <div className="flex flex-wrap gap-x-4 gap-y-1 text-white text-sm">
-              <a
-                href={DOWNLOAD_URL}
-                download
-                className="underline hover:text-krg-link-orange"
-              >
-                .dmg を直接ダウンロード
-              </a>
-              <a
-                href="/downloads/deskstick/"
-                className="underline hover:text-krg-link-orange"
-              >
-                すべてのバージョンを見る / All releases →
-              </a>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-white text-sm">
+              <span className="text-white/80">Homebrew:</span>
+              <code className="rounded bg-black/40 px-2 py-1 font-mono text-xs sm:text-sm">
+                {HOMEBREW_COMMAND}
+              </code>
             </div>
+            <a
+              href="/downloads/deskstick/"
+              className="text-white text-sm underline hover:text-krg-link-orange"
+            >
+              すべてのインストール方法を見る / All install options →
+            </a>
           </div>
         </div>
       </div>
       <div className="max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8 w-full">
+        <DeskStickScreenshots lang="ja" />
         <section
           aria-label="Support and follow"
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
@@ -151,6 +154,15 @@ const Component: React.FC = () => {
           </a>
         </section>
         <div>
+          <p>
+            <strong>DeskStick</strong> は Mac・iPhone・iPad・Apple Vision Pro
+            向けの付箋アプリで、書いたメモは iCloud
+            で全デバイスに同期されます。よく使う ChatGPT / Claude / Gemini
+            のプロンプトを最前面にピン留めしておいたり、生成されたドラフトを本番のエディタに貼る前に一時的に置いておいたりと、
+            <strong>AIプロンプトと LLM 出力のスクラッチパッド</strong>{" "}
+            として特に便利です。ピン留め・色分け・メニューバーからの一覧表示（macOS）に対応しています。開発は
+            Karaage。
+          </p>
           <Japanese components={components} />
         </div>
       </div>

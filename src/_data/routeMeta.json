@@ -33,8 +33,8 @@
     "alternates": { "ja": "/works/fennec/", "en": "/works/fennec/en/" }
   },
   "/works/deskstick/": {
-    "title": "DeskStick - AIプロンプト・出力の一時メモに使えるiCloud同期付箋アプリ (macOS) | Karaage's Library",
-    "description": "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる macOS 向けの付箋（sticky notes）アプリです。複数のMac間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからの一覧表示で素早くアクセスできます。無料でダウンロードできます。",
+    "title": "DeskStick - AIプロンプト・出力の一時メモに使えるiCloud同期付箋アプリ (Mac / iPhone / iPad / Vision Pro) | Karaage's Library",
+    "description": "DeskStick は AIプロンプトや ChatGPT・Claude などの出力を一時的にメモするのに最適な、iCloud で同期できる付箋（sticky notes）アプリです。Mac・iPhone・iPad・Apple Vision Pro 間でプロンプトのスニペットや作業メモをシームレスに共有し、ピン留め・色分け・メニューバーからのクイック入力（macOS）、ホーム画面／ロック画面ウィジェット（iPhone・iPad）、オフライン編集に対応。App Store から無料でダウンロードできます。",
     "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
     "favicon": "/deskstick-icon-mac.png",
     "priority": "0.8",
@@ -42,8 +42,8 @@
     "alternates": { "ja": "/works/deskstick/", "en": "/works/deskstick/en/" }
   },
   "/works/deskstick/en/": {
-    "title": "DeskStick - iCloud-synced sticky notes for AI prompts & scratchpads on macOS | Karaage's Library",
-    "description": "DeskStick is an iCloud-synced sticky notes app for macOS, perfect for keeping AI prompts (ChatGPT, Claude, Gemini) and LLM outputs as quick scratchpads. Sync notes across multiple Macs, pin them on top, color-code, and access everything from the menubar. Free download. Built by Karaage.",
+    "title": "DeskStick - iCloud-synced sticky notes for AI prompts & scratchpads on Mac, iPhone, iPad & Vision Pro | Karaage's Library",
+    "description": "DeskStick is an iCloud-synced sticky notes app for Mac, iPhone, iPad, and Apple Vision Pro, perfect for keeping AI prompts (ChatGPT, Claude, Gemini) and LLM outputs as quick scratchpads. Sync notes across all your Apple devices, pin them on top, color-code them, write from the macOS menu bar, keep them on your Home and Lock Screen widgets, and keep editing offline. Free on the App Store. Built by Karaage.",
     "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
     "favicon": "/deskstick-icon-mac.png",
     "lang": "en",
@@ -53,7 +53,7 @@
   },
   "/works/deskstick/privacy/": {
     "title": "Privacy Policy — DeskStick | Karaage's Library",
-    "description": "Privacy Policy for DeskStick, an iCloud-synced sticky notes app for macOS. Learn how the app handles your notes, iCloud sync, automatic updates, and contact information.",
+    "description": "Privacy Policy for DeskStick, an iCloud-synced sticky notes app for Mac, iPhone, iPad, and Apple Vision Pro. Learn how the app handles your notes, iCloud sync, updates, and contact information.",
     "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
     "favicon": "/deskstick-icon-mac.png",
     "lang": "en",
@@ -95,8 +95,8 @@
     "changefreq": "yearly"
   },
   "/downloads/deskstick/": {
-    "title": "DeskStick Releases - macOS版ダウンロード一覧 (DMG / ZIP) | Karaage's Library",
-    "description": "DeskStick（iCloud 同期対応の macOS 向け付箋アプリ）の最新版および過去バージョンのダウンロードページ。DMG インストーラ・ZIP・Sparkle 自動アップデート対応。AIプロンプトや LLM 出力の一時メモに使えます。",
+    "title": "DeskStick Releases - App Store / Homebrew でのインストール | Karaage's Library",
+    "description": "DeskStick（iCloud 同期対応の付箋アプリ）のインストール方法と過去バージョンのダウンロードページ。App Store のほか Homebrew cask（brew install --cask krgpi/tap/deskstick）でも導入できます。AIプロンプトや LLM 出力の一時メモに使えます。",
     "ogImage": "https://krgpi.github.io/stickies-on-the-desktop.png",
     "favicon": "/deskstick-icon-mac.png",
     "priority": "0.8",

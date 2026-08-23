@@ -1,16 +1,45 @@
 ## Features
+
 ### Sync your stickies with iCloud.
-Your stickies sync via iCloud, so the same notes are available on your Mac, iPhone, iPad, and Apple Vision Pro.
-### Organize your notes.
-It has an organize window, that you can choose notes which you would like to display. You can also display this window from menubar.
+Your stickies sync via iCloud, so the same notes are available on your Mac, iPhone, iPad, and Apple Vision Pro. There is no per-device local database, so you never have to wonder which device holds the latest copy.
+
+### Keep writing offline.
+Edits you make on a plane or underground are kept on the device and pushed to iCloud automatically once you are back online. Losing connectivity never means losing what you were writing.
+
+### Quick input from the menu bar (macOS)
+Click the menu bar icon and a quick input field opens right there. Press `⌘⏎` and the note is saved and stuck to your desktop as a window. No app switching between the thought and writing it down.
+
+### See everything in the organizer (macOS)
+The organizer is a two-pane window: pick a note in the list on the left and edit or delete it directly in the pane on the right. Even with a lot of notes, you can skim through their contents without opening a window for each one.
+
 ### Always front
-Note can be pinned. Pinned note is always displayed in front even if you select another app window.
+Notes can be pinned. A pinned note stays in front even while you work in another app. Use the pin icon, or toggle it with `⌘P`.
+
 ### Colorful and creative.
-You can set the color of the note, and it will also be synchronized via iCloud.
+You can set the color of the note, and it will also be synchronized via iCloud — an instant way to tell "work", "personal", and "experimental" apart.
 
-## Supported devices
+### Apple Intelligence summary titles (macOS 26 or later)
+Turn this on in settings and a short summary of each note's contents appears as its window title and in the organizer list. The summarization happens on your Mac; the contents are never sent anywhere.
 
-DeskStick is **available on the App Store** for Mac, iPhone, iPad, and Apple Vision Pro. Notes sync seamlessly via iCloud, so you can start a prompt on your Mac and pick it up on your iPhone.
+### Choose the menu bar, the Dock, or both (macOS)
+The settings window (`⌘,`) lets you decide whether DeskStick lives in the menu bar, in the Dock, or both. At least one of the two is always shown, so the app can never disappear on you.
+
+### Home Screen and Lock Screen widgets (iPhone / iPad)
+Keep your latest notes on the Home Screen. There is a "sticky list" widget that shows several notes at once and a "single sticky" widget that shows one note you pick, both in small, medium, and large sizes. On the Lock Screen you can add a circular widget that starts a new note in one tap, plus a rectangular widget showing your most recent note. Tapping any widget opens that note directly in the app.
+
+### List and grid views (iPhone / iPad)
+Switch the overview between a list and a grid. Your choice is remembered the next time you launch the app.
+
+## Supported devices and requirements
+
+DeskStick is **available on the App Store** for Mac, iPhone, iPad, and Apple Vision Pro. The macOS build can also be installed with Homebrew (`brew install --cask krgpi/tap/deskstick`). Notes sync seamlessly via iCloud, so you can start a prompt on your Mac and pick it up on your iPhone.
+
+| | |
+|------|------|
+| Operating systems | macOS 13.0 or later / iOS and iPadOS 16.0 or later / visionOS |
+| Requirements | An iCloud account signed in on the device, with iCloud Drive enabled |
+| Sync | Through Apple's iCloud (CloudKit). No sign-up, no separate account |
+| Data handling | Nothing passes through the developer's servers. No ads, no tracking ([privacy policy](/works/deskstick/privacy/)) |
 
 ## Use cases for the AI era — keep your prompts and LLM outputs handy
 
@@ -35,7 +64,7 @@ Start drafting a prompt on your desk Mac and finish it on your MacBook — or yo
 macOS ships with a "Stickies" app, but DeskStick adds **iCloud sync** and **menubar quick access**, both of which make it well-suited to high-frequency note taking around AI tools.
 
 ## How to use
-### Select action from the Menubar
+### Select action from the Menubar (macOS)
   You can select "Show All Stickies" and "New Sticky" from the menubar.
 
 ![menubar](/stickies-menubar.png)
@@ -52,6 +81,20 @@ macOS ships with a "Stickies" app, but DeskStick adds **iCloud sync** and **menu
 | Binder icon | Copy the content of the sticky note |
 
 ![green-note](/green-note.png)
+
+You can drag a note window by either the top or the bottom bar, so moving it never interferes with selecting text.
+
+### Keyboard shortcuts (macOS)
+
+| Shortcut | Action |
+|----------|--------|
+| `⌘N` | Create a new sticky note |
+| `⇧⌘A` | Open the organizer |
+| `⌘⏎` | Turn what you typed in quick input into a note |
+| `⌘P` | Toggle the pin on the focused note |
+| `⌘M` | Minimize the note |
+| `⌘W` | Close the note |
+| `⌘,` | Open the settings window |
 
 ## Support DeskStick
 

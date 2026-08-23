@@ -2,27 +2,8 @@ import type React from "react";
 import { useDocumentMeta } from "../../../_components/useDocumentMeta";
 import { getRouteMeta } from "../../../_data/routeMeta";
 
-const ASSET_BASE = "https://krgpi.github.io/releases/cloudstickies";
-
-const LATEST_ZIP_VERSION = "1.0.6";
-const LATEST_ZIP_URL = `${ASSET_BASE}/CloudStickies-${LATEST_ZIP_VERSION}.zip`;
-
-const LATEST_DMG_VERSION = "1.0.4";
-const LATEST_DMG_URL = `${ASSET_BASE}/CloudStickiesInstaller-${LATEST_DMG_VERSION}.dmg`;
-
-const APPCAST_URL = `${ASSET_BASE}/appcast.xml`;
 const APP_STORE_URL = "https://apps.apple.com/app/id6449665256";
-
-const PREVIOUS_ZIP_RELEASES: { version: string; url: string }[] = [
-  { version: "1.0.5", url: `${ASSET_BASE}/CloudStickies-1.0.5.zip` },
-];
-
-const PREVIOUS_DMG_RELEASES: { version: string; url: string }[] = [
-  { version: "1.0.3", url: `${ASSET_BASE}/CloudStickiesInstaller-1.0.3.dmg` },
-  { version: "1.0.2", url: `${ASSET_BASE}/CloudStickiesInstaller-1.0.2.dmg` },
-  { version: "1.0.1", url: `${ASSET_BASE}/CloudStickiesInstaller-1.0.1.dmg` },
-  { version: "1.0.0", url: `${ASSET_BASE}/CloudStickiesInstaller-1.0.0.dmg` },
-];
+const HOMEBREW_COMMAND = "brew install --cask krgpi/tap/deskstick";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -34,9 +15,8 @@ const Component: React.FC = () => {
       name: "DeskStick",
       applicationCategory: "ProductivityApplication",
       operatingSystem: "macOS, iOS, iPadOS, visionOS",
-      softwareVersion: LATEST_ZIP_VERSION,
-      downloadUrl: LATEST_ZIP_URL,
-      installUrl: LATEST_ZIP_URL,
+      downloadUrl: APP_STORE_URL,
+      installUrl: APP_STORE_URL,
       offers: {
         "@type": "Offer",
         price: "0",
@@ -56,7 +36,7 @@ const Component: React.FC = () => {
   return (
     <div className="space-y-6 max-w-(--breakpoint-xl) mx-auto p-4">
       <div>
-        <h1 className="text-3xl font-bold">DeskStick — Releases</h1>
+        <h1 className="text-3xl font-bold">DeskStick — インストール</h1>
         <p className="mt-2">
           DeskStick（iCloud で同期できる付箋アプリ）です。AI プロンプトや LLM
           出力の一時メモにもお使いいただけます。
@@ -64,7 +44,7 @@ const Component: React.FC = () => {
       </div>
 
       <section className="space-y-3">
-        <h2 className="text-2xl font-bold">最新版 / Latest</h2>
+        <h2 className="text-2xl font-bold">入手方法 / Get DeskStick</h2>
 
         <div className="rounded-lg border border-white/20 p-4 max-w-prose space-y-2">
           <p className="text-xl">
@@ -90,20 +70,27 @@ const Component: React.FC = () => {
         </div>
 
         <h3 className="text-xl font-semibold pt-2">
-          直接ダウンロード / Direct downloads
+          その他のインストール方法 / Other install options
         </h3>
 
         <div className="rounded-lg border border-white/20 p-4 max-w-prose space-y-2">
           <p className="text-xl">
-            DMG インストーラ <strong>v{LATEST_DMG_VERSION}</strong>
+            Homebrew — <strong>cask</strong>
           </p>
-          <a
-            href={LATEST_DMG_URL}
-            download
-            className="mt-2 inline-block bg-white/10 border border-krg-link-orange text-krg-link-orange font-bold rounded-lg px-5 py-2.5 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
-          >
-            Download DMG (v{LATEST_DMG_VERSION})
-          </a>
+          <p className="text-sm">
+            App Store を使わずに macOS 版を導入したい場合はこちら。DMG
+            での配布は終了しました。
+          </p>
+          <pre className="mt-2 overflow-x-auto rounded-lg bg-black/40 px-4 py-3 text-sm">
+            <code>{HOMEBREW_COMMAND}</code>
+          </pre>
+          <p className="text-sm">
+            App Store 版と Homebrew 版は同じバンドル ID{" "}
+            <code>com.krgpi.stickies</code> を使い、どちらも{" "}
+            <code>/Applications/DeskStick.app</code>{" "}
+            にインストールされます。併用はできないため、どちらか一方をお使いください。付箋は
+            iCloud 上にあるので、入れ替えてもデータは引き継がれます。
+          </p>
         </div>
       </section>
 
@@ -111,66 +98,19 @@ const Component: React.FC = () => {
         <h2 className="text-2xl font-bold">インストール方法 / Installation</h2>
         <ol className="list-decimal list-inside space-y-1 max-w-prose">
           <li>
-            <strong>DMG の場合:</strong>{" "}
-            ダウンロードしたファイルをダブルクリックでマウントし、
-            <code>DeskStick.app</code> を <code>/Applications</code>{" "}
-            フォルダにドラッグ＆ドロップしてください。
+            <strong>Homebrew の場合:</strong> 上記のコマンドを実行してください。
+            tap は初回に自動で追加されます。
           </li>
           <li>
-            初回起動時に macOS Gatekeeper の警告が出る場合は、システム設定 →
+            App Store 以外から導入した版で初回起動時に macOS Gatekeeper
+            の警告が出る場合は、システム設定 →
             プライバシーとセキュリティから「このまま開く」を選んでください。
           </li>
           <li>
             iCloud 同期を使うには、System Settings → Apple ID → iCloud → iCloud
             Drive で DeskStick が ON になっていることをご確認ください。
           </li>
-          <li>
-            アップデートは Sparkle 経由で自動的に通知されます（appcast:{" "}
-            <a
-              className="text-krg-link-orange hover:underline"
-              href={APPCAST_URL}
-            >
-              appcast.xml
-            </a>
-            ）。
-          </li>
         </ol>
-      </section>
-
-      <section className="space-y-2">
-        <h2 className="text-2xl font-bold">
-          過去バージョン / Previous releases
-        </h2>
-
-        <h3 className="text-xl font-semibold mt-2">ZIP</h3>
-        <ul className="list-disc list-inside max-w-prose">
-          {PREVIOUS_ZIP_RELEASES.map((r) => (
-            <li key={r.version}>
-              <a
-                className="text-krg-link-orange hover:underline"
-                href={r.url}
-                download
-              >
-                DeskStick v{r.version} (.zip)
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <h3 className="text-xl font-semibold mt-2">DMG インストーラ</h3>
-        <ul className="list-disc list-inside max-w-prose">
-          {PREVIOUS_DMG_RELEASES.map((r) => (
-            <li key={r.version}>
-              <a
-                className="text-krg-link-orange hover:underline"
-                href={r.url}
-                download
-              >
-                DeskStick Installer v{r.version} (.dmg)
-              </a>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <section
