@@ -6,9 +6,6 @@ import { getRouteMeta } from "../../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
 import English from "./_english.mdx";
 
-const GITHUB_URL = "https://github.com/krgpi/fennec/releases";
-const HOMEBREW_COMMAND = "brew install --cask krgpi/tap/fennec";
-
 const Component: React.FC = () => {
   useDocumentMeta({
     ...getRouteMeta("/works/fennec/en/"),
@@ -80,17 +77,15 @@ const Component: React.FC = () => {
               <span>Fennec</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              Your meetings, transcribed locally.
+              Meeting notes without a bot in the call.
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              Local transcription & AI meeting notes for macOS, Windows, and
-              Linux
+              Any call app, captured at the OS level. Transcription and AI
+              minutes, all on your own machine
             </p>
             <div className="mt-2">
               <a
-                href={GITHUB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#install"
                 className="inline-flex items-center justify-center gap-2 bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
               >
                 Download (Free) →
@@ -100,12 +95,6 @@ const Component: React.FC = () => {
               macOS 26+ · Windows x64 · Linux x86_64 · Free · MIT License · All
               processing stays on-device
             </p>
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-white text-sm">
-              <span className="text-white/80">Homebrew (macOS):</span>
-              <code className="rounded bg-black/40 px-2 py-1 font-mono text-xs sm:text-sm">
-                {HOMEBREW_COMMAND}
-              </code>
-            </div>
           </div>
         </div>
       </div>

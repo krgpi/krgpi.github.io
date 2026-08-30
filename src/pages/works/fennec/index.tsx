@@ -6,9 +6,6 @@ import { getRouteMeta } from "../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../mdx-components";
 import Japanese from "./_japanese.mdx";
 
-const GITHUB_URL = "https://github.com/krgpi/fennec/releases";
-const HOMEBREW_COMMAND = "brew install --cask krgpi/tap/fennec";
-
 const Component: React.FC = () => {
   useDocumentMeta({
     ...getRouteMeta("/works/fennec/"),
@@ -80,16 +77,15 @@ const Component: React.FC = () => {
               <span>Fennec</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              会議の声を、そのままテキストに。
+              録音ボットも、クラウドも呼ばない議事録。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              ローカル文字起こし & AI議事録アプリ for macOS / Windows / Linux
+              どの通話アプリでも OS ごと録音。文字起こしも
+              AI議事録も、すべてこの端末の中で完結
             </p>
             <div className="mt-2">
               <a
-                href={GITHUB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#install"
                 className="inline-flex items-center justify-center gap-2 bg-krg-link-orange text-white font-bold rounded-lg px-6 h-12 hover:underline focus:outline-none focus:ring-4 focus:ring-orange-300"
               >
                 ダウンロードはこちら（無料）→
@@ -99,12 +95,6 @@ const Component: React.FC = () => {
               macOS 26+ / Windows x64 / Linux x86_64 / 無料 / MIT License /
               すべての処理がオンデバイスで完結
             </p>
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-white text-sm">
-              <span className="text-white/80">Homebrew (macOS):</span>
-              <code className="rounded bg-black/40 px-2 py-1 font-mono text-xs sm:text-sm">
-                {HOMEBREW_COMMAND}
-              </code>
-            </div>
           </div>
         </div>
       </div>
