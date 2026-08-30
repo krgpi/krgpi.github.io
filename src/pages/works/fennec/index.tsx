@@ -15,9 +15,9 @@ const Component: React.FC = () => {
     <div className="space-y-4">
       <div className="relative w-full bg-black min-h-96">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 scale-110 bg-fennec-bg bg-cover bg-top opacity-55 blur-[3px]" />
+          <div className="absolute inset-0 scale-110 bg-fennec-bg bg-cover bg-top opacity-90 blur-[2px]" />
         </div>
-        <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/75 to-gray-900/40" />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/45 to-gray-900/10" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
             href="/works/fennec/en/"
