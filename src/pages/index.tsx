@@ -50,63 +50,61 @@ const Component: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="space-y-3">
-                            <div className="space-y-1">
-                                <p className="text-xs font-bold tracking-widest text-gray-400">
-                                    NOW
-                                </p>
-                                <ul className="list-disc list-inside space-y-1 text-sm">
-                                    <li>
-                                        プロダクトエンジニア・プロダクトマネージャー・アドバイザー
-                                    </li>
-                                    <li>
-                                        <a
-                                            className="font-bold text-krg-link-orange hover:underline"
-                                            href="https://ideoj.co.jp"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            株式会社IDEOJ
-                                        </a>{" "}
-                                        代表取締役
-                                    </li>
-                                </ul>
-                            </div>
-                            <details className="text-sm leading-relaxed text-gray-300">
-                                <summary className="cursor-pointer text-gray-400 hover:text-gray-200">
-                                    Detail
-                                </summary>
-                                <div className="mt-3 space-y-3">
-                                    <p>
-                                        EM・PdM・スクラムマスター・PO・経営者としての経験から、「エンジニアリングを土台にした意思決定」と「組織に仕組みを埋め込む」ことを強みとしています。各レイヤーを横断してきた経験を活かし、開発プロセス全体が円滑に回る仕組みづくりに取り組んでいます。
+                        <details className="text-sm leading-relaxed text-gray-300">
+                            <summary className="cursor-pointer text-gray-400 hover:text-gray-200">
+                                Detail
+                            </summary>
+                            <div className="mt-3 space-y-3">
+                                <div className="space-y-1">
+                                    <p className="text-xs font-bold tracking-widest text-gray-400">
+                                        NOW
                                     </p>
-                                    <p>
-                                        2025年以降、Claude
-                                        Codeが実用段階に入ったタイミングで、Coding
-                                        Agentを個人の生産性ハックに閉じさせず「エージェント定義のリポジトリ化」「レビュー知見のAIプロンプト化」など組織の集合知として育てる取り組みを主導してきました。
-                                        生成AI活用は「どのツールを使うか」ではなく「ワークフロー全体を再設計し、AIを組織で育てていく体制をつくること」が本質だと考えています。
-                                    </p>
+                                    <ul className="list-disc list-inside space-y-1">
+                                        <li>
+                                            プロダクトエンジニア・プロダクトマネージャー・アドバイザー
+                                        </li>
+                                        <li>
+                                            <a
+                                                className="font-bold text-krg-link-orange hover:underline"
+                                                href="https://ideoj.co.jp"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                株式会社IDEOJ
+                                            </a>{" "}
+                                            代表取締役
+                                        </li>
+                                    </ul>
                                 </div>
-                            </details>
-                            <div className="space-y-1 text-sm text-gray-400">
-                                <p className="text-xs font-bold tracking-widest text-gray-500">
-                                    PAST
+                                <div className="space-y-1 text-gray-400">
+                                    <p className="text-xs font-bold tracking-widest text-gray-500">
+                                        PAST
+                                    </p>
+                                    <p>
+                                        （元）株式会社CoeFont
+                                        プロダクトマネージャー兼エンジニアマネージャー
+                                    </p>
+                                    <p>（元）株式会社WindHole 共同創業者CTO</p>
+                                    <p>
+                                        （元）ピクシブ株式会社 iOSアプリエンジニア
+                                    </p>
+                                    <p>
+                                        筑波大学大学院 システム情報工学研究科
+                                        博士前期課程修了
+                                    </p>
+                                    <p>筑波大学 理工学群 工学システム学類 卒業</p>
+                                </div>
+                                <p>
+                                    EM・PdM・スクラムマスター・PO・経営者としての経験から、「エンジニアリングを土台にした意思決定」と「組織に仕組みを埋め込む」ことを強みとしています。各レイヤーを横断してきた経験を活かし、開発プロセス全体が円滑に回る仕組みづくりに取り組んでいます。
                                 </p>
                                 <p>
-                                    （元）株式会社CoeFont
-                                    プロダクトマネージャー兼エンジニアマネージャー
+                                    2025年以降、Claude
+                                    Codeが実用段階に入ったタイミングで、Coding
+                                    Agentを個人の生産性ハックに閉じさせず「エージェント定義のリポジトリ化」「レビュー知見のAIプロンプト化」など組織の集合知として育てる取り組みを主導してきました。
+                                    生成AI活用は「どのツールを使うか」ではなく「ワークフロー全体を再設計し、AIを組織で育てていく体制をつくること」が本質だと考えています。
                                 </p>
-                                <p>（元）株式会社WindHole 共同創業者CTO</p>
-                                <p>
-                                    （元）ピクシブ株式会社 iOSアプリエンジニア
-                                </p>
-                                <p>
-                                    筑波大学大学院 システム情報工学研究科
-                                    博士前期課程修了
-                                </p>
-                                <p>筑波大学 理工学群 工学システム学類 卒業</p>
                             </div>
-                        </div>
+                        </details>
 
                         <p className="text-sm text-gray-300">
                             hobbies: 📸 🎸 🚘 🀄️ 🎳 💻 🪴 🗺️ 🐈
