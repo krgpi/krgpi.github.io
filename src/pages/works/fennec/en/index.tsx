@@ -1,5 +1,6 @@
 import { useMDXComponents } from "@mdx-js/react";
 import type React from "react";
+import { FennecScreenshots } from "../../../../_components/FennecScreenshots";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
 import { getRouteMeta } from "../../../../_data/routeMeta";
 import { useMDXComponents as customMdx } from "../../../../mdx-components";
@@ -55,7 +56,10 @@ const Component: React.FC = () => {
   return (
     <div className="space-y-4">
       <div className="relative w-full bg-black min-h-96">
-        <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent" />
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 scale-110 bg-fennec-bg bg-cover bg-center opacity-25 blur-[3px]" />
+        </div>
+        <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/85 to-gray-900/60" />
         <div className="relative mx-auto max-w-3xl min-h-96">
           <a
             href="/works/fennec/"
@@ -106,6 +110,7 @@ const Component: React.FC = () => {
         </div>
       </div>
       <div className="max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8 w-full">
+        <FennecScreenshots lang="en" />
         <section
           aria-label="Support and follow"
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
