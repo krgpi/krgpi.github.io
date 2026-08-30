@@ -2,7 +2,7 @@ import type React from "react";
 import { useDocumentMeta } from "../../../../_components/useDocumentMeta";
 import { getRouteMeta } from "../../../../_data/routeMeta";
 
-const LAST_UPDATED = "April 27, 2026";
+const LAST_UPDATED = "August 23, 2026";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -30,21 +30,22 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <p>
             This Privacy Policy explains how <strong>DeskStick</strong> (the
-            “app”), a macOS sticky notes application developed by Karaage (Yuki
-            NOAKI), handles information when you use the app. The app is
-            distributed for free from{" "}
+            “app”), a sticky notes application for Mac, iPhone, iPad, and Apple
+            Vision Pro developed by Karaage (Yuki NOAKI), handles information
+            when you use the app. The app is distributed for free on the App
+            Store and through Homebrew — see the{" "}
             <a
               href="https://krgpi.github.io/works/deskstick/"
               className="text-krg-link-orange hover:underline"
             >
-              krgpi.github.io
-            </a>
-            .
+              DeskStick page
+            </a>{" "}
+            for details.
           </p>
           <p>
             <strong>Summary:</strong> DeskStick does not collect, transmit, or
             sell any personal data to the developer or to third parties. Your
-            notes stay on your Mac and (optionally) inside your own iCloud
+            notes stay on your device and (optionally) inside your own iCloud
             account.
           </p>
         </section>
@@ -53,7 +54,7 @@ const Component: React.FC = () => {
           <h2 className="text-2xl font-bold">1. Information the app handles</h2>
           <p>
             DeskStick stores the content you type into sticky notes — including
-            text, note color, position, and pinned state — on your Mac. The
+            text, note color, position, and pinned state — on your device. The
             developer does not receive a copy of this content.
           </p>
           <p>
@@ -66,10 +67,10 @@ const Component: React.FC = () => {
         <section className="space-y-2">
           <h2 className="text-2xl font-bold">2. iCloud sync</h2>
           <p>
-            If you are signed in to iCloud on your Mac and have iCloud Drive
+            If you are signed in to iCloud on your device and have iCloud Drive
             enabled, DeskStick uses Apple’s CloudKit framework to sync your
-            sticky notes between Macs that are signed in to the same Apple ID.
-            Your notes are stored in your private iCloud database and are
+            sticky notes between devices that are signed in to the same Apple
+            ID. Your notes are stored in your private iCloud database and are
             handled by Apple under{" "}
             <a
               href="https://www.apple.com/legal/privacy/"
@@ -85,42 +86,27 @@ const Component: React.FC = () => {
             The developer cannot read, view, or recover the contents of notes
             stored in your iCloud account. If you do not want to use iCloud
             sync, you can sign out of iCloud or disable iCloud Drive for the app
-            from <strong>System Settings → [your name] → iCloud</strong>.
+            from <strong>System Settings → [your name] → iCloud</strong> on
+            macOS, or <strong>Settings → [your name] → iCloud</strong> on iOS,
+            iPadOS, and visionOS.
           </p>
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-2xl font-bold">3. Automatic updates (Sparkle)</h2>
+          <h2 className="text-2xl font-bold">3. Updates</h2>
           <p>
-            DeskStick uses the open-source{" "}
-            <a
-              href="https://sparkle-project.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-krg-link-orange hover:underline"
-            >
-              Sparkle
-            </a>{" "}
-            framework to check for new versions of the app. When checking for
-            updates, the app makes HTTPS requests to{" "}
-            <code>krgpi.github.io</code> (hosted on GitHub Pages). These
-            requests may include standard information that any web request
-            includes, such as your IP address and a user-agent string. This is
-            handled by GitHub under{" "}
-            <a
-              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-krg-link-orange hover:underline"
-            >
-              GitHub’s privacy statement
-            </a>
-            . The developer does not run server-side logging or analytics on top
-            of these requests.
+            DeskStick does not check for updates on its own, and it does not
+            contact the developer’s servers for any purpose. Earlier versions
+            bundled the Sparkle update framework and requested an update feed
+            from <code>krgpi.github.io</code>; current versions no longer do
+            this.
           </p>
           <p>
-            You can disable automatic update checks at any time from the app’s
-            preferences.
+            Updates are delivered by whichever channel you installed the app
+            from — the App Store, or Homebrew via{" "}
+            <code>brew upgrade --cask deskstick</code>. Those channels are
+            operated by Apple and by the Homebrew project respectively, and
+            their own privacy policies apply to them.
           </p>
         </section>
 
@@ -131,13 +117,12 @@ const Component: React.FC = () => {
           <p>
             DeskStick does not include any third-party crash-reporting or
             telemetry SDK. If you choose to share diagnostics with Apple from
-            macOS{" "}
+            your device’s{" "}
             <strong>
-              System Settings → Privacy &amp; Security → Analytics &amp;
-              Improvements
-            </strong>
-            , Apple may share anonymized crash logs with the developer through
-            App Store Connect or similar channels. Sharing is opt-in and
+              Privacy &amp; Security → Analytics &amp; Improvements
+            </strong>{" "}
+            settings, Apple may share anonymized crash logs with the developer
+            through App Store Connect or similar channels. Sharing is opt-in and
             controlled by you.
           </p>
         </section>
@@ -156,15 +141,19 @@ const Component: React.FC = () => {
           <ul className="list-disc list-inside space-y-1">
             <li>
               You can delete individual notes or all notes from the app at any
-              time. Deletions sync via iCloud to your other Macs.
+              time. Deletions sync via iCloud to your other devices.
             </li>
             <li>
               You can stop using iCloud sync by signing out of iCloud or
               disabling iCloud Drive for the app.
             </li>
             <li>
-              You can uninstall DeskStick by dragging <code>DeskStick.app</code>{" "}
-              from <code>/Applications</code> to the Trash.
+              On a Mac you can uninstall DeskStick by dragging{" "}
+              <code>DeskStick.app</code> from <code>/Applications</code> to the
+              Trash, or — if you installed it with Homebrew — by running{" "}
+              <code>brew uninstall --cask deskstick</code>. On iPhone, iPad, and
+              Apple Vision Pro, delete the app from the Home Screen as you would
+              any other app.
             </li>
           </ul>
         </section>
@@ -198,7 +187,7 @@ const Component: React.FC = () => {
             >
               site privacy policy
             </a>
-            . The app on your Mac is not affected by website analytics.
+            . The app on your device is not affected by website analytics.
           </p>
         </section>
 
