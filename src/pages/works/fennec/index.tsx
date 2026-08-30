@@ -7,46 +7,7 @@ import { useMDXComponents as customMdx } from "../../../mdx-components";
 import Japanese from "./_japanese.mdx";
 
 const Component: React.FC = () => {
-  useDocumentMeta({
-    ...getRouteMeta("/works/fennec/"),
-    jsonLdId: "fennec",
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: "Fennec",
-      applicationCategory: "ProductivityApplication",
-      applicationSubCategory: "Transcription",
-      operatingSystem: "macOS, Windows, Linux",
-      keywords:
-        "文字起こし, 議事録, macOS, Windows, Linux, whisper.cpp, ローカル処理, 音声認識, AI議事録, 話者分離, リアルタイム翻訳",
-      featureList: [
-        "あらゆる通話アプリに対応（OSレベルでシステム音声をキャプチャ）",
-        "システム音声とマイクのデュアルストリームキャプチャ",
-        "リアルタイム文字起こし（whisper.cpp / Apple音声認識）",
-        "高精度文字起こし（Whisper Small / Large V3 Turbo）",
-        "AI議事録生成（Claude Code / Codex / Gemini CLI）",
-        "ライブ翻訳（オンデバイス・macOS）",
-        "話者分離（sherpa-onnx）",
-        "カレンダー連携によるビデオ会議自動検出",
-        "CLIによるスクリプト操作",
-      ],
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "JPY",
-        availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/fennec/",
-      },
-      author: {
-        "@type": "Person",
-        name: "Karaage",
-        url: "https://krgpi.github.io/",
-      },
-      url: "https://krgpi.github.io/works/fennec/",
-      image: "https://krgpi.github.io/fennec-icon.png",
-      inLanguage: ["ja", "en"],
-    },
-  });
+  useDocumentMeta(getRouteMeta("/works/fennec/"));
 
   const defaultComponents = useMDXComponents();
   const components = customMdx(defaultComponents);
@@ -75,6 +36,9 @@ const Component: React.FC = () => {
                 className="block w-[1.2em] h-[1.2em] shrink-0 rounded-2xl drop-shadow-xl drop-shadow-black/40"
               />
               <span>Fennec</span>
+              <span className="sr-only">
+                — ローカル文字起こし & AI議事録アプリ
+              </span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
               録音をクラウドに上げない安心設計。
@@ -93,7 +57,7 @@ const Component: React.FC = () => {
             </div>
             <p className="text-white text-sm">
               macOS 26+ / Windows x64 / Linux x86_64 / 無料 / MIT License /
-              すべての処理がオンデバイスで完結
+              録音・文字起こし・翻訳はオンデバイスで完結
             </p>
           </div>
         </div>

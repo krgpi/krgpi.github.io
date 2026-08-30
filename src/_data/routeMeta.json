@@ -14,23 +14,135 @@
     "changefreq": "monthly"
   },
   "/works/fennec/": {
-    "title": "Fennec - ローカル文字起こし & AI議事録アプリ (macOS / Windows / Linux) | Karaage's Library",
-    "description": "Fennec はシステム音声とマイク入力を同時にキャプチャし、リアルタイムおよび録音後の音声テキスト変換を行うデスクトップアプリです。macOS・Windows・Linuxに対応。すべての処理はデバイス上で実行され、データは外部サーバーに送信されません。",
-    "ogImage": "https://krgpi.github.io/fennec-icon.png",
+    "title": "Fennec - ローカル文字起こし & AI議事録アプリ | Karaage's Library",
+    "description": "Fennec はシステム音声とマイクを同時に録音し、オンデバイスで文字起こしするアプリ。録音・文字起こし・話者分離・翻訳はローカルで完結。議事録は Markdown、操作は CLI。macOS / Windows / Linux 対応、無料・MIT License。",
+    "keywords": "Fennec, 文字起こし アプリ, AI議事録, 議事録 自動作成, ローカル 文字起こし, オンデバイス 音声認識, whisper.cpp, 話者分離, リアルタイム文字起こし, 会議 録音, システム音声 録音, Markdown 議事録, CLI, macOS, Windows, Linux, 無料, オープンソース",
+    "ogImage": "https://krgpi.github.io/fennec/ja/og.jpg",
+    "ogImageAlt": "Fennec のメイン画面。システム音声とマイクを同時に録音し、リアルタイムで文字起こししている様子。",
+    "ogImageWidth": "1200",
+    "ogImageHeight": "630",
+    "twitterCard": "summary_large_image",
     "favicon": "/fennec-icon.png",
     "priority": "0.8",
-    "changefreq": "yearly",
-    "alternates": { "ja": "/works/fennec/", "en": "/works/fennec/en/" }
+    "changefreq": "monthly",
+    "alternates": {
+      "ja": "/works/fennec/",
+      "en": "/works/fennec/en/",
+      "x-default": "/works/fennec/"
+    },
+    "jsonLdId": "fennec",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Fennec",
+      "applicationCategory": "ProductivityApplication",
+      "applicationSubCategory": "Transcription",
+      "operatingSystem": "macOS, Windows, Linux",
+      "keywords": "文字起こし, 議事録, macOS, Windows, Linux, whisper.cpp, ローカル処理, 音声認識, AI議事録, 話者分離, リアルタイム翻訳, Markdown, CLI",
+      "featureList": [
+        "あらゆる通話アプリに対応（OSレベルでシステム音声をキャプチャ）",
+        "システム音声とマイクのデュアルストリームキャプチャ",
+        "リアルタイム文字起こし（whisper.cpp / Apple音声認識）",
+        "高精度文字起こし（Whisper Small / Large V3 Turbo）",
+        "AI議事録生成（Claude Code / Codex / Gemini CLI）",
+        "ライブ翻訳（オンデバイス・macOS）",
+        "話者分離（sherpa-onnx）",
+        "カレンダー連携によるビデオ会議自動検出",
+        "1セッション1フォルダのファイル保存（Markdown の minutes.md）",
+        "トレイ / メニューバー常駐",
+        "CLIによるスクリプト操作"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "url": "https://krgpi.github.io/works/fennec/"
+      },
+      "downloadUrl": "https://github.com/krgpi/fennec/releases",
+      "installUrl": "https://github.com/krgpi/fennec/releases",
+      "license": "https://opensource.org/licenses/MIT",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Karaage",
+        "url": "https://krgpi.github.io/"
+      },
+      "url": "https://krgpi.github.io/works/fennec/",
+      "image": "https://krgpi.github.io/fennec/ja/og.jpg",
+      "screenshot": [
+        "https://krgpi.github.io/fennec/recording.webp",
+        "https://krgpi.github.io/fennec/minutes.webp",
+        "https://krgpi.github.io/fennec/ja/generate.webp"
+      ],
+      "inLanguage": "ja"
+    }
   },
   "/works/fennec/en/": {
-    "title": "Fennec - Local transcription & AI meeting notes for macOS, Windows, and Linux | Karaage's Library",
-    "description": "Fennec captures system audio and microphone input simultaneously, with real-time and post-recording speech-to-text. All audio processing runs on-device — recordings and transcripts never leave your machine. Available for macOS, Windows, and Linux.",
-    "ogImage": "https://krgpi.github.io/fennec-icon.png",
+    "title": "Fennec - Local transcription & AI meeting notes | Karaage's Library",
+    "description": "Fennec transcribes meetings on-device — recordings never leave your machine. Markdown minutes, CLI control. Free and MIT-licensed for macOS, Windows and Linux.",
+    "keywords": "Fennec, transcription app, AI meeting notes, local transcription, on-device speech recognition, whisper.cpp, speaker diarization, real-time transcription, meeting recording, system audio capture, Markdown minutes, CLI, macOS, Windows, Linux, free, open source",
+    "ogImage": "https://krgpi.github.io/fennec/en/og.jpg",
+    "ogImageAlt": "The Fennec main window recording system audio and microphone together with live transcription.",
+    "ogImageWidth": "1200",
+    "ogImageHeight": "630",
+    "twitterCard": "summary_large_image",
     "favicon": "/fennec-icon.png",
     "lang": "en",
     "priority": "0.7",
-    "changefreq": "yearly",
-    "alternates": { "ja": "/works/fennec/", "en": "/works/fennec/en/" }
+    "changefreq": "monthly",
+    "alternates": {
+      "ja": "/works/fennec/",
+      "en": "/works/fennec/en/",
+      "x-default": "/works/fennec/"
+    },
+    "jsonLdId": "fennec-en",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Fennec",
+      "applicationCategory": "ProductivityApplication",
+      "applicationSubCategory": "Transcription",
+      "operatingSystem": "macOS, Windows, Linux",
+      "keywords": "transcription, meeting notes, macOS, Windows, Linux, whisper.cpp, local processing, speech recognition, AI meeting minutes, speaker diarization, Markdown, CLI",
+      "featureList": [
+        "Works with any call app (OS-level system audio capture)",
+        "Dual-stream capture (system audio + microphone)",
+        "Real-time transcription (whisper.cpp / Apple Speech Recognition)",
+        "High-accuracy transcription (Whisper Small / Large V3 Turbo)",
+        "AI meeting minutes (Claude Code / Codex / Gemini CLI)",
+        "Live translation (on-device, macOS)",
+        "Speaker diarization (sherpa-onnx)",
+        "Calendar integration for video meeting detection",
+        "File-based storage, one folder per session (Markdown minutes.md)",
+        "Tray / menu bar background operation",
+        "CLI for scripting and automation"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://krgpi.github.io/works/fennec/en/"
+      },
+      "downloadUrl": "https://github.com/krgpi/fennec/releases",
+      "installUrl": "https://github.com/krgpi/fennec/releases",
+      "license": "https://opensource.org/licenses/MIT",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Karaage",
+        "url": "https://krgpi.github.io/"
+      },
+      "url": "https://krgpi.github.io/works/fennec/en/",
+      "image": "https://krgpi.github.io/fennec/en/og.jpg",
+      "screenshot": [
+        "https://krgpi.github.io/fennec/recording.webp",
+        "https://krgpi.github.io/fennec/minutes.webp",
+        "https://krgpi.github.io/fennec/en/generate.webp"
+      ],
+      "inLanguage": "en"
+    }
   },
   "/works/deskstick/": {
     "title": "DeskStick - AIプロンプト・出力の一時メモに使えるiCloud同期付箋アプリ (Mac / iPhone / iPad / Vision Pro) | Karaage's Library",
@@ -39,7 +151,10 @@
     "favicon": "/deskstick-icon-mac.png",
     "priority": "0.8",
     "changefreq": "yearly",
-    "alternates": { "ja": "/works/deskstick/", "en": "/works/deskstick/en/" }
+    "alternates": {
+      "ja": "/works/deskstick/",
+      "en": "/works/deskstick/en/"
+    }
   },
   "/works/deskstick/en/": {
     "title": "DeskStick - iCloud-synced sticky notes for AI prompts & scratchpads on Mac, iPhone, iPad & Vision Pro | Karaage's Library",
@@ -49,7 +164,10 @@
     "lang": "en",
     "priority": "0.7",
     "changefreq": "yearly",
-    "alternates": { "ja": "/works/deskstick/", "en": "/works/deskstick/en/" }
+    "alternates": {
+      "ja": "/works/deskstick/",
+      "en": "/works/deskstick/en/"
+    }
   },
   "/works/deskstick/privacy/": {
     "title": "Privacy Policy — DeskStick | Karaage's Library",

@@ -7,46 +7,7 @@ import { useMDXComponents as customMdx } from "../../../../mdx-components";
 import English from "./_english.mdx";
 
 const Component: React.FC = () => {
-  useDocumentMeta({
-    ...getRouteMeta("/works/fennec/en/"),
-    jsonLdId: "fennec-en",
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: "Fennec",
-      applicationCategory: "ProductivityApplication",
-      applicationSubCategory: "Transcription",
-      operatingSystem: "macOS, Windows, Linux",
-      keywords:
-        "transcription, meeting notes, macOS, Windows, Linux, whisper.cpp, local processing, speech recognition, AI meeting minutes, speaker diarization",
-      featureList: [
-        "Works with any call app (OS-level system audio capture)",
-        "Dual-stream capture (system audio + microphone)",
-        "Real-time transcription (whisper.cpp / Apple Speech Recognition)",
-        "High-accuracy transcription (Whisper Small / Large V3 Turbo)",
-        "AI meeting minutes (Claude Code / Codex / Gemini CLI)",
-        "Live translation (on-device, macOS)",
-        "Speaker diarization (sherpa-onnx)",
-        "Calendar integration for video meeting detection",
-        "CLI for scripting and automation",
-      ],
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-        url: "https://krgpi.github.io/works/fennec/en/",
-      },
-      author: {
-        "@type": "Person",
-        name: "Karaage",
-        url: "https://krgpi.github.io/",
-      },
-      url: "https://krgpi.github.io/works/fennec/en/",
-      image: "https://krgpi.github.io/fennec-icon.png",
-      inLanguage: "en",
-    },
-  });
+  useDocumentMeta(getRouteMeta("/works/fennec/en/"));
 
   const defaultComponents = useMDXComponents();
   const components = customMdx(defaultComponents);
@@ -75,6 +36,9 @@ const Component: React.FC = () => {
                 className="block w-[1.2em] h-[1.2em] shrink-0 rounded-2xl drop-shadow-xl drop-shadow-black/40"
               />
               <span>Fennec</span>
+              <span className="sr-only">
+                — Local transcription & AI meeting notes
+              </span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
               Recordings that never touch the cloud.
@@ -92,8 +56,8 @@ const Component: React.FC = () => {
               </a>
             </div>
             <p className="text-white text-sm">
-              macOS 26+ · Windows x64 · Linux x86_64 · Free · MIT License · All
-              processing stays on-device
+              macOS 26+ · Windows x64 · Linux x86_64 · Free · MIT License ·
+              Recording, transcription and translation stay on-device
             </p>
           </div>
         </div>

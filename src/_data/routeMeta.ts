@@ -11,6 +11,8 @@ type StaticMeta = {
   favicon?: string;
   lang?: string;
   noindex?: boolean;
+  jsonLdId?: string;
+  jsonLd?: Record<string, unknown>;
 };
 
 export const getRouteMeta = (path: RoutePath) => {
@@ -21,5 +23,7 @@ export const getRouteMeta = (path: RoutePath) => {
     canonical: `${SITE_ORIGIN}${path}`,
     ogImage: meta.ogImage,
     favicon: meta.favicon,
+    jsonLdId: meta.jsonLdId,
+    jsonLd: meta.jsonLd,
   };
 };

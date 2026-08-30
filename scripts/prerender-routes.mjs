@@ -118,6 +118,43 @@ function renderHtml(baseHtml, route, meta) {
     "og:image",
     route,
   );
+  if (meta.keywords) {
+    html = replaceOne(
+      html,
+      /<meta name="keywords" content="[\s\S]*?" \/>/,
+      `<meta name="keywords" content="${esc(meta.keywords)}" />`,
+      "keywords",
+      route,
+    );
+  }
+  html = replaceOne(
+    html,
+    /<meta property="og:image:alt" content="[\s\S]*?" \/>/,
+    `<meta property="og:image:alt" content="${esc(meta.ogImageAlt ?? meta.title)}" />`,
+    "og:image:alt",
+    route,
+  );
+  html = replaceOne(
+    html,
+    /<meta property="og:image:width" content="[\s\S]*?" \/>/,
+    `<meta property="og:image:width" content="${meta.ogImageWidth ?? "1024"}" />`,
+    "og:image:width",
+    route,
+  );
+  html = replaceOne(
+    html,
+    /<meta property="og:image:height" content="[\s\S]*?" \/>/,
+    `<meta property="og:image:height" content="${meta.ogImageHeight ?? "1024"}" />`,
+    "og:image:height",
+    route,
+  );
+  html = replaceOne(
+    html,
+    /<meta name="twitter:card" content="[\s\S]*?" \/>/,
+    `<meta name="twitter:card" content="${meta.twitterCard ?? "summary"}" />`,
+    "twitter:card",
+    route,
+  );
   html = replaceOne(
     html,
     /<meta name="twitter:title" content="[\s\S]*?" \/>/,
@@ -167,6 +204,13 @@ function renderHtml(baseHtml, route, meta) {
       `<link rel="icon" href="${esc(meta.favicon)}" />`,
       "icon",
       route,
+    );
+  }
+  if (meta.jsonLd && meta.jsonLdId) {
+    const json = JSON.stringify(meta.jsonLd).replace(/</g, "\\u003c");
+    html = html.replace(
+      /(\n\s*<script type="module")/,
+      `\n    <script type="application/ld+json" id="jsonld-${meta.jsonLdId}">\n    ${json}\n    </script>$1`,
     );
   }
   if (meta.alternates) {
