@@ -23,6 +23,9 @@ const Component: React.FC = () => {
                             className="rounded-full w-32 sm:w-60"
                             src="/icon.png"
                             alt="アイコン画像"
+                            width={400}
+                            height={400}
+                            decoding="async"
                         />
                         <a
                             href="/icons"
@@ -131,6 +134,10 @@ const Component: React.FC = () => {
                             alt=""
                             aria-hidden
                             className="shrink-0 w-12 h-12 rounded-xl"
+                            width={78}
+                            height={78}
+                            loading="lazy"
+                            decoding="async"
                         />
                         <span className="flex-1">
                             <span className="block font-bold group-hover:underline">
@@ -160,6 +167,10 @@ const Component: React.FC = () => {
                             alt=""
                             aria-hidden
                             className="shrink-0 w-12 h-12 rounded-xl"
+                            width={256}
+                            height={256}
+                            loading="lazy"
+                            decoding="async"
                         />
                         <span className="flex-1">
                             <span className="block font-bold group-hover:underline">
@@ -188,6 +199,10 @@ const Component: React.FC = () => {
                             alt=""
                             aria-hidden
                             className="shrink-0 w-12 h-12 rounded-xl"
+                            width={256}
+                            height={256}
+                            loading="lazy"
+                            decoding="async"
                         />
                         <span className="flex-1">
                             <span className="block font-bold group-hover:underline">
@@ -217,6 +232,10 @@ const Component: React.FC = () => {
                             alt=""
                             aria-hidden
                             className="shrink-0 w-12 h-12 rounded-xl"
+                            width={256}
+                            height={256}
+                            loading="lazy"
+                            decoding="async"
                         />
                         <span className="flex-1">
                             <span className="block font-bold group-hover:underline">
