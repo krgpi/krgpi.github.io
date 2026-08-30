@@ -77,11 +77,10 @@ const Component: React.FC = () => {
               <span>Fennec</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              録音ボットも、クラウドも呼ばない議事録。
+              会議の音声は、この端末から出ない。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              どの通話アプリでも OS ごと録音。文字起こしも
-              AI議事録も、すべてこの端末の中で完結
+              録音・文字起こし・話者分離はすべてオンデバイス。会議に録音ボットを招く必要もありません
             </p>
             <div className="mt-2">
               <a
