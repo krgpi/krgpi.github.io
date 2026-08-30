@@ -77,11 +77,11 @@ const Component: React.FC = () => {
               <span>Fennec</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              Your meeting audio never leaves this device.
+              Recordings that never touch the cloud.
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              Recording, transcription, and diarization all run on-device — and
-              no bot ever joins your call
+              Transcription and diarization run on-device — and no bot ever
+              joins your call
             </p>
             <div className="mt-2">
               <a

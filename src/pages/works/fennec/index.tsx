@@ -77,10 +77,10 @@ const Component: React.FC = () => {
               <span>Fennec</span>
             </h1>
             <p className="text-white text-2xl sm:text-4xl font-light break-words">
-              会議の音声は、この端末から出ない。
+              録音をクラウドに上げない安心設計。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              録音・文字起こし・話者分離はすべてオンデバイス。会議に録音ボットを招く必要もありません
+              文字起こしも話者分離もオンデバイス。会議に録音ボットを招く必要もありません
             </p>
             <div className="mt-2">
               <a
