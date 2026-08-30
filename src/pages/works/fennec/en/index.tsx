@@ -80,8 +80,8 @@ const Component: React.FC = () => {
               Recordings that never touch the cloud.
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              Transcription and diarization run on-device — and no bot ever
-              joins your call
+              Minutes in Markdown, control from the CLI — drops straight into
+              your agent workflow
             </p>
             <div className="mt-2">
               <a

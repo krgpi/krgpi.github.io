@@ -80,7 +80,8 @@ const Component: React.FC = () => {
               録音をクラウドに上げない安心設計。
             </p>
             <p className="text-white text-xl sm:text-2xl font-light break-words">
-              文字起こしも話者分離もオンデバイス。会議に録音ボットを招く必要もありません
+              議事録は Markdown、操作は
+              CLI。エージェントのワークフローにそのまま組み込めます
             </p>
             <div className="mt-2">
               <a
