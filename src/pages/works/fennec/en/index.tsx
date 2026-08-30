@@ -6,6 +6,7 @@ import { useMDXComponents as customMdx } from "../../../../mdx-components";
 import English from "./_english.mdx";
 
 const GITHUB_URL = "https://github.com/krgpi/fennec/releases";
+const HOMEBREW_COMMAND = "brew install --cask krgpi/tap/fennec";
 
 const Component: React.FC = () => {
   useDocumentMeta({
@@ -95,6 +96,12 @@ const Component: React.FC = () => {
               macOS 26+ · Windows x64 · Linux x86_64 · Free · MIT License · All
               processing stays on-device
             </p>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-white text-sm">
+              <span className="text-white/80">Homebrew (macOS):</span>
+              <code className="rounded bg-black/40 px-2 py-1 font-mono text-xs sm:text-sm">
+                {HOMEBREW_COMMAND}
+              </code>
+            </div>
           </div>
         </div>
       </div>
