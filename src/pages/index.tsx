@@ -20,7 +20,7 @@ const Component: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:gap-6">
                     <div className="shrink-0 flex flex-col items-center sm:items-start">
                         <img
-                            className="rounded-full w-32 sm:w-60"
+                            className="rounded-full w-24 sm:w-32"
                             src="/icon.png"
                             alt="アイコン画像"
                             width={400}
