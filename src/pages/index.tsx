@@ -37,10 +37,10 @@ const Component: React.FC = () => {
                     <div className="space-y-5">
                         <div className="space-y-1">
                             <p className="text-3xl">
-                                Yuki NOAKI
+                                Karaage
                                 <span className="text-lg font-normal">
                                     {" "}
-                                    / Karaage
+                                    / Yuki NOAKI
                                 </span>
                             </p>
                             <p className="text-lg">
@@ -49,7 +49,7 @@ const Component: React.FC = () => {
                                 </span>
                             </p>
                             <p>
-                                E2EEファイル共有「カギスル」主宰。AIスタートアップでPO・PdM・EMなどを経験。AIの組織的活用+自律型組織を目指す開発チームを支援しています。
+                                プロダクトエンジニア
                             </p>
                         </div>
 
