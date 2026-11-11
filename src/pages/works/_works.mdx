@@ -1,21 +1,43 @@
-import { WorksList } from "../../_components/WorksList";
+import { WorkCard } from "../../_components/WorkCard";
 
 # Works - 作ったもの
-
-<WorksList />
 
 趣味の Web 開発（今や仕事...）や写真で、個人活動または自身が立ち上げたチームで作ったものについて扱います。歴史的経緯にも少し触れてます。
 
 ## 2025
 
-### [Fennec](/works/fennec/)
+<WorkCard
+    href="https://kagisuru.com"
+    icon="/kagisuru-icon.png"
+    iconSize={78}
+    name="カギスル"
+    description="暗号化ファイル共有サービス。パスワードや共有リンクが不要な仕組みでリスクを根絶できます。"
+    by="IDEOJ"
+/>
+
+<WorkCard
+    href="/works/fennec/"
+    icon="/fennec-icon.png"
+    iconSize={256}
+    name="Fennec"
+    description="ローカル文字起こし & AI議事録アプリ。macOS / Windows / Linux対応。すべての処理がデバイス上で完結。"
+/>
+
 - macOS用 アプリケーション
 - 完全に個人で作成
-- ローカル文字起こし & AI議事録アプリ。macOS / Windows / Linux対応。すべての処理がデバイス上で完結。
+
+ミニマリストで、プライバシーファーストなソフトウェアづくりを目指しています。-- OS標準機能を活かし、依存を最小にし、息の長いものを作ること。データの寿命はサービスより長いから、所有権はユーザーにあるべきで、互換性のある形式で持ち出せること。
 
 ## 2023
 
-### [DeskStick](/works/deskstick/)
+<WorkCard
+    href="/works/deskstick/"
+    icon="/deskstick-icon-ios.png"
+    iconSize={256}
+    name="DeskStick"
+    description="iCloud 同期対応の付箋アプリ。macOS と iOS（iPhone / iPad / visionOS）に対応。AIプロンプトや LLM 出力のスクラッチパッドにも。"
+/>
+
 ![DeskStick Image](/stickies-on-the-desktop.png)
 - Mac / iPhone / iPad / Apple Vision Pro 向け アプリケーション
 - 完全に個人で作成
@@ -54,7 +76,14 @@ https://topicnote.github.io/
 
 ## 2018
 
-### [Polarisetter](/works/polarisetter/) 2018.7
+<WorkCard
+    href="/works/polarisetter/"
+    icon="/polarisetter-icon-ios.png"
+    iconSize={256}
+    name="Polarisetter"
+    date="2018.7"
+    description="天体望遠鏡セッティング用の真北・水平ガイド。暗順応を妨げない黒背景＋赤文字UIになっています。"
+/>
 
 - iOS / iPadOS 用アプリケーション
 - 完全に個人で作成
